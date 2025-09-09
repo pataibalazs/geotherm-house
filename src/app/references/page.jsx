@@ -71,7 +71,7 @@ export default function ReferenceGallery() {
   );
 
   return (
-    <div className="mx-auto max-w-7xl px-6 py- lg:px-8 bg-stone-50">
+    <div className="px-6 py- lg:px-8 bg-stone-50">
       <Section title="Kivitelezési referenciák" items={kivitelezesi} />
       <Section title="Tervezési referenciák" items={tervezesi} />
     </div>
