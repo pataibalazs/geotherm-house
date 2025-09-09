@@ -5,8 +5,9 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "REFERENCIÁK", href: "references" },
-  { name: "CSAPAT", href: "/teams" },
+  { name: "KIVITELEZÉS", href: "/construction" },
+  { name: "TERVEZÉS", href: "/design" },
+  { name: "REFERENCIÁK", href: "/references" },
   { name: "KARRIER", href: "/career" },
   { name: "KONTAKT", href: "/contact" },
   { name: "RÓLUNK", href: "/about" },
@@ -39,7 +40,7 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-10">
           {navigation.map((item) => (
             <a
               key={item.name}
