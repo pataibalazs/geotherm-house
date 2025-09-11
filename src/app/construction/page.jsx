@@ -13,13 +13,13 @@ export default function Construction() {
         <div className="mx-auto max-w-7xl lg:w-1/2 px-6 py-16 lg:px-8 flex items-center relative z-10">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Data to enrich your business
+              Generál kivitelezés
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              30 év generálkivitelezési tapasztalattal, képzett szakemberekkel
+              és minőségi anyagokkal biztosítjuk a precíz, tartós munkát.
             </p>
+
             <div className="mt-10 flex items-center gap-x-6">
               <a
                 href="#"
@@ -94,14 +94,13 @@ export default function Construction() {
               <img
                 src={item.src}
                 alt={item.title}
-                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="h-full w-full object-cover"
                 loading="lazy"
               />
 
-              {/* Erősebb, mobilon is látható overlay */}
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-                {/* Cím-sáv a bal alsó sarokban */}
-                <p className="m-3 px-2.5 py-1 rounded bg-black/45 backdrop-blur-[2px] text-indigo-200 text-sm font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1">
+              {/* Szöveg csak hover esetén jelenik meg */}
+              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <p className="m-3 px-2.5 py-1 rounded text-indigo-200 text-2xl font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1">
                   {item.title}
                 </p>
               </div>

@@ -17,6 +17,22 @@ export default function ReferenceGallery() {
       src: "https://images.unsplash.com/photo-1494526585095-c41746248156",
       title: "Kivitelezés 4",
     },
+    {
+      src: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
+      title: "Kivitelezés 5",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      title: "Kivitelezés 6",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1503389152951-9f343605f61e",
+      title: "Kivitelezés 7",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1507652955-f3dcef5a3be5",
+      title: "Kivitelezés 8",
+    },
   ];
 
   const tervezesi = [
@@ -30,24 +46,67 @@ export default function ReferenceGallery() {
     },
     {
       src: "https://images.unsplash.com/photo-1486325212027-8081e485255e",
-      title: "Tervezés 4",
+      title: "Tervezés 3",
     },
     {
       src: "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
-      title: "Tervezés 5",
+      title: "Tervezés 4",
     },
     {
       src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      title: "Tervezés 6",
+      title: "Tervezés 5",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+      title: "Tervezés 7",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+      title: "Tervezés 8",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1497366216548-37526070297c",
+      title: "Tervezés 9",
+    },
+  ];
+
+  const muvezetesi = [
+    {
+      src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
+      title: "Művezetés 1",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8",
+      title: "Művezetés 2",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
+      title: "Művezetés 3",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1494526585095-c41746248156",
+      title: "Művezetés 4",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1497366216548-37526070297c",
+      title: "Művezetés 7",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      title: "Művezetés 8",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      title: "Művezetés 9",
     },
   ];
 
   const Section = ({ title, items }) => (
-    <div className="pt-10">
+    <div className="pt-20">
       <h2 className="mb-8 text-center text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
         {title}
       </h2>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, idx) => (
           <div
             key={idx}
@@ -74,6 +133,7 @@ export default function ReferenceGallery() {
     <div className="px-6 py- lg:px-8 bg-stone-50">
       <Section title="Kivitelezési referenciák" items={kivitelezesi} />
       <Section title="Tervezési referenciák" items={tervezesi} />
+      <Section title="Művezetési referenciák" items={muvezetesi} />
     </div>
   );
 }
