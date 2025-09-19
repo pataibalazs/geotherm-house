@@ -1,9 +1,4 @@
-const stats = [
-  { id: 1, name: "Átadott lakás", value: "250" },
-  { id: 2, name: "Tapasztalat", value: "30 éves" },
-  { id: 3, name: "Alkalmazott", value: "35" },
-];
-
+import DescriptionWithoutImage from "@/components/DescriptionWithoutImage";
 export default function Construction() {
   return (
     <div className="bg-stone-50 pt-5">
@@ -13,12 +8,12 @@ export default function Construction() {
         <div className="mx-auto max-w-7xl lg:w-1/2 px-6 py-16 lg:px-8 flex items-center relative z-10">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Data to enrich your business
+              Építészeti tervezés
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+              esztétikai minőség korszerű, <br></br> innovatív szemlélet{" "}
+              <br></br>
+              személyre szabott megoldások
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <a
@@ -44,24 +39,7 @@ export default function Construction() {
           />
         </div>
       </div>
-
-      {/* Statisztikák */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 mt-20">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-          {stats.map((stat) => (
-            <div
-              key={stat.id}
-              className="mx-auto flex max-w-xs flex-col gap-y-2"
-            >
-              <dt className="text-base text-gray-600">{stat.name}</dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                {stat.value}
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-
+      <DescriptionWithoutImage />
       {/* Referencia szekció */}
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

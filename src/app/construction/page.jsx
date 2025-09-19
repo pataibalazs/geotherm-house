@@ -4,6 +4,8 @@ const stats = [
   { id: 3, name: "Alkalmazott", value: "35" },
 ];
 
+import DescriptionWithoutImage from "@/components/DescriptionWithoutImage";
+
 export default function Construction() {
   return (
     <div className="bg-stone-50 pt-5">
@@ -44,7 +46,6 @@ export default function Construction() {
           />
         </div>
       </div>
-
       {/* Statisztikák */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 mt-20">
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
@@ -61,7 +62,7 @@ export default function Construction() {
           ))}
         </dl>
       </div>
-
+      <DescriptionWithoutImage />
       {/* Referencia szekció */}
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

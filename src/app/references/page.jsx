@@ -1,4 +1,5 @@
-// ReferenceGallery.jsx
+import Link from "next/link";
+
 export default function ReferenceGallery() {
   const kivitelezesi = [
     {
@@ -101,29 +102,31 @@ export default function ReferenceGallery() {
     },
   ];
 
-  const Section = ({ title, items }) => (
+  const Section = ({ title, items, sectionKey }) => (
     <div className="pt-20">
       <h2 className="mb-8 text-center text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
         {title}
       </h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((item, idx) => (
-          <div
+          <Link
             key={idx}
-            className="group relative aspect-square overflow-hidden rounded-md shadow"
+            href={`/references/${sectionKey}-${idx + 1}`}
+            className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-indigo-600"
+            prefetch={false}
           >
             <img
               src={item.src}
               alt={item.title}
-              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="h-full w-full object-cover"
               loading="lazy"
             />
-            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-              <p className="m-3 px-2.5 py-1 rounded bg-black/45 backdrop-blur-[2px] text-indigo-200 text-sm font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1">
+            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="m-3 px-2.5 py-1 rounded text-indigo-200 text-2xl font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1">
                 {item.title}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
@@ -131,9 +134,21 @@ export default function ReferenceGallery() {
 
   return (
     <div className="px-6 py- lg:px-8 bg-stone-50">
-      <Section title="Kivitelezési referenciák" items={kivitelezesi} />
-      <Section title="Tervezési referenciák" items={tervezesi} />
-      <Section title="Művezetési referenciák" items={muvezetesi} />
+      <Section
+        title="Tervezési referenciák"
+        items={tervezesi}
+        sectionKey="tervezesi"
+      />
+      <Section
+        title="Kivitelezési referenciák"
+        items={kivitelezesi}
+        sectionKey="kivitelezesi"
+      />
+      <Section
+        title="Művezetési referenciák"
+        items={muvezetesi}
+        sectionKey="muvezetesi"
+      />
     </div>
   );
 }
