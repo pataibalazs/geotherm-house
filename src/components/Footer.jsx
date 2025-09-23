@@ -1,12 +1,7 @@
-const navigation = {
-  main: [
-    { name: "KIVITELEZÉS", href: "#" },
-    { name: "TERVEZÉS", href: "#" },
-    { name: "REFERENCIÁK", href: "#" },
-    { name: "CSAPAT", href: "#" },
-    { name: "RÓLUNK", href: "#" },
-  ],
-  social: [
+import Link from "next/link";
+import { navigation } from "./navigation";
+
+const social = [
     {
       name: "Facebook",
       href: "#",
@@ -68,21 +63,21 @@ const navigation = {
         </svg>
       ),
     },
-  ],
-};
+];
 
 export default function Footer() {
   return (
     <footer className="bg-stone-50">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav
-          aria-label="Footer"
-          className="-mb-6  flex flex-wrap justify-center gap-x-12 gap-y-3 text-md font-semibold"
-        >
-          {navigation.main.map((item) => (
-            <a key={item.name} href={item.href} className="text-black">
+        <nav aria-label="Footer" className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-md font-semibold">
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-black hover:text-indigo-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 rounded"
+            >
               {item.name}
-            </a>
+            </Link>
           ))}
         </nav>
         <p className="mt-10 text-center text-sm/6 text-black">

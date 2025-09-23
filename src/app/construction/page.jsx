@@ -52,11 +52,11 @@ export default function Construction() {
           </div>
         </div>
         {/* Image section */}
-        <div className="lg:w-1/2 h-full aspect-square flex items-center">
+        <div className="lg:w-1/2 h-full w-full sm:max-w-[600px] aspect-square flex items-center justify-center sm:mx-auto">
           <img
             alt="Construction"
             src="https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1587&q=80"
-            className="w-full h-full object-cover rounded-md"
+            className="w-full h-full object-cover object-center rounded-md"
             loading="lazy"
           />
         </div>

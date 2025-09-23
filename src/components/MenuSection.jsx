@@ -7,12 +7,12 @@ export default function MenuSection({ imageUrl, text }) {
         src={imageUrl}
         alt={text}
         fill
-        className="object-cover group-hover:scale-102 transition-transform duration-500"
+        className="object-cover transition-transform duration-500"
         sizes="(max-width: 768px) 200vw, 700px"
         priority
       />
-      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
-        <span className="text-white text-2xl font-bold tracking-wide transition-colors duration-500 group-hover:text-indigo-500">
+      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-200 flex items-center justify-center">
+        <span className="text-white text-3xl font-bold tracking-wide transition-colors duration-500 group-hover:text-indigo-500">
           {text}
         </span>
       </div>
