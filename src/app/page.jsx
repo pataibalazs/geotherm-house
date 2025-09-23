@@ -4,12 +4,17 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-stone-50 min-h-screen flex flex-col">
-      <div className="text-center py-20 font-semibold text-4xl leading-tight">
-        <span className="text-gray-800 block">Az ötlettől az átadásig,</span>
-        <span className="text-indigo-600">a teljes folyamat egy kézben!</span>
+      {/* Hero text */}
+      <div className="py-16 sm:py-20">
+        <div className="mx-auto px-4 sm:px-6 text-center font-semibold leading-tight sm:max-w-xl sm:max-w-2xl md:max-w-3xl text-3xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight">
+          <span className="text-gray-800 block">Az ötlettől az átadásig,</span>
+          <span className="text-indigo-600 block">
+            a teljes folyamat egy kézben!
+          </span>
+        </div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-12 px-10 pb-20">
+      <div className="flex md:flex-row flex-col justify-center gap-12 px-10 pb-20 content-center">
         <Link
           href="/construction"
           className="block focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded-2xl focus:ring-offset-2 focus:ring-offset-stone-50"

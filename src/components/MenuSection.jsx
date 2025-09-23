@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MenuSection({ imageUrl, text }) {
   return (
-    <div className="group relative w-[500px] h-[500px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 cursor-pointer">
+    <div className="group relative w-full max-w-[600px] aspect-square sm:w-[550px] sm:h-[550px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 cursor-pointer flex justify-center items-center mx-auto">
       <Image
         src={imageUrl}
         alt={text}
