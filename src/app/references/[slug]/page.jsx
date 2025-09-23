@@ -99,6 +99,9 @@ export default async function ReferenceDetail({ params }) {
             );
           })}
         </div>
+        <div className="mt-1 text-sm text-gray-500">
+          Fotókat készítette: Érsek Máté Attila
+        </div>
       </div>
     </div>
   );
