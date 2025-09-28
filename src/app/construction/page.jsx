@@ -90,35 +90,35 @@ export default function Construction() {
           {[
             {
               src: "https://deckbae.sirv.com/geotherm_house/j%C3%B3kai1/mid/KEZDŐ_compressed.webp",
-              title: "REFERENCIA 1",
+              title: "13 LAKÁSOS TÁRSASHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/KEZD%C5%90.webp",
-              title: "REFERENCIA 2",
+              title: "8 LAKÁSOS TÁRSASHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/KEZD%C5%90.webp",
-              title: "REFERENCIA 3",
+              title: "8 LAKÁSOS TÁRSASHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/KEZD%C5%90.webp",
-              title: "REFERENCIA 4",
+              title: "9 LAKÁSOS TÁRSASHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/KEZD%C5%90.webp",
-              title: "REFERENCIA 5",
+              title: "8 LAKÁSOS TÁRSASHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/KEZD%C5%90.webp",
-              title: "REFERENCIA 6",
+              title: "IKERHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/KEZD%C5%90.webp",
-              title: "REFERENCIA 7",
+              title: "CSALÁDI HÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
-              title: "REFERENCIA 8",
+              title: "6 LAKÁSOS SORHÁZ",
             },
           ].map((item, idx) => (
             <Link
@@ -133,7 +133,7 @@ export default function Construction() {
                 loading="lazy"
               />
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                <p className="m-3 px-2.5 py-1 rounded text-indigo-200 text-2xl font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1">
+                <p className="m-3 px-2.5 py-1 rounded text-white text-lg font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1">
                   {item.title}
                 </p>
               </div>

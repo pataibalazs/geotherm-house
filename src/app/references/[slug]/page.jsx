@@ -7,16 +7,16 @@ const references = {
       "Ez az első tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     featuredIndices: [0, 5],
     captions: [
-      "Tervezett látvány",
-      "Meglévő épület 1",
-      "Meglévő épület 2",
-      "Tervezett látvány 1",
-      "Tervezett látvány 2",
-      "Alaprajz",
-      "Homlokzat 1",
-      "Homlokzat 2",
-      "Metszet 1",
-      "Metszet 2",
+      "TERVEZET LÁTVÁNY",
+      "MEGLÉVŐ ÉPÜLET",
+      "MEGLÉVŐ ÉPÜLET",
+      "TERVEZET LÁTVÁNY",
+      "TERVEZET LÁTVÁNY",
+      "ALAPRAJZ",
+      "HOMLOKZAT",
+      "HOMLOKZAT",
+      "METSZET",
+      "METSZET",
     ],
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/5.webp",
@@ -189,11 +189,10 @@ export default async function ReferenceDetail({ params }) {
                     const isFeatured = featuredList.includes(i);
                     const caption = ref.captions?.[i] ?? ref.title;
                     return (
-                      <div
+                      <figure
                         key={i}
                         className={
-                          (isFeatured ? "sm:col-span-2 " : "") +
-                          "relative group mb-6"
+                          (isFeatured ? "sm:col-span-2 " : "") + "mb-6"
                         }
                       >
                         <img
@@ -201,10 +200,10 @@ export default async function ReferenceDetail({ params }) {
                           alt={`${ref.title} kép ${i + 1}`}
                           className="w-full rounded shadow object-contain"
                         />
-                        <span className="absolute left-3 bottom-6 text-black text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
+                        <figcaption className="mt-2 text-black text-xs md:text-sm font-semibold tracking-wide">
                           {caption}
-                        </span>
-                      </div>
+                        </figcaption>
+                      </figure>
                     );
                   })}
                 </div>
@@ -214,19 +213,16 @@ export default async function ReferenceDetail({ params }) {
             return (
               <div className="columns-1 sm:columns-2 gap-6">
                 {ref.images.map((img, i) => (
-                  <div
-                    key={i}
-                    className="relative mb-6 break-inside-avoid group"
-                  >
+                  <figure key={i} className="mb-6 break-inside-avoid">
                     <img
                       src={img}
                       alt={`${ref.title} kép ${i + 1}`}
                       className="rounded shadow object-contain w-full"
                     />
-                    <span className="absolute left-0 bottom-0 text-green-600 text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
+                    <figcaption className="mt-2 text-black text-[10px] sm:text-xs md:text-sm font-semibold tracking-wide">
                       {ref.captions?.[i] ?? ref.title}
-                    </span>
-                  </div>
+                    </figcaption>
+                  </figure>
                 ))}
               </div>
             );
