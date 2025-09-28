@@ -12,7 +12,7 @@ export default function MenuSection({ imageUrl, text }) {
         priority
       />
       <div className="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors duration-200 flex items-center justify-center">
-        <span className="text-white text-3xl font-bold tracking-wide transition-colors duration-500 group-hover:text-indigo-500">
+        <span className="text-white text-3xl font-bold tracking-wide transition-colors duration-500 group-hover:text-green-500">
           {text}
         </span>
       </div>

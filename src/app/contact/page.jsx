@@ -98,13 +98,13 @@ const ContactPage = () => {
                             type="email"
                             autoComplete="email"
                             required
-                            className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
                           />
                           <ValidationError
                             prefix="Email"
                             field="email"
                             errors={state.errors}
-                            className="text-indigo-600 text-sm mt-1"
+                            className="text-green-600 text-sm mt-1"
                           />
                         </div>
                       </div>
@@ -121,13 +121,13 @@ const ContactPage = () => {
                             name="message"
                             rows={4}
                             required
-                            className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                            className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
                           />
                           <ValidationError
                             prefix="Message"
                             field="message"
                             errors={state.errors}
-                            className="text-indigo-600 text-sm mt-1"
+                            className="text-green-600 text-sm mt-1"
                           />
                         </div>
                       </div>
@@ -136,7 +136,7 @@ const ContactPage = () => {
                       <button
                         type="submit"
                         disabled={state.submitting}
-                        className={`block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 ${
+                        className={`block w-full rounded-md bg-green-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 transition-all duration-200 ${
                           state.submitting
                             ? "opacity-70 cursor-not-allowed"
                             : ""
@@ -153,10 +153,10 @@ const ContactPage = () => {
               <div className="mt-10 w-full mx-auto max-w-xl">
                 <div className="bg-stone-50 border border-gray-200 p-4 sm:p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg w-full">
                   <div className="flex items-center justify-center mb-6 sm:mb-8">
-                    <div className="mr-4 p-3 bg-indigo-100 rounded-full flex items-center justify-center">
+                    <div className="mr-4 p-3 bg-green-100 rounded-full flex items-center justify-center">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 sm:h-6 sm:w-6 text-indigo-600"
+                        className="h-5 w-5 sm:h-6 sm:w-6 text-green-600"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -181,7 +181,7 @@ const ContactPage = () => {
                         <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-indigo-600"
+                            className="h-5 w-5 text-green-600"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -207,7 +207,7 @@ const ContactPage = () => {
                         <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-indigo-600"
+                            className="h-5 w-5 text-green-600"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -224,7 +224,7 @@ const ContactPage = () => {
                           <p className="text-sm text-gray-500">Email</p>
                           <a
                             href="mailto:geothermhouse@gmail.com"
-                            className="text-base font-medium text-indigo-600 hover:underline"
+                            className="text-base font-medium text-green-600 hover:underline"
                           >
                             geothermhouse@gmail.com
                           </a>
@@ -236,7 +236,7 @@ const ContactPage = () => {
                         <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-indigo-600"
+                            className="h-5 w-5 text-green-600"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Pill({ children }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-2.5 py-1 text-[11px] sm:text-xs font-medium text-indigo-700">
+    <span className="inline-flex items-center rounded-full border border-green-200 bg-green-50 px-2.5 py-1 text-[11px] sm:text-xs font-medium text-green-700">
       {children}
     </span>
   );
@@ -25,7 +25,7 @@ function Section({ title, items, icon }) {
             className="flex items-start gap-2 text-sm text-gray-700"
           >
             <svg
-              className="mt-0.5 h-4 w-4 flex-shrink-0 text-indigo-600"
+              className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -133,7 +133,7 @@ export default function Careers() {
                 <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                   {j.title}
                 </h3>
-                <span className="rounded-full bg-indigo-50 px-2 py-1 text-[11px] sm:text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200">
+                <span className="rounded-full bg-green-50 px-2 py-1 text-[11px] sm:text-xs font-medium text-green-700 ring-1 ring-inset ring-green-200">
                   {j.type}
                 </span>
               </div>
@@ -178,7 +178,7 @@ export default function Careers() {
                 {/* IDE: /contact + position query */}
                 <Link
                   href={`/contact?position=${encodeURIComponent(j.title)}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-indigo-500"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-green-600 px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-green-500"
                 >
                   Jelentkezem
                 </Link>
@@ -242,7 +242,7 @@ export default function Careers() {
                   items={openJob.responsibilities}
                   icon={
                     <svg
-                      className="h-4 w-4 text-indigo-600"
+                      className="h-4 w-4 text-green-600"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -262,7 +262,7 @@ export default function Careers() {
                   items={openJob.mustHave}
                   icon={
                     <svg
-                      className="h-4 w-4 text-indigo-600"
+                      className="h-4 w-4 text-green-600"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -282,7 +282,7 @@ export default function Careers() {
                   items={openJob.niceToHave}
                   icon={
                     <svg
-                      className="h-4 w-4 text-indigo-600"
+                      className="h-4 w-4 text-green-600"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -302,7 +302,7 @@ export default function Careers() {
                   items={openJob.benefits}
                   icon={
                     <svg
-                      className="h-4 w-4 text-indigo-600"
+                      className="h-4 w-4 text-green-600"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -324,7 +324,7 @@ export default function Careers() {
                   href={`/contact?position=${encodeURIComponent(
                     openJob.title
                   )}`}
-                  className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-500"
+                  className="rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-500"
                 >
                   Jelentkezem
                 </Link>

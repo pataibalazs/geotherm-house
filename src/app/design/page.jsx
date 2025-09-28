@@ -32,13 +32,13 @@ export default function Construction() {
               <a
                 href="#references"
                 onClick={handleScrollToReferences}
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors mb-6 sm:mb-0"
+                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 transition-colors mb-6 sm:mb-0"
               >
                 Referenciák
               </a>
               <Link
                 href="/contact"
-                className="text-sm font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 rounded"
+                className="text-sm font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
               >
                 Lépj velünk kapcsolatba! <span aria-hidden="true">→</span>
               </Link>
@@ -90,7 +90,7 @@ export default function Construction() {
             <Link
               key={idx}
               href={`/references/tervezesi-${idx + 1}`}
-              className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-indigo-600"
+              className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-green-600"
             >
               <img
                 src={item.src}
@@ -99,7 +99,7 @@ export default function Construction() {
                 loading="lazy"
               />
               <div className="absolute inset-0 flex items-end pb-6 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                <p className="mx-3 px-2.5 py-1 rounded text-indigo-200 text-2xl font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1 translate-y-2 group-hover:translate-y-0 transition-transform">
+                <p className="mx-3 px-2.5 py-1 rounded text-white text-2xl font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1 translate-y-2 group-hover:translate-y-0 transition-transform">
                   {item.title}
                 </p>
               </div>

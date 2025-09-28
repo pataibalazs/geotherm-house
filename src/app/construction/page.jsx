@@ -44,7 +44,7 @@ export default function Construction() {
               </a>
               <Link
                 href="/contact"
-                className="text-sm font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 rounded"
+                className="text-sm font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
               >
                 Lépj velünk kapcsolatba! <span aria-hidden="true">→</span>
               </Link>
@@ -124,7 +124,7 @@ export default function Construction() {
             <Link
               key={idx}
               href={`/references/kivitelezesi-${idx + 1}`}
-              className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-indigo-600"
+              className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-green-600"
             >
               <img
                 src={item.src}
