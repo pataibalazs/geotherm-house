@@ -38,7 +38,7 @@ export default function ReferenceGallery() {
 
   const tervezesi = [
     {
-      src: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/kezd%C5%91.webp",
       title: "Tervezés 1",
     },
     {
