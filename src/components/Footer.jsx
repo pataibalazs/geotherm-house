@@ -77,7 +77,7 @@ export default function Footer() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-black hover:text-indigo-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 rounded"
+              className="text-black hover:text-green-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
             >
               {item.name}
             </Link>

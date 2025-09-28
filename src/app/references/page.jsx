@@ -76,7 +76,7 @@ export default function ReferenceGallery() {
           <Link
             key={idx}
             href={`/references/${sectionKey}-${idx + 1}`}
-            className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-indigo-600"
+            className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-green-600"
             prefetch={false}
           >
             <img
