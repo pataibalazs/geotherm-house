@@ -5,13 +5,13 @@ const references = {
     title: "TERVEZÉSI REFERENCIA 1",
     description:
       "Ez az első tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
-    featuredIndices: [2, 5],
+    featuredIndices: [0, 5],
     captions: [
+      "Tervezett látvány",
       "Meglévő épület 1",
       "Meglévő épület 2",
-      "Tervezett átalakítás 1",
-      "Tervezett átalakítás 2",
-      "Tervezett átalakítás 3",
+      "Tervezett látvány 1",
+      "Tervezett látvány 2",
       "Alaprajz",
       "Homlokzat 1",
       "Homlokzat 2",
@@ -19,10 +19,10 @@ const references = {
       "Metszet 2",
     ],
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/1.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/2.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/6.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/7.webp",
@@ -171,7 +171,7 @@ export default async function ReferenceDetail({ params }) {
   return (
     <div className="mx-auto min-h-screen bg-stone-50">
       <div className="max-w-7xl mx-auto py-16 px-4">
-        <h1 className="text-3xl font-bold mb-4 text-indigo-700">{ref.title}</h1>
+        <h1 className="text-3xl font-bold mb-4 text-black">{ref.title}</h1>
         <p className="mb-6 text-gray-700">{ref.description}</p>
         {/* Tervezési referenciák speciális elrendezés logika */}
         {slug.startsWith("tervezesi-") ? (
@@ -201,7 +201,7 @@ export default async function ReferenceDetail({ params }) {
                           alt={`${ref.title} kép ${i + 1}`}
                           className="w-full rounded shadow object-contain"
                         />
-                        <span className="absolute left-3 bottom-6 text-indigo-600 text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
+                        <span className="absolute left-3 bottom-6 text-black text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
                           {caption}
                         </span>
                       </div>
@@ -223,7 +223,7 @@ export default async function ReferenceDetail({ params }) {
                       alt={`${ref.title} kép ${i + 1}`}
                       className="rounded shadow object-contain w-full"
                     />
-                    <span className="absolute left-0 bottom-0 text-indigo-600 text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
+                    <span className="absolute left-0 bottom-0 text-green-600 text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
                       {ref.captions?.[i] ?? ref.title}
                     </span>
                   </div>
