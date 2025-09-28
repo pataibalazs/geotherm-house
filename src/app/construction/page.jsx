@@ -93,20 +93,32 @@ export default function Construction() {
               title: "REFERENCIA 1",
             },
             {
-              src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8",
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/KEZD%C5%90.webp",
               title: "REFERENCIA 2",
             },
             {
-              src: "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/KEZD%C5%90.webp",
               title: "REFERENCIA 3",
             },
             {
-              src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/KEZD%C5%90.webp",
               title: "REFERENCIA 4",
             },
             {
-              src: "https://images.unsplash.com/photo-1494526585095-c41746248156",
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/KEZD%C5%90.webp",
               title: "REFERENCIA 5",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/KEZD%C5%90.webp",
+              title: "REFERENCIA 6",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/KEZD%C5%90.webp",
+              title: "REFERENCIA 7",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
+              title: "REFERENCIA 8",
             },
           ].map((item, idx) => (
             <Link

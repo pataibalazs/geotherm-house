@@ -3,35 +3,35 @@ import Link from "next/link";
 export default function ReferenceGallery() {
   const kivitelezesi = [
     {
-      src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 1",
     },
     {
-      src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 2",
     },
     {
-      src: "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 3",
     },
     {
-      src: "https://images.unsplash.com/photo-1494526585095-c41746248156",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 4",
     },
     {
-      src: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 5",
     },
     {
-      src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 6",
     },
     {
-      src: "https://images.unsplash.com/photo-1503389152951-9f343605f61e",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 7",
     },
     {
-      src: "https://images.unsplash.com/photo-1507652955-f3dcef5a3be5",
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
       title: "Kivitelezés 8",
     },
   ];
@@ -53,22 +53,6 @@ export default function ReferenceGallery() {
       src: "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
       title: "Tervezés 4",
     },
-    {
-      src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      title: "Tervezés 5",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
-      title: "Tervezés 7",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-      title: "Tervezés 8",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1497366216548-37526070297c",
-      title: "Tervezés 9",
-    },
   ];
 
   const muvezetesi = [
@@ -79,26 +63,6 @@ export default function ReferenceGallery() {
     {
       src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8",
       title: "Művezetés 2",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
-      title: "Művezetés 3",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-      title: "Művezetés 4",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1497366216548-37526070297c",
-      title: "Művezetés 7",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-      title: "Művezetés 8",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-      title: "Művezetés 9",
     },
   ];
 
