@@ -113,7 +113,7 @@ export default function Careers() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16">
         {/* Hero */}
         <header className="mx-auto max-w-3xl text-center">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-gray-900">
+          <h1 className="text-2xl sm:text-4xl md:text-Sxl font-semibold tracking-tight text-gray-900">
             Nyitott pozíciók
           </h1>
           <p className="mt-3 text-base sm:text-lg text-gray-600">

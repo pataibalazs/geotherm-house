@@ -26,8 +26,8 @@ export default function Construction() {
         {/* Text section */}
         <div className="mx-auto max-w-7xl lg:w-1/2 px-6 py-10 md:py-16 lg:px-8 flex items-center relative z-10">
           <div className="mx-auto max-w-xl md:max-w-2xl lg:mx-0">
-            <h1 className="text-6xl font-semibold tracking-tight text-gray-900 sm:text-7xl md:text-left text-center">
-              Generál kivitelezés
+            <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl md:text-left text-center">
+              GENERÁL KIVITELEZÉS
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl md:text-left sm:text-center text-center">
               30 év generálkivitelezési tapasztalattal, képzett szakemberekkel
@@ -84,7 +84,7 @@ export default function Construction() {
         className="mx-auto md:max-w-3xl lg:max-w-7xl px-6 md:px-8 py-20 scroll-mt-0"
       >
         <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl mb-10">
-          Referenciák
+          REFERENCIÁK
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[

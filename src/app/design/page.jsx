@@ -20,8 +20,8 @@ export default function Construction() {
         {/* Text section */}
         <div className="mx-auto max-w-7xl lg:w-1/2 px-6 py-10 md:py-16 lg:px-8 flex items-center relative z-10">
           <div className="mx-auto max-w-xl md:max-w-2xl lg:mx-0">
-            <h1 className="text-6xl font-semibold tracking-tight text-gray-900 sm:text-7xl md:text-left text-center">
-              Építészeti tervezés
+            <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl md:text-left text-center">
+              ÉPÍTÉSZETI TERVEZÉS
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl md:text-left sm:text-center text-center">
               30 év generálkivitelezési tapasztalattal, képzett szakemberekkel
@@ -62,12 +62,12 @@ export default function Construction() {
         className="mx-auto md:max-w-3xl lg:max-w-7xl px-6 md:px-8 py-20 scroll-mt-0"
       >
         <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl mb-10">
-          Referenciák
+          REFERENCIÁK
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
-              src: "https://deckbae.sirv.com/geotherm_house/j%C3%B3kai1/mid/KEZDŐ_compressed.webp",
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/k%C3%B6zepes/kezd%C5%91.webp",
               title: "REFERENCIA 1",
             },
             {
@@ -89,7 +89,7 @@ export default function Construction() {
           ].map((item, idx) => (
             <Link
               key={idx}
-              href={`/references/kivitelezesi-${idx + 1}`}
+              href={`/references/tervezesi-${idx + 1}`}
               className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-indigo-600"
             >
               <img
@@ -98,8 +98,8 @@ export default function Construction() {
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                <p className="m-3 px-2.5 py-1 rounded text-indigo-200 text-2xl font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1">
+              <div className="absolute inset-0 flex items-end pb-6 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <p className="mx-3 px-2.5 py-1 rounded text-indigo-200 text-2xl font-semibold drop-shadow-[0_1px_1px_rgba(0,0,0,0.8)] leading-none line-clamp-1 translate-y-2 group-hover:translate-y-0 transition-transform">
                   {item.title}
                 </p>
               </div>

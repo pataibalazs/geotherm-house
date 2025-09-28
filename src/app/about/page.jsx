@@ -6,7 +6,7 @@ const stats = [
 
 const people = [
   {
-    name: "Fülöp Vilmos",
+    name: "FÜLÖP VILMOS",
     role: "Director of Product",
     imageUrl:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
@@ -15,7 +15,7 @@ const people = [
   },
 
   {
-    name: "Fülöp Theodóra Eszter",
+    name: "FÜLÖP THEODÓRA ESZTER",
     role: "Designer",
     imageUrl:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
@@ -23,7 +23,7 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "Takács Johanna",
+    name: "TAKÁCS JOHANNA",
     role: "Front-end Developer",
     imageUrl:
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
@@ -132,7 +132,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-              Our team
+              OUR TEAM
             </h2>
             <p className="mt-6 text-lg/8 text-gray-600">
               We’re a dynamic group of individuals who are passionate about what

@@ -2,16 +2,29 @@ import { notFound } from "next/navigation";
 
 const references = {
   "tervezesi-1": {
-    title: "Tervezési referencia 1",
+    title: "TERVEZÉSI REFERENCIA 1",
     description:
       "Ez az első tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    featuredIndices: [2, 5],
+    captions: [
+      "Meglévő épület 1",
+      "Meglévő épület 2",
+      "Tervezett átalakítás 1",
+      "Tervezett átalakítás 2",
+      "Tervezett átalakítás 3",
+      "Alaprajz",
+      "Homlokzat 1",
+      "Homlokzat 2",
+      "Metszet 1",
+      "Metszet 2",
+    ],
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/3.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/5.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/6.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/7.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/8.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/9.webp",
@@ -21,23 +34,25 @@ const references = {
   "tervezesi-2": {
     title: "Tervezési referencia 2",
     description:
-      "Ez a második tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+      "Ez az első tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    featuredIndices: [2, 5],
     images: [
       "https://images.unsplash.com/photo-1486325212027-8081e485255e",
       "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
     ],
   },
   "tervezesi-3": {
-    title: "Tervezési referencia 3",
+    title: "TERVEZÉSI REFERENCIA 3",
     description:
       "Ez a harmadik tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    captions: ["Előtéri atrium", "Belső szervezés"],
     images: [
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
       "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
     ],
   },
   "kivitelezesi-1": {
-    title: "Kivitelezési referencia 1",
+    title: "KIVITELEZÉSI REFERENCIA 1",
     description:
       "Ez az első kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -51,7 +66,7 @@ const references = {
     ],
   },
   "kivitelezesi-2": {
-    title: "Kivitelezési referencia 2",
+    title: "KIVITELEZÉSI REFERENCIA 2",
     description: "Ez egy példa kivitelezési referencia leírás.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
@@ -63,7 +78,7 @@ const references = {
     ],
   },
   "kivitelezesi-3": {
-    title: "Kivitelezési referencia 3",
+    title: "KIVITELEZÉSI REFERENCIA 3",
     description:
       "Ez a harmadik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -78,7 +93,7 @@ const references = {
     ],
   },
   "kivitelezesi-4": {
-    title: "Kivitelezési referencia 4",
+    title: "KIVITELEZÉSI REFERENCIA 4",
     description:
       "Ez a negyedik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -91,7 +106,7 @@ const references = {
     ],
   },
   "kivitelezesi-5": {
-    title: "Kivitelezési referencia 5",
+    title: "KIVITELEZÉSI REFERENCIA 5",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -104,7 +119,7 @@ const references = {
     ],
   },
   "kivitelezesi-6": {
-    title: "Kivitelezési referencia 6",
+    title: "KIVITELEZÉSI REFERENCIA 6",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -119,7 +134,7 @@ const references = {
     ],
   },
   "kivitelezesi-7": {
-    title: "Kivitelezési referencia 7",
+    title: "KIVITELEZÉSI REFERENCIA 7",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -131,7 +146,7 @@ const references = {
     ],
   },
   "kivitelezesi-8": {
-    title: "Kivitelezési referencia 8",
+    title: "KIVITELEZÉSI REFERENCIA 8",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -158,19 +173,76 @@ export default async function ReferenceDetail({ params }) {
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h1 className="text-3xl font-bold mb-4 text-indigo-700">{ref.title}</h1>
         <p className="mb-6 text-gray-700">{ref.description}</p>
-        <div className="columns-1 sm:columns-2 gap-6">
-          {ref.images.map((img, i) => {
-            const size = ref.sizes?.[i];
+        {/* Tervezési referenciák speciális elrendezés logika */}
+        {slug.startsWith("tervezesi-") ? (
+          (() => {
+            const featuredList = Array.isArray(ref.featuredIndices)
+              ? ref.featuredIndices
+              : typeof ref.featuredIndex === "number"
+              ? [ref.featuredIndex]
+              : [];
+            const useGrid = featuredList.length > 0; // ha van legalább egy kiemelt, gridet használunk
+            if (useGrid) {
+              return (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {ref.images.map((img, i) => {
+                    const isFeatured = featuredList.includes(i);
+                    const caption = ref.captions?.[i] ?? ref.title;
+                    return (
+                      <div
+                        key={i}
+                        className={
+                          (isFeatured ? "sm:col-span-2 " : "") +
+                          "relative group mb-6"
+                        }
+                      >
+                        <img
+                          src={img}
+                          alt={`${ref.title} kép ${i + 1}`}
+                          className="w-full rounded shadow object-contain"
+                        />
+                        <span className="absolute left-3 bottom-6 text-indigo-600 text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
+                          {caption}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            }
+            // fallback: nincs kiemelt -> oszlopos megjelenítés
             return (
+              <div className="columns-1 sm:columns-2 gap-6">
+                {ref.images.map((img, i) => (
+                  <div
+                    key={i}
+                    className="relative mb-6 break-inside-avoid group"
+                  >
+                    <img
+                      src={img}
+                      alt={`${ref.title} kép ${i + 1}`}
+                      className="rounded shadow object-contain w-full"
+                    />
+                    <span className="absolute left-0 bottom-0 text-indigo-600 text-[10px] sm:text-xs md:text-sm font-semibold drop-shadow-sm select-none bg-white/60 backdrop-blur px-2 py-1 rounded">
+                      {ref.captions?.[i] ?? ref.title}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            );
+          })()
+        ) : (
+          <div className="columns-1 sm:columns-2 gap-6">
+            {ref.images.map((img, i) => (
               <img
                 key={i}
                 src={img}
                 alt={`${ref.title} kép ${i + 1}`}
                 className="mb-6 break-inside-avoid rounded shadow object-contain w-full"
               />
-            );
-          })}
-        </div>
+            ))}
+          </div>
+        )}
         {ref.credit && (
           <div className="mt-1 text-sm text-gray-500">{ref.credit}</div>
         )}

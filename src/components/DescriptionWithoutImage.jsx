@@ -1,16 +1,16 @@
 const features = [
   {
-    name: "Push to deploy",
+    name: "PUSH TO DEPLOY",
     description:
       "Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.",
   },
   {
-    name: "SSL certificates",
+    name: "SSL CERTIFICATES",
     description:
       "Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.",
   },
   {
-    name: "Simple queues",
+    name: "SIMPLE QUEUES",
     description:
       "Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.",
   },
@@ -22,7 +22,7 @@ export default function DescriptionWithoutImage() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-            All-in-one platform
+            ALL-IN-ONE PLATFORM
           </h2>
           <p className="mt-6 text-lg/8 text-gray-700">
             Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam

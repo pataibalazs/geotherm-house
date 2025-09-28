@@ -99,17 +99,17 @@ export default function ReferenceGallery() {
   return (
     <div className="px-6 py- lg:px-8 bg-stone-50">
       <Section
-        title="Tervezési referenciák"
+        title="TERVEZÉSI REFERENCIÁK"
         items={tervezesi}
         sectionKey="tervezesi"
       />
       <Section
-        title="Kivitelezési referenciák"
+        title="KIVITELEZÉSI REFERENCIÁK"
         items={kivitelezesi}
         sectionKey="kivitelezesi"
       />
       <Section
-        title="Művezetési referenciák"
+        title="MŰVEZETÉSI REFERENCIÁK"
         items={muvezetesi}
         sectionKey="muvezetesi"
       />
