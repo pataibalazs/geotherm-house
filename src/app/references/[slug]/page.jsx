@@ -19,12 +19,12 @@ const references = {
       "METSZET B",
     ],
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_5.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/2.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/3.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/7.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/8.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/9.webp",
@@ -63,6 +63,7 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/5.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/6.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/7.webp",
     ],
   },
   "kivitelezesi-2": {
@@ -75,6 +76,7 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/6.webp",
     ],
   },
   "kivitelezesi-3": {
@@ -103,6 +105,7 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/6.webp",
     ],
   },
   "kivitelezesi-5": {
@@ -116,6 +119,7 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/4.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/6.webp",
     ],
   },
   "kivitelezesi-6": {
@@ -143,6 +147,7 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/2.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/4.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/5.webp",
     ],
   },
   "kivitelezesi-8": {
@@ -161,6 +166,32 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/7.webp",
     ],
   },
+  "kivitelezesi-9": {
+    title: "KIVITELEZÉSI REFERENCIA 9",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "A projektben művezetőként vettünk részt.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/nagy/1.webp",
+    ],
+  },
+  "kivitelezesi-10": {
+    title: "KIVITELEZÉSI REFERENCIA 10",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "A projektben művezetőként vettünk részt.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/nagy/1.webp",
+    ],
+  },
+  "kivitelezesi-11": {
+    title: "KIVITELEZÉSI REFERENCIA 11",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/nagy/1.webp",
+    ],
+  },
 };
 
 export default async function ReferenceDetail({ params }) {
@@ -174,71 +205,86 @@ export default async function ReferenceDetail({ params }) {
         <h1 className="text-3xl font-bold mb-4 text-black">{ref.title}</h1>
         <p className="mb-6 text-gray-700">{ref.description}</p>
         {/* Tervezési referenciák speciális elrendezés logika */}
-        {slug.startsWith("tervezesi-") ? (
-          (() => {
-            const featuredList = Array.isArray(ref.featuredIndices)
-              ? ref.featuredIndices
-              : typeof ref.featuredIndex === "number"
-              ? [ref.featuredIndex]
-              : [];
-            const useGrid = featuredList.length > 0; // ha van legalább egy kiemelt, gridet használunk
-            if (useGrid) {
+        {slug.startsWith("tervezesi-")
+          ? (() => {
+              const featuredList = Array.isArray(ref.featuredIndices)
+                ? ref.featuredIndices
+                : typeof ref.featuredIndex === "number"
+                ? [ref.featuredIndex]
+                : [];
+              const useGrid = featuredList.length > 0; // ha van legalább egy kiemelt, gridet használunk
+              if (useGrid) {
+                return (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {ref.images.map((img, i) => {
+                      const isFeatured = featuredList.includes(i);
+                      const caption = ref.captions?.[i] ?? ref.title;
+                      return (
+                        <figure
+                          key={i}
+                          className={
+                            (isFeatured ? "sm:col-span-2 " : "") + "mb-6"
+                          }
+                        >
+                          <img
+                            src={img}
+                            alt={`${ref.title} kép ${i + 1}`}
+                            className="w-full rounded shadow object-contain"
+                          />
+                          <figcaption className="mt-2 text-black text-xs md:text-sm font-semibold tracking-wide">
+                            {caption}
+                          </figcaption>
+                        </figure>
+                      );
+                    })}
+                  </div>
+                );
+              }
+              // fallback: nincs kiemelt -> oszlopos megjelenítés
               return (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {ref.images.map((img, i) => {
-                    const isFeatured = featuredList.includes(i);
-                    const caption = ref.captions?.[i] ?? ref.title;
-                    return (
-                      <figure
-                        key={i}
-                        className={
-                          (isFeatured ? "sm:col-span-2 " : "") + "mb-6"
-                        }
-                      >
-                        <img
-                          src={img}
-                          alt={`${ref.title} kép ${i + 1}`}
-                          className="w-full rounded shadow object-contain"
-                        />
-                        <figcaption className="mt-2 text-black text-xs md:text-sm font-semibold tracking-wide">
-                          {caption}
-                        </figcaption>
-                      </figure>
-                    );
-                  })}
+                <div className="columns-1 sm:columns-2 gap-6">
+                  {ref.images.map((img, i) => (
+                    <figure key={i} className="mb-6 break-inside-avoid">
+                      <img
+                        src={img}
+                        alt={`${ref.title} kép ${i + 1}`}
+                        className="rounded shadow object-contain w-full"
+                      />
+                      <figcaption className="mt-2 text-black text-[10px] sm:text-xs md:text-sm font-semibold tracking-wide">
+                        {ref.captions?.[i] ?? ref.title}
+                      </figcaption>
+                    </figure>
+                  ))}
                 </div>
               );
-            }
-            // fallback: nincs kiemelt -> oszlopos megjelenítés
-            return (
-              <div className="columns-1 sm:columns-2 gap-6">
-                {ref.images.map((img, i) => (
-                  <figure key={i} className="mb-6 break-inside-avoid">
+            })()
+          : (() => {
+              const isSingleConstruction =
+                slug.startsWith("kivitelezesi-") && ref.images.length === 1;
+              if (isSingleConstruction) {
+                return (
+                  <div className="mb-10">
                     <img
+                      src={ref.images[0]}
+                      alt={`${ref.title} kép 1`}
+                      className="w-full rounded shadow object-contain"
+                    />
+                  </div>
+                );
+              }
+              return (
+                <div className="columns-1 sm:columns-2 gap-6">
+                  {ref.images.map((img, i) => (
+                    <img
+                      key={i}
                       src={img}
                       alt={`${ref.title} kép ${i + 1}`}
-                      className="rounded shadow object-contain w-full"
+                      className="mb-6 break-inside-avoid rounded shadow object-contain w-full"
                     />
-                    <figcaption className="mt-2 text-black text-[10px] sm:text-xs md:text-sm font-semibold tracking-wide">
-                      {ref.captions?.[i] ?? ref.title}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-            );
-          })()
-        ) : (
-          <div className="columns-1 sm:columns-2 gap-6">
-            {ref.images.map((img, i) => (
-              <img
-                key={i}
-                src={img}
-                alt={`${ref.title} kép ${i + 1}`}
-                className="mb-6 break-inside-avoid rounded shadow object-contain w-full"
-              />
-            ))}
-          </div>
-        )}
+                  ))}
+                </div>
+              );
+            })()}
         {ref.credit && (
           <div className="mt-1 text-sm text-gray-500">{ref.credit}</div>
         )}

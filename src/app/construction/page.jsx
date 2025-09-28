@@ -120,6 +120,18 @@ export default function Construction() {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
               title: "6 LAKÁSOS SORHÁZ",
             },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/k%C3%B6zepes/1.webp",
+              title: "130 LAKÁSOS TÁRSASHÁZ",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/k%C3%B6zepes/1.webp",
+              title: "120 LAKÁSOS TÁRSASHÁZ",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/k%C3%B6zepes/1.webp",
+              title: "CSALÁDI HÁZ",
+            },
           ].map((item, idx) => (
             <Link
               key={idx}

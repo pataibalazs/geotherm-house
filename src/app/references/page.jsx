@@ -34,6 +34,18 @@ export default function ReferenceGallery() {
       src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
       title: "6 LAKÁSOS SORHÁZ",
     },
+    {
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/k%C3%B6zepes/1.webp",
+      title: "130 LAKÁSOS TÁRSASHÁZ",
+    },
+    {
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/k%C3%B6zepes/1.webp",
+      title: "120 LAKÁSOS TÁRSASHÁZ",
+    },
+    {
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/k%C3%B6zepes/1.webp",
+      title: "CSALÁDI HÁZ",
+    },
   ];
 
   const tervezesi = [
@@ -52,17 +64,6 @@ export default function ReferenceGallery() {
     {
       src: "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
       title: "Tervezés 4",
-    },
-  ];
-
-  const muvezetesi = [
-    {
-      src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
-      title: "Művezetés 1",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8",
-      title: "Művezetés 2",
     },
   ];
 
@@ -107,11 +108,6 @@ export default function ReferenceGallery() {
         title="KIVITELEZÉSI REFERENCIÁK"
         items={kivitelezesi}
         sectionKey="kivitelezesi"
-      />
-      <Section
-        title="MŰVEZETÉSI REFERENCIÁK"
-        items={muvezetesi}
-        sectionKey="muvezetesi"
       />
     </div>
   );
