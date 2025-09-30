@@ -6,7 +6,7 @@ const stats = [
   { id: 3, name: "Alkalmazott", value: "35" },
 ];
 
-import DescriptionWithoutImage from "@/components/DescriptionWithoutImage";
+import DescriptionWithoutImageConstruction from "@/components/DescriptionWithoutImageConstruction";
 import Link from "next/link";
 import { useCallback } from "react";
 
@@ -77,7 +77,7 @@ export default function Construction() {
           ))}
         </dl>
       </div>
-      <DescriptionWithoutImage />
+      <DescriptionWithoutImageConstruction />
       {/* Referencia szekció */}
       <div
         id="references"

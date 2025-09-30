@@ -1,6 +1,6 @@
 "use client";
 
-import DescriptionWithoutImage from "@/components/DescriptionWithoutImage";
+import DescriptionWithoutImageDesign from "@/components/DescriptionWithoutImageDesign";
 import Link from "next/link";
 import { useCallback } from "react";
 
@@ -55,7 +55,7 @@ export default function Construction() {
           />
         </div>
       </div>
-      <DescriptionWithoutImage />
+      <DescriptionWithoutImageDesign />
       {/* Referencia szekció */}
       <div
         id="references"
