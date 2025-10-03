@@ -25,7 +25,7 @@ export default function MenuSection({ imageUrl, text, variant = "elegant" }) {
   // --- Minimal, igényes hover ---
   return (
     <div
-      className="group relative w-full max-w-[600px] aspect-square sm:w-[550px] sm:h-[550px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] rounded-2xl overflow-hidden shadow-md transition-shadow duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2 focus-visible:ring-offset-stone-50"
+      className="group relative w-full max-w-[600px] aspect-square sm:w-[550px] sm:h-[550px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] rounded-2xl overflow-hidden shadow-md transition-shadow duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-stone-50"
       aria-label={text}
       role="button"
       tabIndex={0}

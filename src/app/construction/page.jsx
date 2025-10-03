@@ -38,13 +38,13 @@ export default function Construction() {
               <a
                 href="#references"
                 onClick={handleScrollToReferences}
-                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 transition-colors mb-6 sm:mb-0"
+                className="rounded-md bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow hover:bg-amber-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 transition-colors mb-6 sm:mb-0"
               >
                 Referenciák
               </a>
               <Link
                 href="/contact"
-                className="text-sm font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
+                className="text-sm font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
               >
                 Lépj velünk kapcsolatba! <span aria-hidden="true">→</span>
               </Link>
@@ -136,7 +136,7 @@ export default function Construction() {
             <Link
               key={idx}
               href={`/references/kivitelezesi-${idx + 1}`}
-              className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <img
                 src={item.src}

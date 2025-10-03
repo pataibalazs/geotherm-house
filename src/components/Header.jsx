@@ -17,7 +17,7 @@ export default function Header() {
       >
         <Link
           href="/"
-          className="-m-1.5 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
+          className="-m-1.5 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
         >
           <span className="sr-only">Geotherm House</span>
           <img
@@ -41,7 +41,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-lg font-bold text-black hover:text-green-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
+              className="text-lg font-bold text-black hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
             >
               {item.name}
             </Link>
@@ -58,7 +58,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link
               href="/"
-              className="-m-1.5 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 rounded"
+              className="-m-1.5 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Geotherm House</span>
@@ -85,7 +85,7 @@ export default function Header() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="-mx-3 text-lg font-bold block rounded-lg px-3 py-2 text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
+                    className="-mx-3 text-lg font-bold block rounded-lg px-3 py-2 text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                   >
                     {item.name}
                   </Link>

@@ -75,14 +75,14 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Céginformációk megnyitása a Ceginformacio.hu oldalon"
-              className="group block rounded-2xl bg-white/70 backdrop-blur-sm ring-1 ring-inset ring-gray-200 hover:ring-green-300 hover:bg-white transition-all duration-300"
+              className="group block rounded-2xl bg-white/70 backdrop-blur-sm ring-1 ring-inset ring-gray-200 hover:ring-amber-300 hover:bg-white transition-all duration-300"
             >
               <div className="flex items-center gap-4 p-6">
                 {/* Ikon (épület) */}
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-green-50 ring-1 ring-inset ring-green-200">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 ring-1 ring-inset ring-amber-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-green-600"
+                    className="h-6 w-6 text-amber-500"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -108,10 +108,10 @@ export default function About() {
                 </div>
 
                 {/* Külső hivatkozás ikon */}
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg ring-1 ring-inset ring-gray-200 group-hover:ring-green-300">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg ring-1 ring-inset ring-gray-200 group-hover:ring-amber-300">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-gray-400 group-hover:text-green-600 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    className="h-5 w-5 text-gray-400 group-hover:text-amber-500 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
