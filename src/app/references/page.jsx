@@ -51,7 +51,7 @@ export default function ReferenceGallery() {
   const tervezesi = [
     {
       src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/kezd%C5%91.webp",
-      title: "MEGLÉVŐ ÁTALAKÍTÁS",
+      title: "ÜZLETHÁZ BŐVÍTÉS",
     },
     {
       src: "https://images.unsplash.com/photo-1544989164-31dc3c645987",
