@@ -136,7 +136,7 @@ const ContactPage = () => {
                       <button
                         type="submit"
                         disabled={state.submitting}
-                        className={`block w-full rounded-md bg-amber-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 transition-all duration-200 ${
+                        className={`block w-full rounded-md bg-amber-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 transition-all duration-200 ${
                           state.submitting
                             ? "opacity-70 cursor-not-allowed"
                             : ""

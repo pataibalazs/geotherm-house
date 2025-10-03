@@ -38,7 +38,7 @@ export default function Construction() {
               <a
                 href="#references"
                 onClick={handleScrollToReferences}
-                className="rounded-md bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow hover:bg-amber-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600 transition-colors mb-6 sm:mb-0"
+                className="rounded-md bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow hover:bg-amber-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 transition-colors mb-6 sm:mb-0"
               >
                 Referenciák
               </a>
