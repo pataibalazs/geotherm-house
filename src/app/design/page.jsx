@@ -24,8 +24,8 @@ export default function Construction() {
               ÉPÍTÉSZETI TERVEZÉS
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl md:text-left sm:text-center text-center">
-              30 év generálkivitelezési tapasztalattal, képzett szakemberekkel
-              és minőségi anyagokkal biztosítjuk a precíz, tartós munkát.
+              Egyedi igényekre szabott, esztétikus és fenntartható megoldásokat
+              tervezünk.
             </p>
 
             <div className="mt-10 flex sm:flex-row flex-col items-center gap-x-6 md:justify-start sm:justify-center">

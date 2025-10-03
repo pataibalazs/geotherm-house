@@ -30,8 +30,8 @@ export default function Construction() {
               GENERÁL KIVITELEZÉS
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl md:text-left sm:text-center text-center">
-              30 év generálkivitelezési tapasztalattal, képzett szakemberekkel
-              és minőségi anyagokkal biztosítjuk a precíz, tartós munkát.
+              A legmagasabb minőséget, szakértelmet és professzionális
+              kivitelezést nyújtjuk minden projektünkben.
             </p>
 
             <div className="mt-10 flex sm:flex-row flex-col items-center gap-x-6 md:justify-start sm:justify-center">

@@ -1,18 +1,18 @@
 const features = [
   {
-    name: "MEGBÍZHATÓSÁG",
+    name: "SZEMÉLYRE SZABOTT MEGKÖZELÍTÉS",
     description:
-      "Három évtizedes tapasztalatunk és ügyfeleink bizalma a garancia arra, hogy velünk építkezni hosszú távon is biztos döntés. Projektjeinket a legmagasabb minőségi elvárások szerint valósítjuk meg, és az átadás után is garanciával, szakmai támogatással állunk Ön mellett.",
+      "Fő célunk, a környezet, az épület és használók közötti harmónia megteremtése. Személyre szabott megoldásokat kínálunk, az ügyfél igényeihez, életstílusához és a környezethez igazodva.",
   },
   {
-    name: "KORSZERŰ ÉS KÖRNYEZETBARÁT",
+    name: "KOMPLEX SZEMLÉLET",
     description:
-      "Fenntartható anyagokat és modern gépészeti megoldásokat alkalmazunk, hogy az általunk épített épületek ne csak kényelmesek és korszerűek legyenek, hanem hosszú távon is alacsony fenntartási költséggel működjenek.",
+      "Szabadon ötvözünk építészeti és belsőépítészeti megoldásokat, így születnek meg azok az esztétikus, funkcionális terek, amelyek minőségét sok éves kivitelezési tapasztalatunk támaszt alá.",
   },
   {
-    name: "SZEMÉLYES KAPCSOLATTARTÁS",
+    name: "NYITOTT HOZZÁÁLLÁS",
     description:
-      "Előzetes telefonos egyeztetés után lehetőség van személyes helyszíni bemutatóra is, melyet cégünk vezetője, Fülöp Vilmos tart. A látogatás során megismerheti a kivitelezés aktuális állását, és minden kérdésére azonnali választ kaphat",
+      "A fenntarthatóságot szem előtt tartva számunkra minden projekt új lehetőség az alkotásra; legyen szó meglévő épület revitalizációjának kihívásáról, vagy egy új épület megálmodásáról. ",
   },
 ];
 

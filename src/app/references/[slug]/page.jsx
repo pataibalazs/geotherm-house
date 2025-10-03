@@ -2,15 +2,25 @@ import { notFound } from "next/navigation";
 
 const references = {
   "tervezesi-1": {
-    title: "TERVEZÉSI REFERENCIA 1",
-    description:
-      "Ez az első tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    title: "ÜZLETHÁZ BŐVÍTÉS, VERESEGYHÁZ",
+    descriptionParagraphs: [
+      "Tervezési feladatunk a Veresegyház Fő útján álló, családi ház karakterű, jelenleg üzletházként működő épület korszerűsítése és társasházzá alakítása volt, amelynek részeként a tetőidom átformálására és a tetőtér beépítésére is sor került.",
+      "A telek Veresegyház településközponti részén helyezkedik el, a Fő út és a vasút kereszteződésének közvetlen szomszédságában. A telek adottságai kiváló lehetőséget kínálnak egy olyan új arculat létrehozásához, amely minőségében és megjelenésében is hozzájárul a környezet vizuális megújulásához, és hosszú távon erősítheti a városrész identitását.",
+      "A tervezett oromfalas nyeregtető vörös cserépfedést kap, a homlokzaton pedig a fehérre vakolt falsíkok és a téglaburkolat váltakozása hoz létre harmonikus összhatást. Az új tetőtérben két, háromszobás lakás kap helyet, amelyek közös kültéri előteréhez vezető lépcsője az épület tömegébe szerves módon illeszkedik. A lépcső egy áttört, gerendákkal merevített, tégla pillérekből álló homlokzati sík mögött kap helyet, mely egyszerre biztosít átlátást és árnyékolást, és egyben karaktert ad az épület megjelenésének.",
+    ],
+    meta: {
+      year: "2025",
+      area: "663 m²",
+      leadArchitect: "Farkas László",
+      architects: "Fülöp Theodóra Eszter, Takács Johanna Krisztina",
+      contractor: "Geotherm House Kft.",
+    },
     featuredIndices: [0, 5],
     captions: [
       "TERVEZETT LÁTVÁNY",
       "MEGLÉVŐ ÉPÜLET",
-      "MEGLÉVŐ ÉPÜLET",
       "TERVEZETT LÁTVÁNY",
+      "MEGLÉVŐ ÉPÜLET",
       "TERVEZETT LÁTVÁNY",
       "ALAPRAJZ",
       "DÉL-NYUGATI HOMLOKZAT",
@@ -21,8 +31,8 @@ const references = {
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_5.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/2.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/4.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/2.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/6.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/7.webp",
@@ -203,8 +213,7 @@ export default async function ReferenceDetail({ params }) {
     <div className="mx-auto min-h-screen bg-stone-50">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h1 className="text-3xl font-bold mb-4 text-black">{ref.title}</h1>
-        <p className="mb-6 text-gray-700">{ref.description}</p>
-        {/* Tervezési referenciák speciális elrendezés logika */}
+        {/* Design (tervezési) speciális layout: hero kép -> meta + leírás -> maradék képek */}
         {slug.startsWith("tervezesi-")
           ? (() => {
               const featuredList = Array.isArray(ref.featuredIndices)
@@ -212,50 +221,118 @@ export default async function ReferenceDetail({ params }) {
                 : typeof ref.featuredIndex === "number"
                 ? [ref.featuredIndex]
                 : [];
-              const useGrid = featuredList.length > 0; // ha van legalább egy kiemelt, gridet használunk
-              if (useGrid) {
-                return (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {ref.images.map((img, i) => {
-                      const isFeatured = featuredList.includes(i);
-                      const caption = ref.captions?.[i] ?? ref.title;
-                      return (
-                        <figure
-                          key={i}
-                          className={
-                            (isFeatured ? "sm:col-span-2 " : "") + "mb-6"
-                          }
-                        >
-                          <img
-                            src={img}
-                            alt={`${ref.title} kép ${i + 1}`}
-                            className="w-full rounded shadow object-contain"
-                          />
-                          <figcaption className="mt-2 text-black text-xs md:text-sm font-semibold tracking-wide">
-                            {caption}
-                          </figcaption>
-                        </figure>
-                      );
-                    })}
-                  </div>
-                );
-              }
-              // fallback: nincs kiemelt -> oszlopos megjelenítés
+              const heroIndex = featuredList.length > 0 ? featuredList[0] : 0;
+              const heroImg = ref.images[heroIndex];
+              const remaining = ref.images
+                .map((src, idx) => ({ src, idx }))
+                .filter((it) => it.idx !== heroIndex);
+              const remainingHasFeatured = remaining.some((it) =>
+                featuredList.includes(it.idx)
+              );
               return (
-                <div className="columns-1 sm:columns-2 gap-6">
-                  {ref.images.map((img, i) => (
-                    <figure key={i} className="mb-6 break-inside-avoid">
-                      <img
-                        src={img}
-                        alt={`${ref.title} kép ${i + 1}`}
-                        className="rounded shadow object-contain w-full"
-                      />
-                      <figcaption className="mt-2 text-black text-[10px] sm:text-xs md:text-sm font-semibold tracking-wide">
-                        {ref.captions?.[i] ?? ref.title}
-                      </figcaption>
-                    </figure>
-                  ))}
-                </div>
+                <>
+                  <div className="mb-10">
+                    <img
+                      src={heroImg}
+                      alt={`${ref.title} hero kép`}
+                      className="w-full rounded shadow object-contain"
+                    />
+                  </div>
+                  <div className="mb-14 md:grid md:grid-cols-2 md:gap-12">
+                    <div className="mb-8 md:mb-0">
+                      {ref.meta && (
+                        <dl className="space-y-4">
+                          {[
+                            { label: "Tervezés éve", value: ref.meta.year },
+                            {
+                              label: "Bruttó szintterület",
+                              value: ref.meta.area,
+                            },
+                            {
+                              label: "Vezető tervező",
+                              value: ref.meta.leadArchitect,
+                            },
+                            {
+                              label: "Tervező építészek",
+                              value: ref.meta.architects,
+                            },
+                            { label: "Kivitelező", value: ref.meta.contractor },
+                          ]
+                            .filter((m) => m.value)
+                            .map((m) => (
+                              <div key={m.label}>
+                                <dt className="text-md font-semibold uppercase text-gray-500">
+                                  {m.label}
+                                </dt>
+                                <dd className="text-black text-md">
+                                  {m.value}
+                                </dd>
+                              </div>
+                            ))}
+                        </dl>
+                      )}
+                    </div>
+                    <div>
+                      {ref.descriptionParagraphs ? (
+                        <div className="space-y-5">
+                          {ref.descriptionParagraphs.map((para, i) => (
+                            <p
+                              key={i}
+                              className="text-gray-700 leading-relaxed whitespace-pre-line"
+                            >
+                              {para}
+                            </p>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-gray-700 whitespace-pre-line leading-relaxed">
+                          {ref.description}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  {remaining.length > 0 &&
+                    (remainingHasFeatured ? (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        {remaining.map(({ src, idx }) => {
+                          const isFeatured = featuredList.includes(idx);
+                          const caption = ref.captions?.[idx] ?? ref.title;
+                          return (
+                            <figure
+                              key={idx}
+                              className={
+                                (isFeatured ? "sm:col-span-2 " : "") + "mb-6"
+                              }
+                            >
+                              <img
+                                src={src}
+                                alt={`${ref.title} kép ${idx + 1}`}
+                                className="w-full rounded shadow object-contain"
+                              />
+                              <figcaption className="mt-2 text-black text-xs md:text-sm font-semibold tracking-wide">
+                                {caption}
+                              </figcaption>
+                            </figure>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <div className="columns-1 sm:columns-2 gap-6">
+                        {remaining.map(({ src, idx }) => (
+                          <figure key={idx} className="mb-6 break-inside-avoid">
+                            <img
+                              src={src}
+                              alt={`${ref.title} kép ${idx + 1}`}
+                              className="rounded shadow object-contain w-full"
+                            />
+                            <figcaption className="mt-2 text-black text-[10px] sm:text-xs md:text-sm font-semibold tracking-wide">
+                              {ref.captions?.[idx] ?? ref.title}
+                            </figcaption>
+                          </figure>
+                        ))}
+                      </div>
+                    ))}
+                </>
               );
             })()
           : (() => {

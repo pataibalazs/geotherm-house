@@ -2,17 +2,17 @@ const features = [
   {
     name: "MEGBÍZHATÓSÁG",
     description:
-      "Három évtized tapasztalata és ügyfeleink bizalma biztosítja, hogy velünk építkezni hosszú távon is jó döntés.",
+      "Három évtizedes tapasztalatunk és ügyfeleink bizalma garantálja, hogy minket választani biztos döntés. A legmagasabb elvárt minőség, és az átadás utáni garancia nálunk egyértelmű.",
   },
   {
     name: "KORSZERŰ ÉS KÖRNYEZETBARÁT",
     description:
-      "Fenntartható anyagokat és modern gépészeti megoldásokat alkalmazunk, hogy épületeink hosszú távon is alacsony fenntartási költséggel működjenek.",
+      "Modern és fenntartható anyagokat, gépészeti megoldásokat alkalmazunk, hogy épületeink a kényelem és korszerűség mellett, alacsony fenntartási költséggel működhessenek.",
   },
   {
     name: "SZEMÉLYES KAPCSOLATTARTÁS",
     description:
-      "Előzetes egyeztetés után személyesen is betekinthet az aktuális kivitelezésbe, Fülöp Vilmos vezetésével.",
+      "Előzetes egyeztetés után személyesen is betekinthet az aktuális kivitelezésbe, és azonnali választ kaphat felmerülő kérdéseire, mindezt cégünk vezetője, Fülöp Vilmos vezetésével.",
   },
 ];
 
