@@ -36,7 +36,7 @@ const people = [
   },
   {
     name: "KUTYAE",
-    role: "Biztonsági szakértő",
+    role: "Területvédelmi specialista",
     imageUrl: "https://geotherm.sirv.com/geotherm/csapat/dog.jpg",
     xUrl: "#",
     linkedinUrl: "#",
