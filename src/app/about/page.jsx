@@ -8,8 +8,7 @@ const people = [
   {
     name: "FÜLÖP VILMOS",
     role: "Director of Product",
-    imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/Vilmos.jpeg",
     xUrl: "#",
     linkedinUrl: "#",
   },
@@ -17,16 +16,14 @@ const people = [
   {
     name: "FÜLÖP THEODÓRA ESZTER",
     role: "Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/pupi.jpeg",
     xUrl: "#",
     linkedinUrl: "#",
   },
   {
     name: "TAKÁCS JOHANNA",
     role: "Front-end Developer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/hanka.jpeg",
     xUrl: "#",
     linkedinUrl: "#",
   },
