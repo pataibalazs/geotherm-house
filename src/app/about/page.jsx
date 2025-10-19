@@ -7,7 +7,7 @@ const stats = [
 const people = [
   {
     name: "FÜLÖP VILMOS",
-    role: "Director of Product",
+    role: "Ügyvezető",
     imageUrl: "https://geotherm.sirv.com/geotherm/csapat/Vilmos.jpeg",
     xUrl: "#",
     linkedinUrl: "#",
@@ -15,14 +15,14 @@ const people = [
 
   {
     name: "FÜLÖP THEODÓRA ESZTER",
-    role: "Designer",
+    role: "Okleves építészmérnök",
     imageUrl: "https://geotherm.sirv.com/geotherm/csapat/pupi.jpeg",
     xUrl: "#",
     linkedinUrl: "#",
   },
   {
     name: "TAKÁCS JOHANNA KRISZTINA",
-    role: "Front-end Developer",
+    role: "Okleves építészmérnök",
     imageUrl: "https://geotherm.sirv.com/geotherm/csapat/hanka.jpeg",
     xUrl: "#",
     linkedinUrl: "#",
