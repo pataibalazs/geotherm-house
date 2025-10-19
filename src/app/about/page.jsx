@@ -34,6 +34,13 @@ const people = [
     xUrl: "#",
     linkedinUrl: "#",
   },
+  {
+    name: "KUTYAE",
+    role: "Biztonsági szakértő",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/dog.jpg",
+    xUrl: "#",
+    linkedinUrl: "#",
+  },
 ];
 
 export default function About() {
