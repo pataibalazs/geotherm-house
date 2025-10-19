@@ -21,9 +21,16 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "TAKÁCS JOHANNA",
+    name: "TAKÁCS JOHANNA KRISZTINA",
     role: "Front-end Developer",
     imageUrl: "https://geotherm.sirv.com/geotherm/csapat/hanka.jpeg",
+    xUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "VÖRÖSMARTI JÓZSEF",
+    role: "Művezető",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/J%C3%B3zsef.jpeg",
     xUrl: "#",
     linkedinUrl: "#",
   },
@@ -146,7 +153,7 @@ export default function About() {
                 <img
                   alt=""
                   src={person.imageUrl}
-                  className="aspect-3/2 w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5"
+                  className="aspect-square w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5"
                 />
                 <h3 className="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">
                   {person.name}
