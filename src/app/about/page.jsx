@@ -8,7 +8,7 @@ const people = [
   {
     name: "FÜLÖP VILMOS",
     role: "Ügyvezető",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/Vilmos.jpeg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/Vilmos.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },
@@ -16,21 +16,21 @@ const people = [
   {
     name: "FÜLÖP THEODÓRA ESZTER",
     role: "Okleves építészmérnök",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/pupi.jpeg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/pupi.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },
   {
     name: "TAKÁCS JOHANNA KRISZTINA",
     role: "Okleves építészmérnök",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/hanka.jpeg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/hanka.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },
   {
     name: "VÖRÖSMARTI JÓZSEF",
     role: "Művezető",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/J%C3%B3zsef.jpeg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/J%C3%B3zsef.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },

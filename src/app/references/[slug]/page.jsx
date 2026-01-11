@@ -42,13 +42,32 @@ const references = {
     ],
   },
   "tervezesi-2": {
-    title: "Tervezési referencia 2",
-    description:
-      "Ez az első tervezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
-    featuredIndices: [2, 5],
+    title: "CSALÁDI HÁZ, BAJTÓT ",
+    descriptionParagraphs: [
+      "A megrendelő pár egy hagyományos parasztház ihlette, kortárs családi otthont képzelt el. Fontos szempont volt, hogy az épület a jelenlegi háromfős használat mellett a későbbiekben két főre is jól működjön, alkalmazkodva az élethelyzet változásaihoz.",
+      "A ház központi tere a nyitott konyha–nappali, amelyből közvetlenül elérhetők a legfontosabb funkciók. Innen nyílik a szülői háló, valamint a keleti terasz és az oldalsó bejárati tér. A gyerek háló és a kiszolgáló helyiségek az utcai homlokzat felé, a bejárati tér túloldalán helyezkednek el, így az alaprajz jól elkülönülő, mégis egységes rendszert alkot.",
+      "Az épület megjelenését vakolt felületek és terméskő burkolat váltakozása határozza meg, a nyílásokat faragott kőkeretek emelik ki. A megrendelők kiemelt kérése volt, hogy a keleti homlokzat különleges hangsúlyt kapjon. A kert felől egy markáns boltív jelöli ki az épület fő tengelyét és keleti megközelítését. A boltívet követő fedett terasz és az íves nyílászáró együttese adja a kívánt plasztikus, emelkedett karaktert a homlokzatnak. ",
+    ],
+    meta: {
+      year: "2025",
+      area: "663 m²",
+      leadArchitect: "Pintér Balázs",
+      architects: "Fülöp Theodóra Eszter, Takács Johanna Krisztina",
+      contractor: "Geotherm House Kft.",
+    },
+    featuredIndices: [0, 5],
+    captions: [
+      "TERVEZETT LÁTVÁNY",
+      "MEGLÉVŐ ÉPÜLET",
+      "TERVEZETT LÁTVÁNY",
+      "MEGLÉVŐ ÉPÜLET",
+      "TERVEZETT LÁTVÁNY",
+    ],
     images: [
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e",
-      "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/3_best.jpg",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/2.jpg",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/1.jpg",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/4.jpg",
     ],
   },
   "tervezesi-3": {
@@ -200,6 +219,72 @@ const references = {
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/nagy/1.webp",
+    ],
+  },
+  "kivitelezesi-12": {
+    title: "KIVITELEZÉSI REFERENCIA 12",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/1.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/2.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/3.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/4.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/6.webp",
+    ],
+  },
+  "kivitelezesi-13": {
+    title: "KIVITELEZÉSI REFERENCIA 13",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/1.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/2.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/3.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/kezd%C5%91.webp",
+    ],
+  },
+  "kivitelezesi-14": {
+    title: "KIVITELEZÉSI REFERENCIA 14",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/1.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/2.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/3.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/4.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/6.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/7.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/8.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/9.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/10.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/11.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/kezd%C5%91.webp",
+    ],
+  },
+  "kivitelezesi-15": {
+    title: "KIVITELEZÉSI REFERENCIA 15",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/1.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/2.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/3.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/4.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/kezd%C5%91.webp",
+    ],
+  },
+  "kivitelezesi-16": {
+    title: "KIVITELEZÉSI REFERENCIA 16",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    images: [
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/1.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/2.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/3.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/kezd%C5%91.webp",
     ],
   },
 };

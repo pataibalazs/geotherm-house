@@ -4,7 +4,7 @@ import DescriptionWithoutImageDesign from "@/components/DescriptionWithoutImageD
 import Link from "next/link";
 import { useCallback } from "react";
 
-export default function Construction() {
+export default function Design() {
   const handleScrollToReferences = useCallback((e) => {
     e.preventDefault();
     const el = document.getElementById("references");
@@ -71,7 +71,7 @@ export default function Construction() {
               title: "REFERENCIA 1",
             },
             {
-              src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8",
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/KEZD%C5%90.jpg",
               title: "REFERENCIA 2",
             },
             {
