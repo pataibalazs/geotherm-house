@@ -89,16 +89,20 @@ export default function Construction() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/k%C3%B6zepes/kezd%C5%91.webp",
+              title: "4 LAKÁSOS SORHÁZ 1",
+            },
+            {
               src: "https://deckbae.sirv.com/geotherm_house/j%C3%B3kai1/mid/KEZDŐ_compressed.webp",
               title: "13 LAKÁSOS TÁRSASHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/KEZD%C5%90.webp",
-              title: "8 LAKÁSOS TÁRSASHÁZ",
+              title: "8 LAKÁSOS TÁRSASHÁZ 1",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/KEZD%C5%90.webp",
-              title: "8 LAKÁSOS TÁRSASHÁZ",
+              title: "8 LAKÁSOS TÁRSASHÁZ 2",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/KEZD%C5%90.webp",
@@ -106,19 +110,35 @@ export default function Construction() {
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/KEZD%C5%90.webp",
-              title: "8 LAKÁSOS TÁRSASHÁZ",
+              title: "8 LAKÁSOS TÁRSASHÁZ 3",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/k%C3%B6zepes/kezd%C5%91.webp",
+              title: "IKERHÁZ 1",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/KEZD%C5%90.webp",
-              title: "IKERHÁZ",
+              title: "IKERHÁZ 2",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/KEZD%C5%90.webp",
-              title: "CSALÁDI HÁZ",
+              title: "CSALÁDI HÁZ 1",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
               title: "6 LAKÁSOS SORHÁZ",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/k%C3%B6zepes/kezd%C5%91.webp",
+              title: "SZILASLIGETI SORHÁZAK",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/kezd%C5%91.webp",
+              title: "4 LAKÁSOS SORHÁZ 2",
+            },
+            {
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/k%C3%B6zepes/kezd%C5%91.webp",
+              title: "10 LAKÁSOS SORHÁZ",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/k%C3%B6zepes/1.webp",
@@ -130,27 +150,7 @@ export default function Construction() {
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/k%C3%B6zepes/1.webp",
-              title: "CSALÁDI HÁZ",
-            },
-            {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/k%C3%B6zepes/kezd%C5%91.webp",
-              title: "SZILASLIGETI SORHÁZAK",
-            },
-            {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/kezd%C5%91.webp",
-              title: "4 LAKÁSOS SORHÁZ 1",
-            },
-            {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/k%C3%B6zepes/kezd%C5%91.webp",
-              title: "4 LAKÁSOS SORHÁZ 2",
-            },
-            {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/k%C3%B6zepes/kezd%C5%91.webp",
-              title: "10 LAKÁSOS SORHÁZ",
-            },
-            {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/k%C3%B6zepes/kezd%C5%91.webp",
-              title: "IKERHÁZ",
+              title: "CSALÁDI HÁZ 2",
             },
           ].map((item, idx) => (
             <Link

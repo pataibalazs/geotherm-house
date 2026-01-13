@@ -74,18 +74,6 @@ export default function Design() {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/KEZD%C5%90.jpg",
               title: "REFERENCIA 2",
             },
-            {
-              src: "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1",
-              title: "REFERENCIA 3",
-            },
-            {
-              src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
-              title: "REFERENCIA 4",
-            },
-            {
-              src: "https://images.unsplash.com/photo-1494526585095-c41746248156",
-              title: "REFERENCIA 5",
-            },
           ].map((item, idx) => (
             <Link
               key={idx}

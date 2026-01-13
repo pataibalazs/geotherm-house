@@ -20,7 +20,7 @@ export default function Home() {
           className="block focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-2xl focus:ring-offset-2 focus:ring-offset-stone-50"
         >
           <MenuSection
-            imageUrl="https://geotherm.sirv.com/geotherm/f%C5%91oldal/kivitelez%C3%A9s_f%C5%91k%C3%A9p.webp"
+            imageUrl="https://geotherm.sirv.com/geotherm/f%C5%91oldal/kivitelez%C3%A9s_f%C5%91k%C3%A9p2.jpg"
             text="KIVITELEZÉS"
           />
         </Link>
@@ -29,7 +29,7 @@ export default function Home() {
           className="block focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-2xl focus:ring-offset-2 focus:ring-offset-stone-50"
         >
           <MenuSection
-            imageUrl="https://geotherm.sirv.com/geotherm/f%C5%91oldal/tervez%C3%A9s_f%C5%91k%C3%A9p.jpg"
+            imageUrl="https://geotherm.sirv.com/geotherm/f%C5%91oldal/tervez%C3%A9s_f%C5%91k%C3%A9p2.jpg"
             text="TERVEZÉS"
           />
         </Link>
