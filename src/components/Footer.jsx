@@ -66,6 +66,7 @@ const social = [
 ];
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className="bg-stone-50">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
@@ -84,7 +85,7 @@ export default function Footer() {
           ))}
         </nav>
         <p className="mt-15 sm:mt-10 text-center text-sm/6 text-black">
-          &copy; 2025 Geotherm House Kft. Minden jog fenntartva.
+          &copy; {year} Geotherm House Kft. Minden jog fenntartva.
         </p>
       </div>
     </footer>
