@@ -27,6 +27,10 @@ export default function ReferenceGallery() {
       title: "8 LAKÁSOS TÁRSASHÁZ",
     },
     {
+      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/kezd%C5%91.webp",
+      title: "IKERHÁZ",
+    },
+    {
       src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/KEZD%C5%90.webp",
       title: "IKERHÁZ",
     },
