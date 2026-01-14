@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero text */}
       <div className="py-16 sm:py-20">
         <div className="mx-auto px-4 sm:px-6 text-center font-semibold leading-tight sm:max-w-xl sm:max-w-2xl md:max-w-3xl text-3xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight">
-          <span className="text-gray-800 block">Az ötlettől az átadásig,</span>
+          <span className="text-black block">Az ötlettől az átadásig,</span>
           <span className="text-amber-500 block">
             a teljes folyamat egy kézben!
           </span>

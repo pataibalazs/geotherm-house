@@ -2,11 +2,8 @@
 
 import Head from "next/head";
 import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
 
 const ContactPage = () => {
-  const [state, handleSubmit] = useForm("xrbpaake");
-
   return (
     <div className="bg-stone-50 flex flex-col items-center">
       <Head>
@@ -54,99 +51,38 @@ const ContactPage = () => {
               </p>
 
               <div className="text-left w-full">
-                {state.succeeded ? (
-                  <div className="mx-auto mt-14 mb-14 max-w-xl text-center p-6 sm:p-8 border border-amber-200 bg-amber-50 rounded-lg shadow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-12 w-12 sm:h-16 sm:w-16 mx-auto text-amber-500 mb-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <h3 className="text-xl sm:text-2xl font-bold text-amber-500 mb-2">
-                      Köszönjük!
-                    </h3>
-                    <p className="text-base sm:text-lg text-amber-500">
-                      Az üzeneted sikeresen elküldtük. Hamarosan felvesszük
-                      veled a kapcsolatot.
-                    </p>
-                  </div>
-                ) : (
-                  <form
-                    onSubmit={handleSubmit}
-                    className="mx-auto mt-14 mb-14 max-w-xl"
+                <form
+                  action="https://formspree.io/f/xqeeaaoz"
+                  method="POST"
+                  className="mx-auto mt-14 mb-14 max-w-xl"
+                >
+                  <label className="block mb-4 text-black font-medium">
+                    Email címed:
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                    />
+                  </label>
+
+                  <label className="block mb-4 text-black font-medium">
+                    Üzeneted:
+                    <textarea
+                      name="message"
+                      rows={5}
+                      required
+                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                    />
+                  </label>
+
+                  <button
+                    type="submit"
+                    className="text-white block w-full rounded-md bg-amber-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 transition-all duration-200"
                   >
-                    <div className="grid grid-cols-1 gap-y-6">
-                      <div>
-                        <label
-                          htmlFor="email"
-                          className="block text-sm font-semibold leading-6 text-gray-900"
-                        >
-                          Email cím
-                        </label>
-                        <div className="mt-2.5">
-                          <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            autoComplete="email"
-                            required
-                            className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
-                          />
-                          <ValidationError
-                            prefix="Email"
-                            field="email"
-                            errors={state.errors}
-                            className="text-amber-500 text-sm mt-1"
-                          />
-                        </div>
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="message"
-                          className="block text-sm font-semibold leading-6 text-gray-900"
-                        >
-                          Üzenet
-                        </label>
-                        <div className="mt-2.5">
-                          <textarea
-                            id="message"
-                            name="message"
-                            rows={4}
-                            required
-                            className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
-                          />
-                          <ValidationError
-                            prefix="Message"
-                            field="message"
-                            errors={state.errors}
-                            className="text-amber-500 text-sm mt-1"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-10">
-                      <button
-                        type="submit"
-                        disabled={state.submitting}
-                        className={`block w-full rounded-md bg-amber-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 transition-all duration-200 ${
-                          state.submitting
-                            ? "opacity-70 cursor-not-allowed"
-                            : ""
-                        }`}
-                      >
-                        {state.submitting ? "Küldés folyamatban..." : "Küldés"}
-                      </button>
-                    </div>
-                  </form>
-                )}
+                    Küldés
+                  </button>
+                </form>
               </div>
 
               {/* Céges információ blokk */}
