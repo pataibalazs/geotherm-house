@@ -14,13 +14,13 @@ const features = [
   {
     name: "KORSZERŰ ÉS KÖRNYEZETBARÁT",
     description:
-      "Modern és fenntartható anyagokat, korszerű gépészeti megoldásokat alkalmazunk, hogy épületeink alacsony fenntartási költséggel és hosszú távon is hatékonyan működjenek.",
+      "Modern és fenntartható anyagokat, gépészeti megoldásokat alkalmazunk, hogy épületeink a kényelem és korszerűség mellett, alacsony fenntartási költséggel működhessenek.",
     icon: SparklesIcon,
   },
   {
     name: "SZEMÉLYES KAPCSOLATTARTÁS",
     description:
-      "Előzetes egyeztetés után személyesen is betekinthet az aktuális kivitelezésbe, és közvetlen választ kap kérdéseire, mindezt cégünk vezetője, Fülöp Vilmos részvételével.",
+      "Előzetes egyeztetés után személyesen is betekinthet az aktuális kivitelezésbe, és azonnali választ kaphat felmerülő kérdéseire, mindezt cégünk vezetője, Fülöp Vilmos vezetésével.",
     icon: UserGroupIcon,
   },
 ];

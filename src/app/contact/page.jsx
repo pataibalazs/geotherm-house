@@ -57,7 +57,7 @@ const ContactPage = () => {
                   className="mx-auto mt-14 mb-14 max-w-xl"
                 >
                   <label className="block mb-4 text-black font-medium">
-                    Név
+                    Neved:
                     <input
                       type="text"
                       name="name"

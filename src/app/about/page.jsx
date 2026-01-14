@@ -55,10 +55,16 @@ export default function About() {
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w/full lg:max-w-2xl lg:flex-auto">
               <p className="text-xl/8 text-gray-600">
-                Cégünk célja, hogy olyan korszerű, környezetbarát épületeket
-                alkossunk, melyek emelik környezetük és használóik
-                életminőségét. Kiemelten fontosnak tartjuk, hogy személyre
-                szabott megoldásokat adjunk minden felmerülő igényre.
+                Lelkes, kreatív csapat vagyunk, ahol a friss, fiatalos tervezési
+                szemlélet találkozik a több évtizedes generálkivitelezési
+                tapasztalattal. Ez a kombináció teszi minden projektünket
+                izgalmassá és megbízhatóvá egyszerre.<br></br>
+                <br></br> Az új ötletek energiája mellett mindig ott van a
+                stabil szakmai háttér. Legyen szó meglévő épületek
+                átalakításáról vagy teljesen új épület megálmodásáról, nálunk a
+                tervezés és a kivitelezés természetesen összefonódik, így a
+                végeredmény nálunk mindig kreatív, élhető és fenntartható
+                egyszerre.
               </p>
             </div>
 
@@ -143,14 +149,15 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-              OUR TEAM
+              CSAPATUNK
             </h2>
             <p className="mt-6 text-lg/8 text-gray-600">
-              We’re a dynamic group of individuals who are passionate about what
-              we do and dedicated to delivering the best results for our
-              clients.
+              Elkötelezett és dinamikus csapat vagyunk, akik szenvedéllyel
+              végzik munkájukat, és minden esetben a lehető legjobb eredményre
+              törekednek ügyfeleink számára.
             </p>
           </div>
+
           <ul
             role="list"
             className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
