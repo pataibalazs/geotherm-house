@@ -68,11 +68,11 @@ export default function Design() {
           {[
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/k%C3%B6zepes/kezd%C5%91.webp",
-              title: "REFERENCIA 1",
+              title: "ÜZLETHÁZ BŐVÍTÉS",
             },
             {
               src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/KEZD%C5%90.jpg",
-              title: "REFERENCIA 2",
+              title: "CSALÁDI HÁZ",
             },
           ].map((item, idx) => (
             <Link

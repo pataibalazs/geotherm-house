@@ -18,9 +18,7 @@ const references = {
     featuredIndices: [0, 5],
     captions: [
       "TERVEZETT LÁTVÁNY",
-      "MEGLÉVŐ ÉPÜLET",
       "TERVEZETT LÁTVÁNY",
-      "MEGLÉVŐ ÉPÜLET",
       "TERVEZETT LÁTVÁNY",
       "ALAPRAJZ",
       "DÉL-NYUGATI HOMLOKZAT",
@@ -30,9 +28,7 @@ const references = {
     ],
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/2.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/6.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_3.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/7.webp",
