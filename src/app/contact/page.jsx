@@ -57,6 +57,14 @@ const ContactPage = () => {
                   className="mx-auto mt-14 mb-14 max-w-xl"
                 >
                   <label className="block mb-4 text-black font-medium">
+                    Név
+                    <input
+                      type="text"
+                      name="name"
+                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                    />
+                  </label>
+                  <label className="block mb-4 text-black font-medium">
                     Email címed:
                     <input
                       type="email"
@@ -72,7 +80,7 @@ const ContactPage = () => {
                       name="message"
                       rows={5}
                       required
-                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 text-sm sm:leading-6"
                     />
                   </label>
 
@@ -110,7 +118,7 @@ const ContactPage = () => {
                     </h3>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-1 gap-8">
                     <div className="space-y-10">
                       {/* Telefon */}
                       <div className="flex items-center">
@@ -133,7 +141,7 @@ const ContactPage = () => {
                         <div className="ml-3 text-left">
                           <p className="text-sm text-gray-500">Telefon</p>
                           <p className="text-base font-medium text-gray-800">
-                            +36 30 612 7858
+                            +36 30 932 1632
                           </p>
                         </div>
                       </div>
@@ -162,12 +170,13 @@ const ContactPage = () => {
                             href="mailto:geothermhouse@gmail.com"
                             className="text-base font-medium text-amber-500 hover:underline"
                           >
-                            geothermhouse@gmail.com
+                            iroda@geothermhouse.hu
                           </a>
                         </div>
                       </div>
 
                       {/* Iroda */}
+
                       <div className="flex items-center md:col-span-2">
                         <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
                           <svg
@@ -186,9 +195,37 @@ const ContactPage = () => {
                           </svg>
                         </div>
                         <div className="ml-3 text-left">
-                          <p className="text-sm text-gray-500">Iroda</p>
+                          <p className="text-sm text-gray-500">
+                            Tervezői iroda
+                          </p>
                           <p className="text-base font-medium text-gray-800">
-                            1132 Budapest, Váci út
+                            1084 Budapest, József u. 42.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center md:col-span-2">
+                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5 text-amber-500"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z"
+                            />
+                          </svg>
+                        </div>
+                        <div className="ml-3 text-left">
+                          <p className="text-sm text-gray-500">
+                            Kivitelezői iroda
+                          </p>
+                          <p className="text-base font-medium text-gray-800">
+                            2112 Veresegyház Jókai u. 2/a.
                           </p>
                         </div>
                       </div>
