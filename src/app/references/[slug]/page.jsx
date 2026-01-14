@@ -106,7 +106,7 @@ const references = {
     ],
   },
   "kivitelezesi-3": {
-    title: "8 LAKÁSOS TÁRSASHÁZ 1",
+    title: "8 LAKÁSOS TÁRSASHÁZ",
     description:
       "Ez a harmadik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -120,7 +120,7 @@ const references = {
     ],
   },
   "kivitelezesi-4": {
-    title: "8 LAKÁSOS TÁRSASHÁZ 2",
+    title: "8 LAKÁSOS TÁRSASHÁZ",
     description:
       "Ez a negyedik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -149,7 +149,7 @@ const references = {
     ],
   },
   "kivitelezesi-6": {
-    title: "8 LAKÁSOS TÁRSASHÁZ 3",
+    title: "8 LAKÁSOS TÁRSASHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -163,7 +163,7 @@ const references = {
     ],
   },
   "kivitelezesi-7": {
-    title: "IKERHÁZ 1",
+    title: "IKERHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -175,7 +175,7 @@ const references = {
     ],
   },
   "kivitelezesi-8": {
-    title: "IKERHÁZ 2",
+    title: "IKERHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
@@ -191,7 +191,7 @@ const references = {
     ],
   },
   "kivitelezesi-9": {
-    title: "CSALÁDI HÁZ 1",
+    title: "CSALÁDI HÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "A projektben művezetőként vettünk részt.",
@@ -235,7 +235,7 @@ const references = {
     ],
   },
   "kivitelezesi-12": {
-    title: "4 LAKÁSOS SORHÁZ 2",
+    title: "4 LAKÁSOS SORHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     images: [
@@ -258,6 +258,12 @@ const references = {
     ],
   },
   "kivitelezesi-14": {
+    title: "CSALÁDI HÁZ",
+    description:
+      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    images: [],
+  },
+  "kivitelezesi-15": {
     title: "130 LAKÁSOS TÁRSASHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
@@ -265,7 +271,7 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/nagy/1.webp",
     ],
   },
-  "kivitelezesi-15": {
+  "kivitelezesi-16": {
     title: "120 LAKÁSOS TÁRSASHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
@@ -273,8 +279,8 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/nagy/1.webp",
     ],
   },
-  "kivitelezesi-16": {
-    title: "CSALÁDI HÁZ 2",
+  "kivitelezesi-17": {
+    title: "CSALÁDI HÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     images: [
