@@ -3,7 +3,7 @@
 const stats = [
   { id: 1, name: "Átadott lakás", value: "250" },
   { id: 2, name: "Tapasztalat", value: "30 éves" },
-  { id: 3, name: "Alkalmazott", value: "35" },
+  { id: 3, name: "Alkalmazott", value: "15" },
 ];
 
 import DescriptionWithoutImageConstruction from "@/components/DescriptionWithoutImageConstruction";

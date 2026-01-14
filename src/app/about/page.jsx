@@ -1,13 +1,13 @@
 const stats = [
   { label: "Átadott lakás", value: "250+" },
   { label: "Tapasztalat", value: "30 éves" },
-  { label: "Alkalmazott", value: "35" },
+  { label: "Alkalmazott", value: "15" },
 ];
 
 const people = [
   {
     name: "FÜLÖP VILMOS",
-    role: "Ügyvezető",
+    role: "Ügyvezető, felelős műszaki vezető",
     imageUrl: "https://geotherm.sirv.com/geotherm/csapat/Vilmos.jpg",
     xUrl: "#",
     linkedinUrl: "#",

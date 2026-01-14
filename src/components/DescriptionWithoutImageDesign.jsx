@@ -1,7 +1,7 @@
 import {
-  AdjustmentsHorizontalIcon,
-  Squares2X2Icon,
-  ArrowPathIcon,
+  UsersIcon,
+  PuzzlePieceIcon,
+  HomeModernIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -9,19 +9,19 @@ const features = [
     name: "SZEMÉLYRE SZABOTT MEGKÖZELÍTÉS",
     description:
       "Fő célunk a környezet, az épület és a használók közötti harmónia megteremtése. Személyre szabott megoldásaink a használói igények és a környezeti adottságok mély megértésén alapulnak.",
-    icon: AdjustmentsHorizontalIcon,
+    icon: UsersIcon,
   },
   {
     name: "KOMPLEX SZEMLÉLET",
     description:
       "Szabadon ötvözünk építészeti és belsőépítészeti megoldásokat, így születnek meg azok az esztétikus és funkcionális terek, amelyek minőségét sokéves kivitelezési tapasztalatunk támasztja alá.",
-    icon: Squares2X2Icon,
+    icon: PuzzlePieceIcon,
   },
   {
     name: "NYITOTT HOZZÁÁLLÁS",
     description:
       "Kis projekttől a nagy léptékű tervekig minden feladatban lehetőséget látunk az alkotásra, legyen szó meglévő épület revitalizációjáról vagy egy teljesen új épület megtervezéséről.",
-    icon: ArrowPathIcon,
+    icon: HomeModernIcon,
   },
 ];
 
