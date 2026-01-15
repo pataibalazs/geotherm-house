@@ -21,9 +21,7 @@ export default function Construction() {
 
   return (
     <div className="bg-stone-50 pt-5">
-      {/* Hero rész */}
       <div className="relative lg:flex lg:items-center max-w-xl sm:max-w-7xl justify-center mx-auto">
-        {/* Text section */}
         <div className="mx-auto max-w-7xl lg:w-1/2 px-6 py-10 md:py-16 lg:px-8 flex items-center relative z-10">
           <div className="mx-auto max-w-xl md:max-w-2xl lg:mx-0">
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl md:text-left text-center">
@@ -177,6 +175,20 @@ export default function Construction() {
           ))}
         </div>
       </div>
+      {/* Széchenyi 2020 logo – konstans jobb alsó sarok */}
+      <img
+        src="/images/szechenyi2020.png"
+        alt="Széchenyi 2020"
+        className="
+          fixed bottom-0 right-0
+          z-50
+          h-auto w-auto
+          max-w-[180px] sm:max-w-[210px]
+          pointer-events-none
+          drop-shadow
+        "
+        loading="lazy"
+      />
     </div>
   );
 }
