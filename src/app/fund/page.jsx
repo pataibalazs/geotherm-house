@@ -34,7 +34,7 @@ export default function FundGalleryPage() {
 
       {/* SZÖVEGES BLOKK */}
       <section className="max-w-6xl mx-auto px-6 mb-16 bg-stone-50">
-        <h1 className="text-3xl sm:text-4xl text-center pt-10 font-semibold text-gray-900 mb-6">
+        <h1 className="text-3xl sm:text-4xl text-center pt-10 font-semibold text-gray-900 mb-10">
           Pályázati támogatás bemutatása
         </h1>
 
