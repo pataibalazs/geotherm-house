@@ -70,7 +70,7 @@ const references = {
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/1.jpg",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/4.jpg",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/3.jpg",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/5.webp",
+      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/10.jpg",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/6.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/7.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/8.webp",
