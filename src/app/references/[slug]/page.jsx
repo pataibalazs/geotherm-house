@@ -10,7 +10,7 @@ const references = {
     ],
     meta: {
       year: "2025",
-      area: "663 m²",
+      area: "175 m²",
       leadArchitect: "Farkas László",
       architects: "Fülöp Theodóra Eszter, Takács Johanna Krisztina",
       contractor: "Geotherm House Kft.",
@@ -38,7 +38,7 @@ const references = {
     ],
   },
   "tervezesi-2": {
-    title: "CSALÁDI HÁZ, BAJTÓT ",
+    title: "CSALÁDI HÁZ, BAJÓT ",
     descriptionParagraphs: [
       "A megrendelő pár egy hagyományos parasztház ihlette, kortárs családi otthont képzelt el. Fontos szempont volt, hogy az épület a jelenlegi háromfős használat mellett a későbbiekben két főre is jól működjön, alkalmazkodva az élethelyzet változásaihoz.",
       "A ház központi tere a nyitott konyha–nappali, amelyből közvetlenül elérhetők a legfontosabb funkciók. Innen nyílik a szülői háló, valamint a keleti terasz és az oldalsó bejárati tér. A gyerek háló és a kiszolgáló helyiségek az utcai homlokzat felé, a bejárati tér túloldalán helyezkednek el, így az alaprajz jól elkülönülő, mégis egységes rendszert alkot.",
@@ -199,7 +199,7 @@ const references = {
     title: "VERESEGYHÁZ, KODÁLY ZOLTÁN UTCA, CSALÁDI HÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
-    credit: "A projektben művezetőként vettünk részt.",
+    credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/2.webp",
@@ -213,7 +213,7 @@ const references = {
     title: "VERESEGYHÁZ, LIGETEK, SORHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
-    credit: "A projektben művezetőként vettünk részt.",
+    credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/2.webp",
@@ -230,6 +230,7 @@ const references = {
     title: "SZILASLIGETI SORHÁZAK",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/2.webp",
@@ -243,6 +244,7 @@ const references = {
     title: "VERESEGYHÁZ, 4 LAKÁSOS SORHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/2.webp",
@@ -254,6 +256,7 @@ const references = {
     title: "VERESEGYHÁZ, 10 LAKÁSOS SORHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/2.webp",
@@ -266,6 +269,7 @@ const references = {
     title: "VERESEGYHÁZ, CSALÁDI HÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/k%C3%B6zepes/1.webp",
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/k%C3%B6zepes/2.webp",
@@ -276,6 +280,7 @@ const references = {
     title: "130 LAKÁSOS TÁRSASHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "A projektben művezetőként vettünk részt.",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/nagy/1.webp",
     ],
@@ -284,6 +289,7 @@ const references = {
     title: "120 LAKÁSOS TÁRSASHÁZ",
     description:
       "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
+    credit: "A projektben művezetőként vettünk részt.",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/nagy/1.webp",
     ],

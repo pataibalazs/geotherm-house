@@ -26,7 +26,7 @@ export default function Header() {
             className="h-20 w-auto"
           />
         </Link>
-        <div className="flex lg:hidden">
+        <div className="flex xl:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -36,7 +36,7 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-10">
+        <div className="hidden xl:flex xl:gap-x-10">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -51,7 +51,7 @@ export default function Header() {
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
-        className="lg:hidden"
+        className="xl:hidden"
       >
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-stone-50 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ">

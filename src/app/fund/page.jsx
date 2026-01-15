@@ -3,7 +3,7 @@
 import Head from "next/head";
 import React from "react";
 
-const ContactPage = () => {
+const FundPage = () => {
   return (
     <div className="bg-stone-50 flex flex-col items-center">
       <Head>
@@ -242,4 +242,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default FundPage;
