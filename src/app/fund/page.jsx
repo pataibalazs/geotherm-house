@@ -1,245 +1,83 @@
 "use client";
 
 import Head from "next/head";
-import React from "react";
+import Image from "next/image";
 
-const FundPage = () => {
+const HERO_IMAGE =
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/nagy/fund.webp";
+
+const GALLERY_IMAGES = [
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/1.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/2.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/3.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/4.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/5.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/6.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/7.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/8.webp",
+  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/9.webp",
+];
+
+export default function FundGalleryPage() {
   return (
-    <div className="bg-stone-50 flex flex-col items-center">
+    <div className="bg-stone-50">
       <Head>
-        <title>Kapcsolat | Deckbae – Gyors házépítés ajánlatkérés</title>
+        <title>Pályázat | Geotherm House Kft.</title>
         <meta
           name="description"
-          content="Lépj kapcsolatba velünk modern és gyors könnyűszerkezetes házak építéséhez! Írj üzenetet és kérj személyre szabott ajánlatot."
-        />
-        <meta
-          name="keywords"
-          content="kapcsolat deckbae, házépítés kapcsolat, ajánlatkérés könnyűszerkezetes ház, kapcsolatfelvétel modern házhoz"
+          content="A Geotherm House Kft. vissza nem térítendő támogatás keretében megvalósult eszközbeszerzése – projektbemutató képgalériával."
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Kapcsolat | Deckbae" />
-        <meta
-          property="og:description"
-          content="Vedd fel velünk a kapcsolatot! Könnyűszerkezetes házak, garázsok és pergolák kivitelezése. Egyedi ajánlatkérés néhány kattintással."
-        />
-        <meta property="og:image" content="/og-image.jpg" />
-        <meta property="og:url" content="https://deckbae.hu/contact" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kapcsolat | Deckbae" />
-        <meta
-          name="twitter:description"
-          content="Lépj kapcsolatba a Deckbae csapatával gyors házépítési megoldásokért!"
-        />
-        <meta name="twitter:image" content="/og-image.jpg" />
-        <link rel="canonical" href="https://deckbae.hu/contact" />
       </Head>
 
-      <main
-        className="flex flex-col items-center p-6 bg-stone-50 rounded-lg mt-10 mb-10 
-        max-w-full xs:max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl w-full"
-      >
-        <div className="bg-stone-50 w-full">
-          <div className="mx-auto max-w-7xl mb-10 w-full">
-            <div className="mx-auto max-w-5xl text-center">
-              <h1 className="mt-2 mb-4 text-3xl sm:text-4xl font-semibold tracking-tight text-pretty text-gray-900">
-                Kérdésed van? Vedd fel velünk a kapcsolatot!
-              </h1>
-              <p className="text-gray-600 text-base sm:text-lg">
-                Írj nekünk üzenetet, és hamarosan jelentkezünk egy személyre
-                szabott válasszal vagy ajánlattal.
-              </p>
+      {/* HERO SZEKCIÓ */}
 
-              <div className="text-left w-full">
-                <form
-                  action="https://formspree.io/f/xqeeaaoz"
-                  method="POST"
-                  className="mx-auto mt-14 mb-14 max-w-xl"
-                >
-                  <label className="block mb-4 text-black font-medium">
-                    Neved:
-                    <input
-                      type="text"
-                      name="name"
-                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
-                    />
-                  </label>
-                  <label className="block mb-4 text-black font-medium">
-                    Email címed:
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
-                    />
-                  </label>
+      {/* SZÖVEGES BLOKK */}
+      <section className="max-w-6xl mx-auto px-6 mb-16 bg-stone-50">
+        <h1 className="text-3xl sm:text-4xl text-center pt-10 font-semibold text-gray-900 mb-6">
+          Pályázati támogatás bemutatása
+        </h1>
 
-                  <label className="block mb-4 text-black font-medium">
-                    Üzeneted:
-                    <textarea
-                      name="message"
-                      rows={5}
-                      required
-                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 text-sm sm:leading-6"
-                    />
-                  </label>
+        <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl">
+          A Geotherm House Kft. a Széchenyi 2020 program keretében vissza nem
+          térítendő európai uniós támogatásban részesült. A projekt célja az
+          építőipari kivitelezéshez szükséges eszközpark fejlesztése volt, amely
+          hozzájárul a hatékonyabb, gyorsabb és magasabb minőségű
+          munkavégzéshez.
+        </p>
+      </section>
 
-                  <button
-                    type="submit"
-                    className="text-white block w-full rounded-md bg-amber-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 transition-all duration-200"
-                  >
-                    Küldés
-                  </button>
-                </form>
-              </div>
-
-              {/* Céges információ blokk */}
-              <div className="mt-10 w-full mx-auto max-w-xl">
-                <div className="bg-stone-50 border border-gray-200 p-4 sm:p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg w-full">
-                  <div className="flex items-center justify-center mb-6 sm:mb-8">
-                    <div className="mr-4 p-3 bg-amber-100 rounded-full flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 sm:h-6 sm:w-6 text-amber-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      Geotherm House Kft.
-                    </h3>
-                  </div>
-
-                  <div className="grid md:grid-cols-1 gap-8">
-                    <div className="space-y-10">
-                      {/* Telefon */}
-                      <div className="flex items-center">
-                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-amber-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="ml-3 text-left">
-                          <p className="text-sm text-gray-500">Telefon</p>
-                          <p className="text-base font-medium text-gray-800">
-                            +36 30 932 1632
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Email */}
-                      <div className="flex items-center">
-                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-amber-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="ml-3 text-left">
-                          <p className="text-sm text-gray-500">Email</p>
-                          <a
-                            href="mailto:geothermhouse@gmail.com"
-                            className="text-base font-medium text-amber-500 hover:underline"
-                          >
-                            iroda@geothermhouse.hu
-                          </a>
-                        </div>
-                      </div>
-
-                      {/* Iroda */}
-
-                      <div className="flex items-center md:col-span-2">
-                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-amber-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="ml-3 text-left">
-                          <p className="text-sm text-gray-500">
-                            Tervezői iroda
-                          </p>
-                          <p className="text-base font-medium text-gray-800">
-                            1084 Budapest, József u. 42.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center md:col-span-2">
-                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-amber-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="ml-3 text-left">
-                          <p className="text-sm text-gray-500">
-                            Kivitelezői iroda
-                          </p>
-                          <p className="text-base font-medium text-gray-800">
-                            2112 Veresegyház Jókai u. 1/a.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Vége céginfóknak */}
-            </div>
-          </div>
+      <section className="max-w-7xl mx-auto px-6">
+        <div className="relative w-full h-[260px] sm:h-[360px] md:h-[440px] lg:h-[520px]">
+          <Image
+            src={HERO_IMAGE}
+            alt="Széchenyi 2020 pályázat – Geotherm House Kft."
+            fill
+            priority
+            className="object-contain bg-white rounded-md"
+          />
         </div>
-      </main>
+      </section>
+
+      {/* GALÉRIA */}
+      <section className="max-w-7xl mx-auto px-6 pb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          {GALLERY_IMAGES.map((src, index) => (
+            <div
+              key={index}
+              className="relative w-full aspect-[4/3] overflow-hidden rounded-lg bg-gray-100"
+            >
+              <Image
+                src={src}
+                alt={`Pályázati megvalósítás ${index + 1}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
-};
-
-export default FundPage;
+}
