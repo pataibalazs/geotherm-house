@@ -183,7 +183,7 @@ export default function Construction() {
           fixed bottom-0 right-0
           z-50
           h-auto w-auto
-          max-w-[180px] sm:max-w-[210px]
+          max-w-[110px] sm:max-w-[210px]
           pointer-events-none
           drop-shadow
         "
