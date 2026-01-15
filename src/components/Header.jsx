@@ -23,7 +23,7 @@ export default function Header() {
           <img
             alt="Geotherm House logo"
             src="/images/gh_logo.png"
-            className="h-20 w-auto"
+            className="h-17 sm:h-23 w-auto -mt-4"
           />
         </Link>
         <div className="flex xl:hidden">
@@ -36,7 +36,7 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden xl:flex xl:gap-x-10">
+        <div className="hidden xl:flex xl:gap-x-9">
           {navigation.map((item) => (
             <Link
               key={item.name}

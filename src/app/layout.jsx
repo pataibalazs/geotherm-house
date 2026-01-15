@@ -12,6 +12,26 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Geotherm House",
   description: "Geotherm House's official website",
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/favicon-32x32.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon-16x16.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -8,11 +8,8 @@ const HERO_IMAGE =
 
 const GALLERY_IMAGES = [
   "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/1.webp",
-  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/2.webp",
   "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/3.webp",
   "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/4.webp",
-  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/5.webp",
-  "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/6.webp",
   "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/7.webp",
   "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/8.webp",
   "https://geotherm.sirv.com/geotherm/p%C3%A1ly%C3%A1zat/k%C3%B6zepes/9.webp",
@@ -30,10 +27,7 @@ export default function FundGalleryPage() {
         <meta name="robots" content="index, follow" />
       </Head>
 
-      {/* HERO SZEKCIÓ */}
-
-      {/* SZÖVEGES BLOKK */}
-      <section className="max-w-6xl mx-auto px-6 mb-16 bg-stone-50">
+      <section className="max-w-6xl mx-auto px-6 mb-6 bg-stone-50">
         <h1 className="text-3xl sm:text-4xl text-center pt-10 font-semibold text-gray-900 mb-10">
           Pályázati támogatás bemutatása
         </h1>
@@ -47,7 +41,7 @@ export default function FundGalleryPage() {
         </p>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6">
+      <section className="max-w-7xl mx-auto px-6 mb-5">
         <div className="relative w-full h-[260px] sm:h-[360px] md:h-[440px] lg:h-[520px]">
           <Image
             src={HERO_IMAGE}
