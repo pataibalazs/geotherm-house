@@ -1,6 +1,7 @@
 "use client";
 
 import DescriptionWithoutImageDesign from "@/components/DescriptionWithoutImageDesign";
+import Services from "@/components/Services";
 import Link from "next/link";
 import { useCallback } from "react";
 

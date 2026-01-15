@@ -6,21 +6,21 @@ import {
 
 const features = [
   {
-    name: "MEGBÍZHATÓSÁG",
+    name: "MEGBÍZHATÓ",
     description:
-      "Három évtizedes tapasztalatunk és ügyfeleink bizalma garantálja, hogy minket választani biztos döntés. A legmagasabb elvárt minőség és az átadás utáni garancia nálunk egyértelmű.",
+      "Három évtizedes tapasztalatunk a biztosíték a legmagasabb minőségre. Nálunk a teljes körű garancia és a szakmai precizitás alapkövetelmény.",
     icon: ShieldCheckIcon,
   },
   {
-    name: "KORSZERŰ ÉS KÖRNYEZETBARÁT",
+    name: "GAZDASÁGOS",
     description:
-      "Modern és fenntartható anyagokat, gépészeti megoldásokat alkalmazunk, hogy épületeink a kényelem és korszerűség mellett, alacsony fenntartási költséggel működhessenek.",
+      "Korszerű anyagaink, és innovatív gépészeti megoldásaink biztosítják az alacsony rezsit és a környezetbarát működést.",
     icon: SparklesIcon,
   },
   {
-    name: "SZEMÉLYES KAPCSOLATTARTÁS",
+    name: "SZEMÉLYES",
     description:
-      "Előzetes egyeztetés után személyesen is betekinthet az aktuális kivitelezésbe, és azonnali választ kaphat felmerülő kérdéseire, mindezt cégünk vezetője, Fülöp Vilmos vezetésével.",
+      "Ismerje meg munkánkat a helyszínen! Fülöp Vilmos ügyvezető személyes bejárás keretében mutatja be építkezéseinket és válaszol a szakmai kérdésekre.",
     icon: UserGroupIcon,
   },
 ];
@@ -34,9 +34,8 @@ export default function DescriptionWithoutImageConstruction() {
             KIVITELEZÉS <br /> KOMPROMISSZUMOK NÉLKÜL
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-700">
-            30 év generálkivitelezési tapasztalattal, képzett szakemberekkel és
-            gondosan kiválasztott anyagokkal biztosítjuk a precíz, megbízható és
-            időtálló kivitelezést.
+            Saját beruházású projektjeinket olyan szakmai igényességgel és
+            prémium anyagokkal építjük, mintha saját magunknak készítenénk őket.
           </p>
         </div>
 

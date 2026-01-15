@@ -1,5 +1,4 @@
 "use client";
-
 const stats = [
   { id: 1, name: "Átadott lakás", value: "250" },
   { id: 2, name: "Tapasztalat", value: "30 éves" },
@@ -75,6 +74,7 @@ export default function Construction() {
           ))}
         </dl>
       </div>
+
       <DescriptionWithoutImageConstruction />
       {/* Referencia szekció */}
       <div

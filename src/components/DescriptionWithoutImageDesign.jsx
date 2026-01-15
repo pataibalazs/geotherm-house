@@ -41,7 +41,7 @@ export default function DescriptionWithoutImageDesign() {
         </div>
 
         {/* Features */}
-        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-10 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-10 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {features.map((feature) => (
             <div
               key={feature.name}
