@@ -7,32 +7,32 @@ const ContactPage = () => {
   return (
     <div className="bg-stone-50 flex flex-col items-center">
       <Head>
-        <title>Kapcsolat | Deckbae – Gyors házépítés ajánlatkérés</title>
+        <title>Kapcsolat | Geotherm – Gyors házépítés ajánlatkérés</title>
         <meta
           name="description"
           content="Lépj kapcsolatba velünk modern és gyors könnyűszerkezetes házak építéséhez! Írj üzenetet és kérj személyre szabott ajánlatot."
         />
         <meta
           name="keywords"
-          content="kapcsolat deckbae, házépítés kapcsolat, ajánlatkérés könnyűszerkezetes ház, kapcsolatfelvétel modern házhoz"
+          content="kapcsolat Geotherm, házépítés kapcsolat, ajánlatkérés könnyűszerkezetes ház, kapcsolatfelvétel modern házhoz"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Kapcsolat | Deckbae" />
+        <meta property="og:title" content="Kapcsolat | Geotherm" />
         <meta
           property="og:description"
           content="Vedd fel velünk a kapcsolatot! Könnyűszerkezetes házak, garázsok és pergolák kivitelezése. Egyedi ajánlatkérés néhány kattintással."
         />
         <meta property="og:image" content="/og-image.jpg" />
-        <meta property="og:url" content="https://deckbae.hu/contact" />
+        <meta property="og:url" content="https://geotherm.hu/contact" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kapcsolat | Deckbae" />
+        <meta name="twitter:title" content="Kapcsolat | Geotherm" />
         <meta
           name="twitter:description"
-          content="Lépj kapcsolatba a Deckbae csapatával gyors házépítési megoldásokért!"
+          content="Lépj kapcsolatba a Geotherm csapatával gyors házépítési megoldásokért!"
         />
         <meta name="twitter:image" content="/og-image.jpg" />
-        <link rel="canonical" href="https://deckbae.hu/contact" />
+        <link rel="canonical" href="https://geotherm.hu/contact" />
       </Head>
 
       <main

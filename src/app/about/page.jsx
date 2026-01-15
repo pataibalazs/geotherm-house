@@ -151,11 +151,6 @@ export default function About() {
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
               CSAPATUNK
             </h2>
-            <p className="mt-6 text-lg/8 text-gray-600">
-              Elkötelezett és dinamikus csapat vagyunk, akik szenvedéllyel
-              végzik munkájukat, és minden esetben a lehető legjobb eredményre
-              törekednek ügyfeleink számára.
-            </p>
           </div>
 
           <ul

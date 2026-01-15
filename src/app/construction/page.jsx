@@ -27,8 +27,8 @@ export default function Construction() {
               GENERÁL KIVITELEZÉS
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl md:text-left sm:text-center text-center">
-              A legmagasabb minőséget, szakértelmet és professzionális
-              kivitelezést nyújtjuk minden projektünkben.
+              Magas minőségű alapanyagok és szakértő csapat az alapozástól a
+              kulcsrakész átadásig.
             </p>
 
             <div className="mt-10 flex sm:flex-row flex-col items-center gap-x-6 md:justify-start sm:justify-center">
