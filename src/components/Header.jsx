@@ -23,7 +23,7 @@ export default function Header() {
           <img
             alt="Geotherm House logo"
             src="/images/gh_logo.png"
-            className="h-17 sm:h-23 w-auto -mt-4"
+            className="h-12 sm:h-23 w-auto sm:-mt-4"
           />
         </Link>
         <div className="flex xl:hidden">

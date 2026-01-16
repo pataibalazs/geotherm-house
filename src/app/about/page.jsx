@@ -54,17 +54,20 @@ export default function About() {
 
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w/full lg:max-w-2xl lg:flex-auto">
-              <p className="text-xl/8 text-gray-600">
-                Lelkes, kreatív csapat vagyunk, ahol a friss, fiatalos tervezési
-                szemlélet találkozik a több évtizedes generálkivitelezési
-                tapasztalattal. Ez a kombináció teszi minden projektünket
-                izgalmassá és megbízhatóvá egyszerre.<br></br>
-                <br></br> Az új ötletek energiája mellett mindig ott van a
-                stabil szakmai háttér. Legyen szó meglévő épületek
-                átalakításáról vagy teljesen új épület megálmodásáról, nálunk a
-                tervezés és a kivitelezés természetesen összefonódik, így a
-                végeredmény nálunk mindig kreatív, élhető és fenntartható
-                egyszerre.
+              <p className="text-xl/7 text-gray-600">
+                Csapatunkban az innovatív tervezői szemlélet több évtizedes
+                generálkivitelezői szaktudással találkozik. Ez az összetett
+                háttér garantálja, hogy projektjeink egyszerre legyenek
+                építészetileg előremutatóak és műszakilag kifogástalanok. Az
+                újító ötletek nálunk minden esetben szilárd műszaki alapokkal és
+                harminc év alatt tökéletesített kivitelezési rutinnal
+                párosulnak.<br></br>
+                <br></br> A teljes folyamatot a tervezéstől a megvalósításig
+                saját kézben tartjuk, így a mérnöki precizitás és az igényes
+                építészeti megjelenés nálunk elválaszthatatlan egységet alkot.
+                Ez az integrált szemlélet a biztosíték arra, hogy minden
+                épületünk élhető, alacsony fenntartású és hosszú távon is
+                értékálló, minőségi térré váljon.
               </p>
             </div>
 

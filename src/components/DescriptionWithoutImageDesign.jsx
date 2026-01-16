@@ -6,21 +6,21 @@ import {
 
 const features = [
   {
-    name: "SZEMÉLYRE SZABOTT MEGKÖZELÍTÉS",
+    name: "SZEMÉLYRE SZABOTT",
     description:
-      "Fő célunk a környezet, az épület és a használók közötti harmónia megteremtése. Személyre szabott megoldásaink a használói igények és a környezeti adottságok mély megértésén alapulnak.",
+      "A tervezés nálunk a közös gondolkodással és a környezet feltárásával indul, így válnak megoldásaink valóban személyessé és hosszú távon szerethetővé.",
     icon: UsersIcon,
   },
   {
-    name: "KOMPLEX SZEMLÉLET",
+    name: "TUDATOS TERVEZÉS",
     description:
-      "Szabadon ötvözünk építészeti és belsőépítészeti megoldásokat, így születnek meg azok az esztétikus és funkcionális terek, amelyek minőségét sokéves kivitelezési tapasztalatunk támasztja alá.",
+      "Az igényes és élhető építészeti formavilágot kivitelezői tapasztalatunkkal ötvözzük, hogy terveink váratlan pluszköltségek nélkül, zökkenőmentesen épüljenek meg.",
     icon: PuzzlePieceIcon,
   },
   {
-    name: "NYITOTT HOZZÁÁLLÁS",
+    name: "KOMPLEX SZOLGÁLTATÁS",
     description:
-      "Kis projekttől a nagy léptékű tervekig minden feladatban lehetőséget látunk az alkotásra, legyen szó meglévő épület revitalizációjáról vagy egy teljesen új épület megtervezéséről.",
+      "A koncepcionális vázlatoktól a hatósági engedélyezésen át a precíz kiviteli tervekig visszük végig a folyamatot, garantálva a tervezői gondolat és a műszaki tartalom összhangját.",
     icon: HomeModernIcon,
   },
 ];
@@ -41,7 +41,7 @@ export default function DescriptionWithoutImageDesign() {
         </div>
 
         {/* Features */}
-        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-10 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-10 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.name}

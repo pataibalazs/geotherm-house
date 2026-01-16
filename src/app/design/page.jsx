@@ -49,8 +49,8 @@ export default function Design() {
         {/* Image section */}
         <div className="mx-auto max-w-3xl md:max-w-3xl lg:max-w-7xl px-6 md:px-8 lg:px-0 lg:w-1/2">
           <img
-            alt="Construction"
-            src="https://geotherm.sirv.com/geotherm/f%C5%91oldal/tervez%C3%A9s_f%C5%91k%C3%A9p.jpg"
+            alt="Design"
+            src="https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/kezd%C5%91.jpg"
             className="w-full h-auto object-cover rounded-md aspect-square"
             loading="lazy"
           />
