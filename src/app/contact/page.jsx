@@ -225,7 +225,7 @@ const ContactPage = () => {
                             Kivitelezői iroda
                           </p>
                           <p className="text-base font-medium text-gray-800">
-                            2112 Veresegyház Jókai u. 1/a.
+                            2112 Veresegyház, Jókai u. 1/a.
                           </p>
                         </div>
                       </div>
