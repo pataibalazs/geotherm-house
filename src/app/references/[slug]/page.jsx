@@ -78,8 +78,6 @@ const references = {
   },
   "kivitelezesi-1": {
     title: "VERESEGYHÁZ, LIGETEK SORHÁZ",
-    description:
-      "Ez az első kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/1.webp",
@@ -98,7 +96,6 @@ const references = {
   },
   "kivitelezesi-2": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 1. TÁRSASHÁZ",
-    description: "Ez egy példa kivitelezési referencia leírás.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/1.webp",
@@ -113,8 +110,6 @@ const references = {
   },
   "kivitelezesi-3": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 2. TÁRSASHÁZ",
-    description:
-      "Ez a harmadik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/1.webp",
@@ -127,8 +122,6 @@ const references = {
   },
   "kivitelezesi-4": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 3. TÁRSASHÁZ",
-    description:
-      "Ez a negyedik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/1.webp",
@@ -142,8 +135,6 @@ const references = {
   },
   "kivitelezesi-5": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 4. TÁRSASHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/1.webp",
@@ -156,8 +147,6 @@ const references = {
   },
   "kivitelezesi-6": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 5. TÁRSASHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/1.webp",
@@ -170,8 +159,6 @@ const references = {
   },
   "kivitelezesi-7": {
     title: "VERESEGYHÁZ, LIGETEK, IKERHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/1.webp",
@@ -182,8 +169,6 @@ const references = {
   },
   "kivitelezesi-8": {
     title: "VERESEGYHÁZ, ETÜD UTCA, CSALÁDI HÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/1.webp",
@@ -198,8 +183,6 @@ const references = {
   },
   "kivitelezesi-9": {
     title: "VERESEGYHÁZ, KODÁLY ZOLTÁN UTCA, CSALÁDI HÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/1.webp",
@@ -212,8 +195,6 @@ const references = {
   },
   "kivitelezesi-10": {
     title: "VERESEGYHÁZ, LIGETEK, SORHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/1.webp",
@@ -229,8 +210,6 @@ const references = {
   },
   "kivitelezesi-11": {
     title: "SZILASLIGETI SORHÁZAK",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/1.webp",
@@ -243,8 +222,6 @@ const references = {
   },
   "kivitelezesi-12": {
     title: "VERESEGYHÁZ, 4 LAKÁSOS SORHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/1.webp",
@@ -255,8 +232,6 @@ const references = {
   },
   "kivitelezesi-13": {
     title: "VERESEGYHÁZ, 10 LAKÁSOS SORHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/1.webp",
@@ -268,8 +243,6 @@ const references = {
   },
   "kivitelezesi-14": {
     title: "VERESEGYHÁZ, CSALÁDI HÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/k%C3%B6zepes/1.webp",
@@ -279,8 +252,6 @@ const references = {
   },
   "kivitelezesi-15": {
     title: "130 LAKÁSOS TÁRSASHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "A projektben művezetőként vettünk részt.",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/nagy/1.webp",
@@ -288,8 +259,6 @@ const references = {
   },
   "kivitelezesi-16": {
     title: "120 LAKÁSOS TÁRSASHÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     credit: "A projektben művezetőként vettünk részt.",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/nagy/1.webp",
@@ -297,13 +266,27 @@ const references = {
   },
   "kivitelezesi-17": {
     title: "CSALÁDI HÁZ",
-    description:
-      "Ez az ötödik kivitelezési referencia leírása. Itt részletezheted a projektet, technológiát, helyszínt, stb.",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/nagy/1.webp",
     ],
   },
 };
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const ref = references[slug];
+  if (!ref) return {};
+  const kind = slug.startsWith("tervezesi-") ? "Tervezési" : "Kivitelezési";
+  const text =
+    ref.descriptionParagraphs?.[0] ??
+    ref.description ??
+    `${kind} referencia a Geotherm House Kft.-től – tervezés és generálkivitelezés az alapozástól a kulcsrakész átadásig.`;
+  return {
+    title: `${ref.title} – ${kind} referencia | Geotherm House`,
+    description: text.length > 160 ? `${text.slice(0, 157)}…` : text,
+    alternates: { canonical: `/references/${slug}` },
+  };
+}
 
 export default async function ReferenceDetail({ params }) {
   const { slug } = await params;

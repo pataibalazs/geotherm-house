@@ -1,39 +1,11 @@
 "use client";
 
-import Head from "next/head";
 import React from "react";
+import ContactForm from "@/components/ContactForm";
 
 const ContactPage = () => {
   return (
     <div className="bg-stone-50 flex flex-col items-center">
-      <Head>
-        <title>Kapcsolat | Geotherm – Gyors házépítés ajánlatkérés</title>
-        <meta
-          name="description"
-          content="Lépj kapcsolatba velünk modern és gyors könnyűszerkezetes házak építéséhez! Írj üzenetet és kérj személyre szabott ajánlatot."
-        />
-        <meta
-          name="keywords"
-          content="kapcsolat Geotherm, házépítés kapcsolat, ajánlatkérés könnyűszerkezetes ház, kapcsolatfelvétel modern házhoz"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Kapcsolat | Geotherm" />
-        <meta
-          property="og:description"
-          content="Vedd fel velünk a kapcsolatot! Könnyűszerkezetes házak, garázsok és pergolák kivitelezése. Egyedi ajánlatkérés néhány kattintással."
-        />
-        <meta property="og:image" content="/og-image.jpg" />
-        <meta property="og:url" content="https://geotherm.hu/contact" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kapcsolat | Geotherm" />
-        <meta
-          name="twitter:description"
-          content="Lépj kapcsolatba a Geotherm csapatával gyors házépítési megoldásokért!"
-        />
-        <meta name="twitter:image" content="/og-image.jpg" />
-        <link rel="canonical" href="https://geotherm.hu/contact" />
-      </Head>
 
       <main
         className="flex flex-col items-center p-6 bg-stone-50 rounded-lg mt-10 mb-10 
@@ -51,46 +23,7 @@ const ContactPage = () => {
               </p>
 
               <div className="text-left w-full">
-                <form
-                  action="https://formspree.io/f/xqeeaaoz"
-                  method="POST"
-                  className="mx-auto mt-14 mb-14 max-w-xl"
-                >
-                  <label className="block mb-4 text-black font-medium">
-                    Neved:
-                    <input
-                      type="text"
-                      name="name"
-                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
-                    />
-                  </label>
-                  <label className="block mb-4 text-black font-medium">
-                    Email címed:
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
-                    />
-                  </label>
-
-                  <label className="block mb-4 text-black font-medium">
-                    Üzeneted:
-                    <textarea
-                      name="message"
-                      rows={5}
-                      required
-                      className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 text-sm sm:leading-6"
-                    />
-                  </label>
-
-                  <button
-                    type="submit"
-                    className="text-white block w-full rounded-md bg-amber-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500 transition-all duration-200"
-                  >
-                    Küldés
-                  </button>
-                </form>
+                <ContactForm />
               </div>
 
               {/* Céges információ blokk */}
@@ -167,10 +100,10 @@ const ContactPage = () => {
                         <div className="ml-3 text-left">
                           <p className="text-sm text-gray-500">Email</p>
                           <a
-                            href="mailto:geothermhouse@gmail.com"
+                            href="mailto:t.eszter.fulop@gmail.com"
                             className="text-base font-medium text-amber-500 hover:underline"
                           >
-                            iroda@geothermhouse.hu
+                            t.eszter.fulop@gmail.com
                           </a>
                         </div>
                       </div>

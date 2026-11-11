@@ -1,4 +1,8 @@
 import Image from "next/image";
+import {
+  ArrowsPointingOutIcon,
+  Squares2X2Icon,
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -29,7 +33,7 @@ export async function generateMetadata({ params }) {
   if (!a) return {};
   const title = `${a.code} lakás – ${a.floorLabel}, ${formatArea(a.area)} | ${project.city}, ${project.name}`;
   const description = `${floorAdjectives[a.floor]} új építésű lakás Veresegyházon: ${formatArea(a.area)}, ${formatArea(a.terrace)} terasz, ${roomsLabel(a).toLowerCase()}. Alaprajz és helyiséglista.`;
-  const url = `https://geotherm.hu/lakasok/${a.slug}`;
+  const url = `https://www.geothermhouse.hu/lakasok/${a.slug}`;
   return {
     title,
     description,
@@ -40,7 +44,7 @@ export async function generateMetadata({ params }) {
       url,
       type: "website",
       locale: "hu_HU",
-      images: [{ url: `https://geotherm.hu${a.plan.src}`, width: a.plan.width, height: a.plan.height }],
+      images: [{ url: `https://www.geothermhouse.hu${a.plan.src}`, width: a.plan.width, height: a.plan.height }],
     },
   };
 }
@@ -69,7 +73,7 @@ export default async function ApartmentPage({ params }) {
       addressLocality: project.city,
       addressCountry: "HU",
     },
-    image: `https://geotherm.hu${a.plan.src}`,
+    image: `https://www.geothermhouse.hu${a.plan.src}`,
   };
 
   const floorPlan = floors.find((f) => f.key === a.floor).plan;
@@ -262,22 +266,25 @@ export default async function ApartmentPage({ params }) {
                   className="object-contain"
                 />
               </a>
-              <div className="mt-3 flex flex-col gap-1 border-t border-stone-100 pt-3 text-sm font-semibold">
+              <div className="mt-3 grid grid-cols-2 gap-2">
                 <a
                   href={sitePlan.src}
                   target="_blank"
                   rel="noopener"
-                  className="text-amber-600 hover:text-amber-500"
+                  className="flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-stone-100 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-stone-200 hover:text-gray-900"
                 >
-                  Helyszínrajz teljes méretben →
+                  <ArrowsPointingOutIcon aria-hidden="true" className="size-4" />
+                  Nagyítás
                 </a>
                 <a
                   href={floorPlan.src}
                   target="_blank"
                   rel="noopener"
-                  className="text-amber-600 hover:text-amber-500"
+                  title={`A teljes ${floorAdjectives[a.floor]} szint alaprajza`}
+                  className="flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-stone-100 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-stone-200 hover:text-gray-900"
                 >
-                  {a.floorLabel} – a teljes szint alaprajza →
+                  <Squares2X2Icon aria-hidden="true" className="size-4" />
+                  Teljes szint
                 </a>
               </div>
             </div>

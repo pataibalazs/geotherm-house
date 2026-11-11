@@ -10,8 +10,16 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Geotherm House",
-  description: "Geotherm House's official website",
+  metadataBase: new URL("https://www.geothermhouse.hu"),
+  title: "Geotherm House – Tervezés és generálkivitelezés egy kézben",
+  description:
+    "Építészeti tervezés és generálkivitelezés egy kézben, az ötlettől az átadásig. 30 év tapasztalat, 250+ átadott lakás. Eladó új építésű lakások Veresegyházon.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    siteName: "Geotherm House",
+    locale: "hu_HU",
+    type: "website",
+  },
 
   icons: {
     icon: "/favicon.ico",
@@ -36,7 +44,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="hu">
       <body
         className={`${montserrat.variable} font-sans antialiased bg-stone-50`}
       >

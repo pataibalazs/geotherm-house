@@ -1662,5 +1662,5 @@ export const renders = [
   { src: "/images/latvany/csonkas-kozpont-latvany-2.webp", width: 1456, height: 732, alt: "Az épület sarka az árkádsorral és a parkolóval (látványterv)" },
   { src: "/images/latvany/csonkas-kozpont-latvany-3.webp", width: 1456, height: 731, alt: "Téglahomlokzat erkélyekkel és tetőablakokkal (látványterv)" },
   { src: "/images/latvany/csonkas-kozpont-latvany-4.webp", width: 1634, height: 640, alt: "Utcai homlokzat a földszinti üzlethelyiséggel (látványterv)" },
-  { src: "/images/latvany/csonkas-kozpont-latvany-5.webp", width: 1706, height: 608, alt: "Udvari homlokzat az erkélysorral (látványterv)" },
+  { src: "/images/latvany/csonkas-kozpont-latvany-5.webp", width: 1706, height: 608, alt: "Utcai homlokzat az erkélysorral (látványterv)" },
 ];
