@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
 }
+
+/* Form fields: no browser-default (blue/indigo) focus outline, the amber ring is the focus indicator. */
+@layer base {
+  input,
+  textarea,
+  select {
+    accent-color: var(--color-amber-500);
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+}
