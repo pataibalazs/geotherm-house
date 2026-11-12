@@ -59,15 +59,15 @@ export default function ReferenceGallery() {
       title: "CSALÁDI HÁZ",
     },
     {
-      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/k%C3%B6zepes/1.webp",
+      src: "/images/referenciak/budapest-1.webp",
       title: "130 LAKÁSOS TÁRSASHÁZ",
     },
     {
-      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/k%C3%B6zepes/1.webp",
+      src: "/images/referenciak/budapest-2.webp",
       title: "120 LAKÁSOS TÁRSASHÁZ",
     },
     {
-      src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/k%C3%B6zepes/1.webp",
+      src: "/images/referenciak/leanyfalu.webp",
       title: "CSALÁDI HÁZ",
     },
   ];

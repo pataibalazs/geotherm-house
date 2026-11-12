@@ -19,7 +19,7 @@ export default function sitemap() {
 
   return [
     page("/", 1),
-    page("/lakasok", 0.9, "weekly"),
+    page("/fooldal", 0.8),
     ...apartments.map((a) => page(`/lakasok/${a.slug}`, 0.8, "weekly")),
     page("/construction", 0.7),
     page("/design", 0.7),

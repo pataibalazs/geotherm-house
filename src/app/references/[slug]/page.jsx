@@ -254,20 +254,20 @@ const references = {
     title: "130 LAKÁSOS TÁRSASHÁZ",
     credit: "A projektben művezetőként vettünk részt.",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%201/nagy/1.webp",
+      "/images/referenciak/budapest-1.webp",
     ],
   },
   "kivitelezesi-16": {
     title: "120 LAKÁSOS TÁRSASHÁZ",
     credit: "A projektben művezetőként vettünk részt.",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Budapest%202/nagy/1.webp",
+      "/images/referenciak/budapest-2.webp",
     ],
   },
   "kivitelezesi-17": {
     title: "CSALÁDI HÁZ",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Le%C3%A1nyfalu/nagy/1.webp",
+      "/images/referenciak/leanyfalu.webp",
     ],
   },
 };

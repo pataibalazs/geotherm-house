@@ -16,7 +16,7 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       >
         <Link
-          href="/"
+          href="/fooldal"
           className="-m-1.5 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
         >
           <span className="sr-only">Geotherm House</span>
@@ -57,7 +57,7 @@ export default function Header() {
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-stone-50 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ">
           <div className="flex items-center justify-between">
             <Link
-              href="/"
+              href="/fooldal"
               className="-m-1.5 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
               onClick={() => setMobileMenuOpen(false)}
             >

@@ -21,6 +21,10 @@ const roomFilters = [
   { key: "3", label: "Nappali + 3" },
 ];
 
+// Available apartments first, sold ones at the end; original order is kept within a group.
+const statusOrder = { elerheto: 0, foglalt: 1, eladva: 2 };
+const soldCount = apartments.filter((a) => a.status === "eladva").length;
+
 function Pill({ active, onClick, children }) {
   return (
     <button
@@ -44,7 +48,8 @@ export default function ApartmentList() {
 
   const list = apartments
     .filter((a) => floor === "all" || a.floor === floor)
-    .filter((a) => rooms === "all" || String(a.bedrooms) === rooms);
+    .filter((a) => rooms === "all" || String(a.bedrooms) === rooms)
+    .sort((a, b) => (statusOrder[a.status] ?? 0) - (statusOrder[b.status] ?? 0));
 
   return (
     <section id="lakasok" aria-labelledby="lakasok-cim" className="scroll-mt-8">
@@ -54,6 +59,9 @@ export default function ApartmentList() {
       >
         Eladó lakások
       </h2>
+      {soldCount > 0 && (
+        <p className="mt-2 text-gray-600">{soldCount} lakás már elkelt.</p>
+      )}
 
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="space-y-3 rounded-2xl bg-white p-4 ring-1 ring-stone-200 lg:col-span-2 lg:flex lg:flex-col lg:justify-center">
@@ -106,7 +114,9 @@ export default function ApartmentList() {
         </p>
       ) : (
         <ul className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {list.map((a) => (
+          {list.map((a) => {
+            const sold = a.status === "eladva";
+            return (
             <li key={a.slug}>
               <Link
                 href={`/lakasok/${a.slug}`}
@@ -118,7 +128,7 @@ export default function ApartmentList() {
                     alt={`${a.code} lakás alaprajza – ${a.floorLabel.toLowerCase()}, ${formatArea(a.area)}`}
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-contain p-3"
+                    className={`object-contain p-3 ${sold ? "opacity-40 grayscale" : ""}`}
                   />
                   <div className="absolute left-3 top-3 flex gap-1.5">
                     <FloorPill label={a.floorLabel} />
@@ -126,10 +136,10 @@ export default function ApartmentList() {
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col border-t border-stone-100 p-5">
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className={`text-xl font-bold ${sold ? "text-gray-500" : "text-gray-900"}`}>
                     {a.code} lakás
                   </h3>
-                  <dl className="mt-3 grid grid-cols-3 gap-2 text-sm">
+                  <dl className={`mt-3 grid grid-cols-3 gap-2 text-sm ${sold ? "opacity-60" : ""}`}>
                     <div>
                       <dt className="text-gray-500">Alapterület</dt>
                       <dd className="font-semibold text-gray-900">
@@ -161,7 +171,8 @@ export default function ApartmentList() {
                 </div>
               </Link>
             </li>
-          ))}
+            );
+          })}
         </ul>
       )}
     </section>

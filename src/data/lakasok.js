@@ -17,12 +17,12 @@ export const contacts = [
 ];
 
 export const floors = [
-  { key: "foldszint", label: "Földszint", plan: { src: "/images/lakasok/foldszint.webp", width: 2200, height: 2572 } },
-  { key: "emelet", label: "1. emelet", plan: { src: "/images/lakasok/emelet.webp", width: 2200, height: 2572 } },
-  { key: "tetoter", label: "Tetőtér", plan: { src: "/images/lakasok/tetoter.webp", width: 2200, height: 2575 } },
+  { key: "foldszint", label: "Földszint", plan: { src: "/images/lakasok/foldszint.webp", width: 2200, height: 2616 } },
+  { key: "emelet", label: "1. emelet", plan: { src: "/images/lakasok/emelet.webp", width: 2200, height: 2620 } },
+  { key: "tetoter", label: "Tetőtér", plan: { src: "/images/lakasok/tetoter.webp", width: 2200, height: 2647 } },
 ];
 
-export const sitePlan = { src: "/images/lakasok/helyszinrajz.webp", width: 2200, height: 2600 };
+export const sitePlan = { src: "/images/lakasok/helyszinrajz.webp", width: 2200, height: 2637 };
 
 export const statusLabels = {
   elerheto: "Elérhető",
@@ -140,7 +140,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "eladva",
     "price": null,
     "plan": {
       "src": "/images/lakasok/1-02.webp",
@@ -201,7 +201,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "eladva",
     "price": null,
     "plan": {
       "src": "/images/lakasok/1-03.webp",
@@ -394,7 +394,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "eladva",
     "price": null,
     "plan": {
       "src": "/images/lakasok/1-06.webp",
@@ -455,7 +455,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "eladva",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-01.webp",
@@ -516,7 +516,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "eladva",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-02.webp",
@@ -577,7 +577,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "eladva",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-03.webp",
@@ -638,7 +638,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "eladva",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-04.webp",
@@ -1375,7 +1375,7 @@ export const apartments = [
     },
     "keyPlan": {
       "src": "/images/lakasok/3-02-elhelyezes.webp",
-      "width": 564,
+      "width": 494,
       "height": 594
     },
     "areaFull": 85.07
@@ -1442,8 +1442,8 @@ export const apartments = [
     "price": null,
     "plan": {
       "src": "/images/lakasok/3-03.webp",
-      "width": 2200,
-      "height": 2677
+      "width": 1689,
+      "height": 2963
     },
     "keyPlan": {
       "src": "/images/lakasok/3-03-elhelyezes.webp",
@@ -1623,7 +1623,7 @@ export const apartments = [
     "plan": {
       "src": "/images/lakasok/3-05.webp",
       "width": 2200,
-      "height": 2440
+      "height": 2563
     },
     "keyPlan": {
       "src": "/images/lakasok/3-05-elhelyezes.webp",

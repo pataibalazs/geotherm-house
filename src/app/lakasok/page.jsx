@@ -13,11 +13,12 @@ const maxArea = Math.ceil(Math.max(...apartments.map((a) => a.area)));
 export const metadata = {
   title: `Eladó új építésű lakások Veresegyházon – ${project.name} | Geotherm House`,
   description: `${apartments.length} eladó új építésű, teraszos lakás Veresegyház Csonkás városrészében, ${minArea}–${maxArea} m² között. Alaprajzok, alapterületek és elérhetőség lakásonként.`,
-  alternates: { canonical: "https://www.geothermhouse.hu/lakasok" },
+  // Same content is served on the homepage, which is the canonical URL.
+  alternates: { canonical: "https://www.geothermhouse.hu/" },
   openGraph: {
     title: `Eladó új építésű lakások – ${project.city}, ${project.name}`,
     description: `${apartments.length} teraszos lakás, ${minArea}–${maxArea} m². Nézze meg az alaprajzokat!`,
-    url: "https://www.geothermhouse.hu/lakasok",
+    url: "https://www.geothermhouse.hu/",
     type: "website",
     locale: "hu_HU",
     images: [
