@@ -61,6 +61,7 @@ export default async function ApartmentPage({ params }) {
     .filter((o) => o.slug !== a.slug && o.status !== "eladva")
     .sort((x, y) => Math.abs(x.area - a.area) - Math.abs(y.area - a.area))
     .slice(0, 3);
+  const sold = a.status === "eladva";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -114,6 +115,58 @@ export default async function ApartmentPage({ params }) {
         <p className="mt-2 text-lg text-gray-600">
           {formatArea(a.area)} · {roomsLabel(a)}
         </p>
+
+        {/* Sold apartment: point visitors to similar available ones right away */}
+        {sold && similar.length > 0 && (
+          <section
+            aria-labelledby="hasonlo-elerheto"
+            className="mt-8 rounded-2xl bg-white p-5 ring-1 ring-stone-200 sm:p-6"
+          >
+            <p className="text-sm font-semibold text-stone-500">
+              Ez a lakás már elkelt.
+            </p>
+            <h2
+              id="hasonlo-elerheto"
+              className="mt-1 text-xl font-semibold text-gray-900 sm:text-2xl"
+            >
+              Hasonló méretű elérhető lakások
+            </h2>
+            <ul className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              {similar.map((o) => (
+                <li key={o.slug}>
+                  <Link
+                    href={`/lakasok/${o.slug}`}
+                    className="group flex h-full flex-col overflow-hidden rounded-xl bg-white ring-1 ring-stone-200 transition hover:shadow-md hover:ring-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  >
+                    <div className="relative aspect-[4/3]">
+                      <Image
+                        src={o.plan.src}
+                        fill
+                        alt={`${o.code} lakás alaprajza`}
+                        sizes="(min-width: 640px) 33vw, 100vw"
+                        className="object-contain p-3"
+                      />
+                    </div>
+                    <div className="border-t border-stone-100 px-4 py-3">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-semibold text-gray-900">
+                          {o.code} lakás
+                        </span>
+                        <FloorPill label={o.floorLabel} />
+                      </div>
+                      <p className="mt-1 text-sm text-gray-600">
+                        {formatArea(o.area)} · {roomsLabel(o)}
+                      </p>
+                      <p className="mt-2 text-sm font-semibold text-amber-600 group-hover:text-amber-500">
+                        Megnézem →
+                      </p>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
             <figure className="flex flex-col rounded-2xl bg-white p-4 ring-1 ring-stone-200">
@@ -337,6 +390,7 @@ export default async function ApartmentPage({ params }) {
           )}
         </nav>
 
+        {!sold && (
         <section aria-labelledby="hasonlo" className="mt-12">
           <h2 id="hasonlo" className="text-xl font-semibold text-gray-900">
             Hasonló méretű lakások
@@ -363,6 +417,7 @@ export default async function ApartmentPage({ params }) {
             ))}
           </ul>
         </section>
+        )}
       </div>
     </main>
   );
