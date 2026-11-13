@@ -66,13 +66,16 @@ export default function FloorPlans() {
               <li key={a.slug}>
                 <Link
                   href={`/lakasok/${a.slug}`}
-                  className="flex items-center justify-between rounded-xl bg-white px-4 py-3 ring-1 ring-stone-200 hover:ring-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 rounded-xl bg-white px-4 py-3 ring-1 ring-stone-200 hover:ring-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
+                  {/* Fixed columns: code left, status badge centered, area always right-aligned */}
                   <span className="font-semibold text-gray-900">{a.code}</span>
-                  <span className="text-sm text-gray-600">
+                  <span className="justify-self-center">
+                    <StatusBadge status={a.status} />
+                  </span>
+                  <span className="justify-self-end text-sm tabular-nums text-gray-600">
                     {formatArea(a.area)}
                   </span>
-                  <StatusBadge status={a.status} />
                 </Link>
               </li>
             ))}
