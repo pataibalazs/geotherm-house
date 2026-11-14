@@ -115,7 +115,6 @@ export default function ApartmentList() {
       ) : (
         <ul className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((a) => {
-            const sold = a.status === "eladva";
             return (
             <li key={a.slug}>
               <Link
@@ -128,7 +127,7 @@ export default function ApartmentList() {
                     alt={`${a.code} lakás alaprajza – ${a.floorLabel.toLowerCase()}, ${formatArea(a.area)}`}
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className={`object-contain p-3 ${sold ? "opacity-40 grayscale" : ""}`}
+                    className="object-contain p-3"
                   />
                   <div className="absolute left-3 top-3 flex gap-1.5">
                     <FloorPill label={a.floorLabel} />
@@ -136,10 +135,10 @@ export default function ApartmentList() {
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col border-t border-stone-100 p-5">
-                  <h3 className={`text-xl font-bold ${sold ? "text-gray-500" : "text-gray-900"}`}>
+                  <h3 className="text-xl font-bold text-gray-900">
                     {a.code} lakás
                   </h3>
-                  <dl className={`mt-3 grid grid-cols-3 gap-2 text-sm ${sold ? "opacity-60" : ""}`}>
+                  <dl className="mt-3 grid grid-cols-3 gap-2 text-sm">
                     <div>
                       <dt className="text-gray-500">Alapterület</dt>
                       <dd className="font-semibold text-gray-900">
