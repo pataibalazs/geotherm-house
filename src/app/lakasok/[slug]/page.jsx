@@ -197,7 +197,7 @@ export default async function ApartmentPage({ params }) {
                 {a.status === "eladva"
                   ? "Eladva"
                   : a.status === "hamarosan"
-                    ? "Hamarosan elérhető"
+                    ? "Értékesítés hamarosan"
                     : formatPrice(a.price)}
               </p>
               <dl className="mt-4 divide-y divide-stone-100 text-sm">

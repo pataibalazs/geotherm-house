@@ -165,7 +165,7 @@ export default function ApartmentList() {
                       {a.status === "eladva"
                         ? ""
                         : a.status === "hamarosan"
-                          ? "Hamarosan elérhető"
+                          ? "Értékesítés hamarosan"
                           : formatPrice(a.price)}
                     </span>
                     <span className="text-sm font-semibold text-amber-600 group-hover:text-amber-500">
