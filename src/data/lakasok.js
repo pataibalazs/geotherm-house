@@ -1,5 +1,5 @@
 // Apartment data extracted from "FÜZET VEVŐKNEK 1-2 ÜTEM_javított.pdf".
-// To update availability or prices edit `status` ("elerheto" | "foglalt" | "eladva")
+// To update availability or prices edit `status` ("elerheto" | "hamarosan" | "foglalt" | "eladva")
 // and `price` (number in HUF, or null for "Ár érdeklődésre").
 
 export const project = {
@@ -26,6 +26,7 @@ export const sitePlan = { src: "/images/lakasok/helyszinrajz.webp", width: 2200,
 
 export const statusLabels = {
   elerheto: "Elérhető",
+  hamarosan: "Hamarosan",
   foglalt: "Foglalt",
   eladva: "Eladva",
 };
@@ -836,7 +837,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-07.webp",
@@ -892,7 +893,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-08.webp",
@@ -968,7 +969,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-09.webp",
@@ -1039,7 +1040,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-10.webp",
@@ -1095,7 +1096,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-11.webp",
@@ -1151,7 +1152,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-12.webp",
@@ -1212,7 +1213,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/2-13.webp",
@@ -1530,7 +1531,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/3-04.webp",
@@ -1618,7 +1619,7 @@ export const apartments = [
         "finish": "kerámia"
       }
     ],
-    "status": "elerheto",
+    "status": "hamarosan",
     "price": null,
     "plan": {
       "src": "/images/lakasok/3-05.webp",

@@ -21,8 +21,8 @@ const roomFilters = [
   { key: "3", label: "Nappali + 3" },
 ];
 
-// Available apartments first, sold ones at the end; original order is kept within a group.
-const statusOrder = { elerheto: 0, foglalt: 1, eladva: 2 };
+// Available apartments first, then upcoming (phase 2), reserved, and sold ones at the end; original order is kept within a group.
+const statusOrder = { elerheto: 0, hamarosan: 1, foglalt: 2, eladva: 3 };
 const soldCount = apartments.filter((a) => a.status === "eladva").length;
 
 function Pill({ active, onClick, children }) {
@@ -162,7 +162,11 @@ export default function ApartmentList() {
                   <p className="sr-only">{roomsLabel(a)}</p>
                   <div className="mt-auto flex items-center justify-between pt-4">
                     <span className="text-sm font-semibold text-gray-700">
-                      {a.status === "eladva" ? "" : formatPrice(a.price)}
+                      {a.status === "eladva"
+                        ? ""
+                        : a.status === "hamarosan"
+                          ? "Hamarosan elérhető"
+                          : formatPrice(a.price)}
                     </span>
                     <span className="text-sm font-semibold text-amber-600 group-hover:text-amber-500">
                       Részletek →

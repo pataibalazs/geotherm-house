@@ -58,7 +58,7 @@ export default async function ApartmentPage({ params }) {
   const prev = apartments[index - 1];
   const next = apartments[index + 1];
   const similar = apartments
-    .filter((o) => o.slug !== a.slug && o.status !== "eladva")
+    .filter((o) => o.slug !== a.slug && o.status !== "eladva" && o.status !== "hamarosan")
     .sort((x, y) => Math.abs(x.area - a.area) - Math.abs(y.area - a.area))
     .slice(0, 3);
   const sold = a.status === "eladva";
@@ -194,7 +194,11 @@ export default async function ApartmentPage({ params }) {
             <div className="space-y-6">
             <div className="rounded-2xl bg-white p-6 ring-1 ring-stone-200">
               <p className={`text-2xl font-bold ${a.status === "eladva" ? "text-stone-500" : "text-gray-900"}`}>
-                {a.status === "eladva" ? "Eladva" : formatPrice(a.price)}
+                {a.status === "eladva"
+                  ? "Eladva"
+                  : a.status === "hamarosan"
+                    ? "Hamarosan elérhető"
+                    : formatPrice(a.price)}
               </p>
               <dl className="mt-4 divide-y divide-stone-100 text-sm">
                 {facts.map((f) => (
