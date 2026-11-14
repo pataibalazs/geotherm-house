@@ -284,7 +284,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${ref.title} – ${kind} referencia | Geotherm House`,
     description: text.length > 160 ? `${text.slice(0, 157)}…` : text,
-    alternates: { canonical: `/references/${slug}` },
+    alternates: { canonical: `/referenciak/${slug}` },
   };
 }
 

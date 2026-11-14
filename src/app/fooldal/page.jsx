@@ -23,7 +23,7 @@ export default function Home() {
 
       <div className="flex md:flex-row flex-col justify-center gap-12 px-10 pb-20 content-center">
         <Link
-          href="/construction"
+          href="/kivitelezes"
           className="block focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-2xl focus:ring-offset-2 focus:ring-offset-stone-50"
         >
           <MenuSection
@@ -32,7 +32,7 @@ export default function Home() {
           />
         </Link>
         <Link
-          href="/design"
+          href="/tervezes"
           className="block focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-2xl focus:ring-offset-2 focus:ring-offset-stone-50"
         >
           <MenuSection

@@ -40,7 +40,7 @@ export default function Construction() {
                 Referenciák
               </a>
               <Link
-                href="/contact"
+                href="/kapcsolat"
                 className="text-sm font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
               >
                 Lépj velünk kapcsolatba! <span aria-hidden="true">→</span>
@@ -157,7 +157,7 @@ export default function Construction() {
           ].map((item, idx) => (
             <Link
               key={idx}
-              href={`/references/kivitelezesi-${idx + 1}`}
+              href={`/referenciak/kivitelezesi-${idx + 1}`}
               className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <img

@@ -2,12 +2,12 @@ export const metadata = {
   title: "Referenciák | Geotherm House",
   description:
     "Tervezési és kivitelezési referenciáink: társasházak, sorházak, ikerházak és családi házak.",
-  alternates: { canonical: "/references" },
+  alternates: { canonical: "/referenciak" },
   openGraph: {
     title: "Referenciák | Geotherm House",
     description:
       "Tervezési és kivitelezési referenciáink: társasházak, sorházak, ikerházak és családi házak.",
-    url: "/references",
+    url: "/referenciak",
   },
 };
 

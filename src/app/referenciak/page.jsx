@@ -92,7 +92,7 @@ export default function ReferenceGallery() {
         {items.map((item, idx) => (
           <Link
             key={idx}
-            href={`/references/${sectionKey}-${idx + 1}`}
+            href={`/referenciak/${sectionKey}-${idx + 1}`}
             className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-amber-500"
             prefetch={false}
           >

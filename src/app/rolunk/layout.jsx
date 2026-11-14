@@ -2,12 +2,12 @@ export const metadata = {
   title: "Rólunk | Geotherm House",
   description:
     "Csapatunkban az innovatív tervezői szemlélet több évtizedes generálkivitelezői szaktudással találkozik. Ismerje meg a Geotherm House Kft. csapatát.",
-  alternates: { canonical: "/about" },
+  alternates: { canonical: "/rolunk" },
   openGraph: {
     title: "Rólunk | Geotherm House",
     description:
       "Csapatunkban az innovatív tervezői szemlélet több évtizedes generálkivitelezői szaktudással találkozik. Ismerje meg a Geotherm House Kft. csapatát.",
-    url: "/about",
+    url: "/rolunk",
   },
 };
 
