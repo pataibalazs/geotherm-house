@@ -14,7 +14,6 @@ export const metadata = {
   title: "Geotherm House – Tervezés és generálkivitelezés egy kézben",
   description:
     "Építészeti tervezés és generálkivitelezés egy kézben, az ötlettől az átadásig. 30 év tapasztalat, 250+ átadott lakás. Eladó új építésű lakások Veresegyházon.",
-  alternates: { canonical: "/" },
   openGraph: {
     siteName: "Geotherm House",
     locale: "hu_HU",

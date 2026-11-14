@@ -98,7 +98,7 @@ export default async function ApartmentPage({ params }) {
       />
       <div className="mx-auto max-w-7xl px-6 pb-20 pt-6 lg:px-8">
         <nav aria-label="Morzsamenü" className="text-sm text-gray-500">
-          <Link href="/lakasok" className="hover:text-amber-600">
+          <Link href="/" className="hover:text-amber-600">
             Eladó lakások
           </Link>
           <span className="mx-2">/</span>

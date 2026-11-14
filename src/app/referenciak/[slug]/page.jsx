@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
+import { ogDefaults, ogImages } from "@/data/seo";
 
 const references = {
   "tervezesi-1": {
     title: "ÜZLETHÁZ BŐVÍTÉS, VERESEGYHÁZ",
+    seoTitle: "Üzletház bővítés tervezése, Veresegyház",
     descriptionParagraphs: [
       "Tervezési feladatunk a Veresegyház Fő útján álló, családi ház karakterű, jelenleg üzletházként működő épület korszerűsítése és társasházzá alakítása volt, amelynek részeként a tetőidom átformálására és a tetőtér beépítésére is sor került.",
       "A telek Veresegyház településközponti részén helyezkedik el, a Fő út és a vasút kereszteződésének közvetlen szomszédságában. A telek adottságai kiváló lehetőséget kínálnak egy olyan új arculat létrehozásához, amely minőségében és megjelenésében is hozzájárul a környezet vizuális megújulásához, és hosszú távon erősítheti a városrész identitását.",
@@ -40,6 +42,7 @@ const references = {
   },
   "tervezesi-2": {
     title: "CSALÁDI HÁZ, BAJÓT ",
+    seoTitle: "Családi ház tervezése, Bajót",
     descriptionParagraphs: [
       "A megrendelő pár egy hagyományos parasztház ihlette, kortárs családi otthont képzelt el. Fontos szempont volt, hogy az épület a jelenlegi háromfős használat mellett a későbbiekben két főre is jól működjön, alkalmazkodva az élethelyzet változásaihoz.",
       "A ház központi tere a nyitott konyha–nappali, amelyből közvetlenül elérhetők a legfontosabb funkciók. Innen nyílik a szülői háló, valamint a keleti terasz és az oldalsó bejárati tér. A gyerek háló és a kiszolgáló helyiségek az utcai homlokzat felé, a bejárati tér túloldalán helyezkednek el, így az alaprajz jól elkülönülő, mégis egységes rendszert alkot.",
@@ -78,6 +81,7 @@ const references = {
   },
   "kivitelezesi-1": {
     title: "VERESEGYHÁZ, LIGETEK SORHÁZ",
+    seoTitle: "Ligetek sorház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/1.webp",
@@ -96,6 +100,7 @@ const references = {
   },
   "kivitelezesi-2": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 1. TÁRSASHÁZ",
+    seoTitle: "Társasház kivitelezése, Jókai utca 1., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/1.webp",
@@ -110,6 +115,7 @@ const references = {
   },
   "kivitelezesi-3": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 2. TÁRSASHÁZ",
+    seoTitle: "Társasház kivitelezése, Jókai utca 2., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/1.webp",
@@ -122,6 +128,7 @@ const references = {
   },
   "kivitelezesi-4": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 3. TÁRSASHÁZ",
+    seoTitle: "Társasház kivitelezése, Jókai utca 3., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/1.webp",
@@ -135,6 +142,7 @@ const references = {
   },
   "kivitelezesi-5": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 4. TÁRSASHÁZ",
+    seoTitle: "Társasház kivitelezése, Jókai utca 4., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/1.webp",
@@ -147,6 +155,7 @@ const references = {
   },
   "kivitelezesi-6": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 5. TÁRSASHÁZ",
+    seoTitle: "Társasház kivitelezése, Jókai utca 5., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/1.webp",
@@ -159,6 +168,7 @@ const references = {
   },
   "kivitelezesi-7": {
     title: "VERESEGYHÁZ, LIGETEK, IKERHÁZ",
+    seoTitle: "Ikerház kivitelezése, Ligetek, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/1.webp",
@@ -169,6 +179,7 @@ const references = {
   },
   "kivitelezesi-8": {
     title: "VERESEGYHÁZ, ETÜD UTCA, CSALÁDI HÁZ",
+    seoTitle: "Családi ház kivitelezése, Etüd utca, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/1.webp",
@@ -183,6 +194,7 @@ const references = {
   },
   "kivitelezesi-9": {
     title: "VERESEGYHÁZ, KODÁLY ZOLTÁN UTCA, CSALÁDI HÁZ",
+    seoTitle: "Családi ház, Kodály Zoltán utca, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/1.webp",
@@ -195,6 +207,7 @@ const references = {
   },
   "kivitelezesi-10": {
     title: "VERESEGYHÁZ, LIGETEK, SORHÁZ",
+    seoTitle: "Sorház kivitelezése, Ligetek, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/1.webp",
@@ -210,6 +223,7 @@ const references = {
   },
   "kivitelezesi-11": {
     title: "SZILASLIGETI SORHÁZAK",
+    seoTitle: "Szilasligeti sorházak kivitelezése",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/1.webp",
@@ -222,6 +236,7 @@ const references = {
   },
   "kivitelezesi-12": {
     title: "VERESEGYHÁZ, 4 LAKÁSOS SORHÁZ",
+    seoTitle: "4 lakásos sorház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/1.webp",
@@ -232,6 +247,7 @@ const references = {
   },
   "kivitelezesi-13": {
     title: "VERESEGYHÁZ, 10 LAKÁSOS SORHÁZ",
+    seoTitle: "10 lakásos sorház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/1.webp",
@@ -243,6 +259,7 @@ const references = {
   },
   "kivitelezesi-14": {
     title: "VERESEGYHÁZ, CSALÁDI HÁZ",
+    seoTitle: "Családi ház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/k%C3%B6zepes/1.webp",
@@ -252,6 +269,7 @@ const references = {
   },
   "kivitelezesi-15": {
     title: "130 LAKÁSOS TÁRSASHÁZ",
+    seoTitle: "130 lakásos társasház kivitelezése",
     credit: "A projektben művezetőként vettünk részt.",
     images: [
       "/images/referenciak/budapest-1.webp",
@@ -259,6 +277,7 @@ const references = {
   },
   "kivitelezesi-16": {
     title: "120 LAKÁSOS TÁRSASHÁZ",
+    seoTitle: "120 lakásos társasház kivitelezése",
     credit: "A projektben művezetőként vettünk részt.",
     images: [
       "/images/referenciak/budapest-2.webp",
@@ -266,6 +285,7 @@ const references = {
   },
   "kivitelezesi-17": {
     title: "CSALÁDI HÁZ",
+    seoTitle: "Családi ház kivitelezése",
     images: [
       "/images/referenciak/leanyfalu.webp",
     ],
@@ -281,10 +301,14 @@ export async function generateMetadata({ params }) {
     ref.descriptionParagraphs?.[0] ??
     ref.description ??
     `${kind} referencia a Geotherm House Kft.-től – tervezés és generálkivitelezés az alapozástól a kulcsrakész átadásig.`;
+  const title = `${ref.seoTitle} | Geotherm House`;
+  const description = text.length > 160 ? `${text.slice(0, 157)}…` : text;
+  const url = `/referenciak/${slug}`;
   return {
-    title: `${ref.title} – ${kind} referencia | Geotherm House`,
-    description: text.length > 160 ? `${text.slice(0, 157)}…` : text,
-    alternates: { canonical: `/referenciak/${slug}` },
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { ...ogDefaults, title, description, url, images: ogImages(ref.images[0]) },
   };
 }
 

@@ -115,6 +115,7 @@ export default function ReferenceGallery() {
 
   return (
     <div className="px-6 py- lg:px-8 bg-stone-50">
+      <h1 className="sr-only">Referenciák – tervezés és generálkivitelezés</h1>
       <Section
         title="TERVEZÉSI REFERENCIÁK"
         items={tervezesi}

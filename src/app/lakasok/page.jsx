@@ -11,7 +11,7 @@ const minArea = Math.floor(Math.min(...apartments.map((a) => a.area)));
 const maxArea = Math.ceil(Math.max(...apartments.map((a) => a.area)));
 
 export const metadata = {
-  title: `Eladó új építésű lakások Veresegyházon – ${project.name} | Geotherm House`,
+  title: `Eladó új építésű lakások Veresegyházon – ${project.name}`,
   description: `${apartments.length} eladó új építésű, teraszos lakás Veresegyház Csonkás városrészében, ${minArea}–${maxArea} m² között. Alaprajzok, alapterületek és elérhetőség lakásonként.`,
   // Same content is served on the homepage, which is the canonical URL.
   alternates: { canonical: "https://www.geothermhouse.hu/" },

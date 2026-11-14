@@ -1,11 +1,18 @@
 import MenuSection from "@/components/MenuSection";
 import Link from "next/link";
+import { ogDefaults, ogImages, ogPhotos } from "@/data/seo";
 
 // Company homepage. The site root (/) shows the apartments for sale while they are on the market;
 // the logo links here.
 export const metadata = {
   alternates: { canonical: "/fooldal" },
-  openGraph: { siteName: "Geotherm House", locale: "hu_HU", type: "website", url: "/fooldal" },
+  openGraph: {
+    ...ogDefaults,
+    title: "Geotherm House – Tervezés és generálkivitelezés egy kézben",
+    description: "Építészeti tervezés és generálkivitelezés egy kézben, az ötlettől az átadásig.",
+    url: "/fooldal",
+    images: ogImages(ogPhotos.construction),
+  },
 };
 
 export default function Home() {
@@ -13,12 +20,12 @@ export default function Home() {
     <div className="bg-stone-50 min-h-screen flex flex-col">
       {/* Hero text */}
       <div className="py-16 sm:py-20">
-        <div className="mx-auto px-4 sm:px-6 text-center font-semibold leading-tight sm:max-w-xl sm:max-w-2xl md:max-w-3xl text-3xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight">
+        <h1 className="mx-auto px-4 sm:px-6 text-center font-semibold leading-tight sm:max-w-xl sm:max-w-2xl md:max-w-3xl text-3xl sm:text-4xl md:text-4xl lg:text-5xl tracking-tight">
           <span className="text-black block">Az ötlettől az átadásig,</span>
           <span className="text-amber-500 block">
             a teljes folyamat egy kézben!
           </span>
-        </div>
+        </h1>
       </div>
 
       <div className="flex md:flex-row flex-col justify-center gap-12 px-10 pb-20 content-center">

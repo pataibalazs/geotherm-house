@@ -1,13 +1,17 @@
+import { ogDefaults, ogImages, ogPhotos } from "@/data/seo";
+
 export const metadata = {
   title: "Építészeti tervezés | Geotherm House",
   description:
     "Egyedi igényekre szabott, esztétikus és fenntartható építészeti megoldások családi házaktól az üzletházakig.",
   alternates: { canonical: "/tervezes" },
   openGraph: {
+    ...ogDefaults,
     title: "Építészeti tervezés | Geotherm House",
     description:
       "Egyedi igényekre szabott, esztétikus és fenntartható építészeti megoldások családi házaktól az üzletházakig.",
     url: "/tervezes",
+    images: ogImages(ogPhotos.design),
   },
 };
 
