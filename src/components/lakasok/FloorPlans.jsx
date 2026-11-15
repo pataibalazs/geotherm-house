@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { apartments, floors, formatArea, sitePlan } from "@/data/lakasok";
 import StatusBadge from "./StatusBadge";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const tabs = [
   ...floors,
@@ -48,8 +49,18 @@ export default function FloorPlans() {
       </div>
 
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <ImageLightbox
+          images={tabs.map((t) => t.plan.src)}
+          captions={tabs.map((t) => `Csonkás központ – ${t.label.toLowerCase()}`)}
+          title="Csonkás központ"
+        >
         <div className="rounded-2xl bg-white p-4 ring-1 ring-stone-200">
-          <a href={tab.plan.src} target="_blank" rel="noopener">
+          <button
+            type="button"
+            data-lb={tabs.indexOf(tab)}
+            aria-label={`${tab.label} alaprajz nagyítása`}
+            className="block w-full cursor-pointer transition hover:opacity-90"
+          >
             <Image
               src={tab.plan.src}
               width={tab.plan.width}
@@ -58,8 +69,9 @@ export default function FloorPlans() {
               sizes="(min-width: 1024px) 800px, 100vw"
               className="mx-auto h-auto max-h-[80vh] w-auto max-w-full"
             />
-          </a>
+          </button>
         </div>
+        </ImageLightbox>
         {floorApartments.length > 0 && (
           <ul className="space-y-2 self-start">
             {floorApartments.map((a) => (

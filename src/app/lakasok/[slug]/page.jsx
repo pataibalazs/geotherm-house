@@ -22,6 +22,7 @@ import ContactCard from "@/components/lakasok/ContactCard";
 import InquiryForm from "@/components/lakasok/InquiryForm";
 import CallButton, { salesContact } from "@/components/lakasok/CallButton";
 import PdfDownloadCard from "@/components/lakasok/PdfDownloadCard";
+import ImageLightbox from "@/components/ImageLightbox";
 
 export function generateStaticParams() {
   return apartments.map((a) => ({ slug: a.slug }));
@@ -168,14 +169,20 @@ export default async function ApartmentPage({ params }) {
           </section>
         )}
 
+        {/* Plans open enlarged in the shared lightbox (data-lb: 0 apartment plan, 1 site plan, 2 whole floor) */}
+        <ImageLightbox
+          images={[a.plan.src, sitePlan.src, floorPlan.src]}
+          captions={[`${a.code} lakás alaprajza`, "Helyszínrajz", `A teljes ${floorAdjectives[a.floor]} szint alaprajza`]}
+          title={`${a.code} lakás`}
+        >
         <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
             <figure className="flex flex-col rounded-2xl bg-white p-4 ring-1 ring-stone-200">
-              <a
-                href={a.plan.src}
-                target="_blank"
-                rel="noopener"
+              <button
+                type="button"
+                data-lb={0}
+                aria-label="Alaprajz nagyítása"
                 style={{ "--ar": `${a.plan.width} / ${a.plan.height}` }}
-                className="relative block aspect-(--ar) lg:aspect-auto lg:min-h-0 lg:flex-1"
+                className="relative block w-full cursor-pointer transition hover:opacity-90 aspect-(--ar) lg:aspect-auto lg:min-h-0 lg:flex-1"
               >
                 <Image
                   src={a.plan.src}
@@ -185,9 +192,9 @@ export default async function ApartmentPage({ params }) {
                   priority
                   className="object-contain"
                 />
-              </a>
+              </button>
               <figcaption className="mt-2 text-center text-sm text-gray-500">
-                Kattintson az alaprajzra a teljes méretű nézethez.
+                Kattintson az alaprajzra a nagyításhoz.
               </figcaption>
             </figure>
 
@@ -309,11 +316,11 @@ export default async function ApartmentPage({ params }) {
               Helyszínrajz
             </h2>
             <div className="mt-4 flex flex-1 flex-col rounded-2xl bg-white p-4 ring-1 ring-stone-200">
-              <a
-                href={sitePlan.src}
-                target="_blank"
-                rel="noopener"
-                className="relative block aspect-[22/26] lg:aspect-auto lg:min-h-[200px] lg:flex-1"
+              <button
+                type="button"
+                data-lb={1}
+                aria-label="Helyszínrajz nagyítása"
+                className="relative block w-full cursor-pointer transition hover:opacity-90 aspect-[22/26] lg:aspect-auto lg:min-h-[200px] lg:flex-1"
               >
                 <Image
                   src={sitePlan.src}
@@ -322,31 +329,30 @@ export default async function ApartmentPage({ params }) {
                   sizes="360px"
                   className="object-contain"
                 />
-              </a>
+              </button>
               <div className="mt-3 grid grid-cols-2 gap-2">
-                <a
-                  href={sitePlan.src}
-                  target="_blank"
-                  rel="noopener"
-                  className="flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-stone-100 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-stone-200 hover:text-gray-900"
+                <button
+                  type="button"
+                  data-lb={1}
+                  className="flex cursor-pointer items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-stone-100 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-stone-200 hover:text-gray-900"
                 >
                   <ArrowsPointingOutIcon aria-hidden="true" className="size-4" />
                   Nagyítás
-                </a>
-                <a
-                  href={floorPlan.src}
-                  target="_blank"
-                  rel="noopener"
+                </button>
+                <button
+                  type="button"
+                  data-lb={2}
                   title={`A teljes ${floorAdjectives[a.floor]} szint alaprajza`}
-                  className="flex items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-stone-100 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-stone-200 hover:text-gray-900"
+                  className="flex cursor-pointer items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-stone-100 px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-stone-200 hover:text-gray-900"
                 >
                   <Squares2X2Icon aria-hidden="true" className="size-4" />
                   Teljes szint
-                </a>
+                </button>
               </div>
             </div>
           </section>
         </div>
+        </ImageLightbox>
 
         {/* Contact + inquiry */}
         <section aria-labelledby="erdeklodes" className="mt-12">

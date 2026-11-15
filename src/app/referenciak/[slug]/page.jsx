@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import { ogDefaults, ogImages } from "@/data/seo";
-import ReferenceLightbox from "@/components/ReferenceLightbox";
+import ImageLightbox from "@/components/ImageLightbox";
 
-// Image trigger for the lightbox: shows a zoom cursor and a subtle hover dim.
+// Image trigger for the lightbox: pointer cursor and a subtle hover lighten.
 const zoomClass =
-  "block w-full cursor-zoom-in rounded transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2";
+  "block w-full cursor-pointer rounded transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2";
 
 const references = {
   "tervezesi-1": {
@@ -327,7 +327,7 @@ export default async function ReferenceDetail({ params }) {
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h1 className="text-3xl font-bold mb-4 text-black">{ref.title}</h1>
         {/* Every image is a data-lb trigger: clicking opens it enlarged in the lightbox */}
-        <ReferenceLightbox images={ref.images} captions={ref.captions} title={ref.title}>
+        <ImageLightbox images={ref.images} captions={ref.captions} title={ref.title}>
         {/* Design (tervezési) speciális layout: hero kép -> meta + leírás -> maradék képek */}
         {slug.startsWith("tervezesi-")
           ? (() => {
@@ -492,7 +492,7 @@ export default async function ReferenceDetail({ params }) {
                 </div>
               );
             })()}
-        </ReferenceLightbox>
+        </ImageLightbox>
         {ref.credit && (
           <div className="mt-1 text-sm text-gray-500">{ref.credit}</div>
         )}

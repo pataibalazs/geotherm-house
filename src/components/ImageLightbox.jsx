@@ -10,7 +10,7 @@ import {
 
 // Wraps a server-rendered gallery: any descendant with data-lb="<index>" opens that image enlarged.
 // Same look and controls as the apartment render gallery (arrows, keyboard, swipe).
-export default function ReferenceLightbox({ images, captions = [], title, children }) {
+export default function ImageLightbox({ images, captions = [], title, children }) {
   const [open, setOpen] = useState(null);
   const touchX = useRef(null);
 
