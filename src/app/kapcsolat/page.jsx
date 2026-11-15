@@ -2,6 +2,8 @@
 
 import React from "react";
 import ContactForm from "@/components/ContactForm";
+import { PhoneIcon } from "@heroicons/react/24/solid";
+import { contacts } from "@/data/lakasok";
 
 const ContactPage = () => {
   return (
@@ -53,9 +55,9 @@ const ContactPage = () => {
 
                   <div className="grid md:grid-cols-1 gap-8">
                     <div className="space-y-10">
-                      {/* Telefon */}
-                      <div className="flex items-center">
-                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
+                      {/* Telefon: icon aligned with the label, one row per contact */}
+                      <div className="flex items-start">
+                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center pt-0.5">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5 text-amber-500"
@@ -71,11 +73,28 @@ const ContactPage = () => {
                             />
                           </svg>
                         </div>
-                        <div className="ml-3 text-left">
+                        <div className="ml-3 min-w-0 flex-1 text-left">
                           <p className="text-sm text-gray-500">Telefon</p>
-                          <p className="text-base font-medium text-gray-800">
-                            +36 30 932 1632
-                          </p>
+                          <ul className="mt-3 divide-y divide-gray-200">
+                            {contacts.map((c) => (
+                              <li
+                                key={c.phone}
+                                className="flex flex-col gap-3 py-3 first:pt-0 last:pb-0 sm:flex-row sm:items-center sm:justify-between"
+                              >
+                                <div className="min-w-0">
+                                  <p className="text-base font-medium text-gray-800">{c.name}</p>
+                                  <p className="text-sm text-gray-500">{c.role}</p>
+                                </div>
+                                <a
+                                  href={`tel:${c.phone.replace(/\s/g, "")}`}
+                                  className="inline-flex w-fit shrink-0 items-center gap-2 whitespace-nowrap rounded-full bg-amber-500 px-4 py-2 text-sm font-bold text-white shadow-sm tabular-nums hover:bg-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+                                >
+                                  <PhoneIcon aria-hidden="true" className="size-4" />
+                                  {c.phone}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       </div>
 

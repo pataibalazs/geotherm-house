@@ -14,6 +14,7 @@ export const project = {
 export const contacts = [
   { name: "Benke Zsófia", role: "Értékesítő", phone: "+36 20 418 4541" },
   { name: "Fülöp Vilmos", role: "Ügyvezető, Geotherm House Kft.", phone: "+36 30 932 1632" },
+  { name: "Fülöp Theodóra Eszter", role: "Okleves építészmérnök", phone: "+36 20 982 5327" },
 ];
 
 export const floors = [

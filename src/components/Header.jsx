@@ -3,8 +3,14 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { PhoneIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { navigation } from "./navigation";
+import { contacts } from "@/data/lakasok";
+
+// Header call shortcut uses the primary sales contact.
+const phone = contacts[0].phone;
+const phoneHref = `tel:${phone.replace(/\s/g, "")}`;
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,11 +19,11 @@ export default function Header() {
     <header className="bg-stone-50">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between gap-x-10 p-6 lg:px-8"
       >
         <Link
           href="/fooldal"
-          className="-m-1.5 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+          className="-m-1.5 shrink-0 p-1.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
         >
           <span className="sr-only">Geotherm House</span>
           <img
@@ -26,7 +32,14 @@ export default function Header() {
             className="h-12 sm:h-23 w-auto sm:-mt-4"
           />
         </Link>
-        <div className="flex xl:hidden">
+        <div className="flex items-center gap-4 xl:hidden">
+          <a
+            href={phoneHref}
+            className="inline-flex size-10 items-center justify-center rounded-full bg-amber-500 text-white shadow-sm hover:bg-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+          >
+            <span className="sr-only">Hívás: {phone}</span>
+            <PhoneIcon aria-hidden="true" className="size-5" />
+          </a>
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -36,17 +49,27 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden xl:flex xl:gap-x-9">
+        {/* Desktop: links centered in the free space, call button pinned to the right edge */}
+        <div className="hidden xl:flex xl:flex-1 xl:items-center xl:justify-center xl:gap-x-7">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-lg font-bold text-black hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+              className="whitespace-nowrap text-base font-bold text-black hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
             >
               {item.name}
             </Link>
           ))}
         </div>
+        {/* Icon-only call button keeps the menu airy; the number shows as a tooltip and to screen readers */}
+        <a
+          href={phoneHref}
+          title={`Hívás: ${phone}`}
+          className="hidden size-10 shrink-0 items-center justify-center rounded-full bg-amber-500 text-white shadow-sm hover:bg-amber-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 xl:ml-4 xl:inline-flex"
+        >
+          <PhoneIcon aria-hidden="true" className="size-5" />
+          <span className="sr-only">Hívás: {phone}</span>
+        </a>
       </nav>
       <Dialog
         open={mobileMenuOpen}
