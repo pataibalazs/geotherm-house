@@ -92,7 +92,7 @@ export default function Construction() {
               title: "4 LAKÁSOS SORHÁZ",
             },
             {
-              src: "https://deckbae.sirv.com/geotherm_house/j%C3%B3kai1/mid/KEZDŐ_compressed.webp",
+              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/KEZD%C5%90.webp",
               title: "13 LAKÁSOS TÁRSASHÁZ",
             },
             {
