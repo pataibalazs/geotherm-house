@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "@formspree/react";
 import ThankYouModal from "@/components/ThankYouModal";
-import { contacts } from "@/data/lakasok";
+import { salesContact } from "@/data/lakasok";
 
 const FORMSPREE_ID = "xqeeaaoz";
 
@@ -121,7 +121,7 @@ export default function InquiryForm({ apartmentCode }) {
       {state.errors && !state.submitting && (
         <p role="alert" className="mt-4 rounded-md bg-red-50 p-3 text-sm text-red-700">
           Hiba történt a küldés közben. Kérjük, próbálja újra, vagy hívjon
-          minket: {contacts[0].phone}.
+          minket: {salesContact.phone}.
         </p>
       )}
 

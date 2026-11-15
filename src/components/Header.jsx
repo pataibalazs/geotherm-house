@@ -8,7 +8,7 @@ import Link from "next/link";
 import { navigation } from "./navigation";
 import { contacts } from "@/data/lakasok";
 
-// Header call shortcut uses the primary sales contact.
+// Header call shortcut uses the company's main number (first contact).
 const phone = contacts[0].phone;
 const phoneHref = `tel:${phone.replace(/\s/g, "")}`;
 

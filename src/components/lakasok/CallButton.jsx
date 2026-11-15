@@ -1,8 +1,7 @@
 import { PhoneIcon } from "@heroicons/react/24/solid";
-import { contacts } from "@/data/lakasok";
+import { salesContact } from "@/data/lakasok";
 
-// Primary sales contact is the first entry in `contacts`.
-export const salesContact = contacts[0];
+export { salesContact };
 
 export default function CallButton({ className = "" }) {
   return (

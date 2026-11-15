@@ -11,11 +11,15 @@ export const project = {
   mapUrl: "https://www.google.com/maps/search/?api=1&query=47.652776,19.264478",
 };
 
+// Display order on contact lists. The first entry is the company's main number (header call button).
 export const contacts = [
-  { name: "Benke Zsófia", role: "Értékesítő", phone: "+36 20 418 4541" },
   { name: "Fülöp Vilmos", role: "Ügyvezető, Geotherm House Kft.", phone: "+36 30 932 1632" },
   { name: "Fülöp Theodóra Eszter", role: "Okleves építészmérnök", phone: "+36 20 982 5327" },
+  { name: "Benke Zsófia", role: "Értékesítő", phone: "+36 20 418 4541" },
 ];
+
+// Apartment sales contact: call button and inquiry fallback on the apartment pages.
+export const salesContact = contacts.find((c) => c.role === "Értékesítő");
 
 export const floors = [
   { key: "foldszint", label: "Földszint", plan: { src: "/images/lakasok/foldszint.webp", width: 2200, height: 2616 } },
