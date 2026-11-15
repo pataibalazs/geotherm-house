@@ -55,8 +55,9 @@ export default function About() {
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w/full lg:max-w-2xl lg:flex-auto">
               <p className="text-xl/7 text-gray-600">
-                Csapatunkban az innovatív tervezői szemlélet több évtizedes
-                generálkivitelezői szaktudással találkozik. Ez az összetett
+                A Geotherm House családi vállalkozás, ahol az innovatív tervezői
+                szemlélet több évtizedes generálkivitelezői szaktudással
+                találkozik. Ez az összetett
                 háttér garantálja, hogy projektjeink egyszerre legyenek
                 építészetileg előremutatóak és műszakilag kifogástalanok. Az
                 újító ötletek nálunk minden esetben szilárd műszaki alapokkal és
