@@ -3,6 +3,6 @@ export const navigation = [
   { name: "KIVITELEZÉS", href: "/kivitelezes" },
   { name: "TERVEZÉS", href: "/tervezes" },
   { name: "REFERENCIÁK", href: "/referenciak" },
-  { name: "KONTAKT", href: "/kapcsolat" },
+  { name: "KAPCSOLAT", href: "/kapcsolat" },
   { name: "RÓLUNK", href: "/rolunk" },
 ];
