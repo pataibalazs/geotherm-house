@@ -1,5 +1,10 @@
 import { notFound } from "next/navigation";
 import { ogDefaults, ogImages } from "@/data/seo";
+import ReferenceLightbox from "@/components/ReferenceLightbox";
+
+// Image trigger for the lightbox: shows a zoom cursor and a subtle hover dim.
+const zoomClass =
+  "block w-full cursor-zoom-in rounded transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2";
 
 const references = {
   "tervezesi-1": {
@@ -321,6 +326,8 @@ export default async function ReferenceDetail({ params }) {
     <div className="mx-auto min-h-screen bg-stone-50">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h1 className="text-3xl font-bold mb-4 text-black">{ref.title}</h1>
+        {/* Every image is a data-lb trigger: clicking opens it enlarged in the lightbox */}
+        <ReferenceLightbox images={ref.images} captions={ref.captions} title={ref.title}>
         {/* Design (tervezési) speciális layout: hero kép -> meta + leírás -> maradék képek */}
         {slug.startsWith("tervezesi-")
           ? (() => {
@@ -340,11 +347,13 @@ export default async function ReferenceDetail({ params }) {
               return (
                 <>
                   <div className="mb-10">
-                    <img
-                      src={heroImg}
-                      alt={`${ref.title} hero kép`}
-                      className="w-full rounded shadow object-contain"
-                    />
+                    <button type="button" data-lb={heroIndex} aria-label="Kép nagyítása" className={zoomClass}>
+                      <img
+                        src={heroImg}
+                        alt={`${ref.title} hero kép`}
+                        className="w-full rounded shadow object-contain"
+                      />
+                    </button>
                   </div>
                   <div className="mb-14 md:grid md:grid-cols-2 md:gap-12">
                     <div className="mb-8 md:mb-0">
@@ -412,11 +421,13 @@ export default async function ReferenceDetail({ params }) {
                                 (isFeatured ? "sm:col-span-2 " : "") + "mb-6"
                               }
                             >
-                              <img
-                                src={src}
-                                alt={`${ref.title} kép ${idx + 1}`}
-                                className="w-full rounded shadow object-contain"
-                              />
+                              <button type="button" data-lb={idx} aria-label="Kép nagyítása" className={zoomClass}>
+                                <img
+                                  src={src}
+                                  alt={`${ref.title} kép ${idx + 1}`}
+                                  className="w-full rounded shadow object-contain"
+                                />
+                              </button>
                               <figcaption className="mt-2 text-black text-xs md:text-sm font-semibold tracking-wide">
                                 {caption}
                               </figcaption>
@@ -428,11 +439,13 @@ export default async function ReferenceDetail({ params }) {
                       <div className="columns-1 sm:columns-2 gap-6">
                         {remaining.map(({ src, idx }) => (
                           <figure key={idx} className="mb-6 break-inside-avoid">
-                            <img
-                              src={src}
-                              alt={`${ref.title} kép ${idx + 1}`}
-                              className="rounded shadow object-contain w-full"
-                            />
+                            <button type="button" data-lb={idx} aria-label="Kép nagyítása" className={zoomClass}>
+                              <img
+                                src={src}
+                                alt={`${ref.title} kép ${idx + 1}`}
+                                className="rounded shadow object-contain w-full"
+                              />
+                            </button>
                             <figcaption className="mt-2 text-black text-[10px] sm:text-xs md:text-sm font-semibold tracking-wide">
                               {ref.captions?.[idx] ?? ref.title}
                             </figcaption>
@@ -449,27 +462,37 @@ export default async function ReferenceDetail({ params }) {
               if (isSingleConstruction) {
                 return (
                   <div className="mb-10">
-                    <img
-                      src={ref.images[0]}
-                      alt={`${ref.title} kép 1`}
-                      className="w-full rounded shadow object-contain"
-                    />
+                    <button type="button" data-lb={0} aria-label="Kép nagyítása" className={zoomClass}>
+                      <img
+                        src={ref.images[0]}
+                        alt={`${ref.title} kép 1`}
+                        className="w-full rounded shadow object-contain"
+                      />
+                    </button>
                   </div>
                 );
               }
               return (
                 <div className="columns-1 sm:columns-2 gap-6">
                   {ref.images.map((img, i) => (
-                    <img
+                    <button
                       key={i}
-                      src={img}
-                      alt={`${ref.title} kép ${i + 1}`}
-                      className="mb-6 break-inside-avoid rounded shadow object-contain w-full"
-                    />
+                      type="button"
+                      data-lb={i}
+                      aria-label="Kép nagyítása"
+                      className={`${zoomClass} mb-6 break-inside-avoid`}
+                    >
+                      <img
+                        src={img}
+                        alt={`${ref.title} kép ${i + 1}`}
+                        className="rounded shadow object-contain w-full"
+                      />
+                    </button>
                   ))}
                 </div>
               );
             })()}
+        </ReferenceLightbox>
         {ref.credit && (
           <div className="mt-1 text-sm text-gray-500">{ref.credit}</div>
         )}
