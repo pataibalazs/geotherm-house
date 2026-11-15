@@ -21,6 +21,9 @@ export const contacts = [
 // Apartment sales contact: call button and inquiry fallback on the apartment pages.
 export const salesContact = contacts.find((c) => c.role === "Értékesítő");
 
+// Contact card on the apartment pages: sales first, then the managing director.
+export const apartmentContacts = [salesContact, contacts.find((c) => c.name === "Fülöp Vilmos")];
+
 export const floors = [
   { key: "foldszint", label: "Földszint", plan: { src: "/images/lakasok/foldszint.webp", width: 2200, height: 2616 } },
   { key: "emelet", label: "1. emelet", plan: { src: "/images/lakasok/emelet.webp", width: 2200, height: 2620 } },
