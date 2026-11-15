@@ -52,6 +52,8 @@ export default function ReferenceLightbox({ images, captions = [], title, childr
           className="fixed inset-0 flex items-center justify-center p-4 sm:p-12"
           onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
           onTouchEnd={onTouchEnd}
+          // A click on the dark area around the image closes the gallery; the image and buttons stay interactive.
+          onClick={(e) => e.target === e.currentTarget && setOpen(null)}
         >
           {open !== null && (
             <img
