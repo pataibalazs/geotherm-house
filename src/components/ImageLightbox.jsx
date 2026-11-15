@@ -7,6 +7,7 @@ import {
   ChevronRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { sirvResize } from "@/data/seo";
 
 // Wraps a server-rendered gallery: any descendant with data-lb="<index>" opens that image enlarged.
 // Same look and controls as the apartment render gallery (arrows, keyboard, swipe).
@@ -57,7 +58,7 @@ export default function ImageLightbox({ images, captions = [], title, children }
         >
           {open !== null && (
             <img
-              src={images[open]}
+              src={sirvResize(images[open], 2560)}
               alt={`${title} – ${open + 1}. kép`}
               className="max-h-full max-w-full object-contain"
             />

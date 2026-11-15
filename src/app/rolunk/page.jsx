@@ -1,3 +1,5 @@
+import { sirvResize } from "@/data/seo";
+
 const stats = [
   { label: "Átadott lakás", value: "250+" },
   { label: "Tapasztalat", value: "30 éves" },
@@ -8,7 +10,7 @@ const people = [
   {
     name: "FÜLÖP VILMOS",
     role: "Ügyvezető, felelős műszaki vezető",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/Vilmos.jpg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/csapat/vilmos.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },
@@ -16,21 +18,21 @@ const people = [
   {
     name: "FÜLÖP THEODÓRA ESZTER",
     role: "Okleves építészmérnök",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/pupi.jpg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/csapat/eszter.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },
   {
     name: "TAKÁCS JOHANNA KRISZTINA",
     role: "Okleves építészmérnök",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/hanka.jpg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/csapat/hanka.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },
   {
     name: "VÖRÖSMARTI JÓZSEF",
     role: "Művezető",
-    imageUrl: "https://geotherm.sirv.com/geotherm/csapat/J%C3%B3zsef.jpg",
+    imageUrl: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/csapat/joci.jpg",
     xUrl: "#",
     linkedinUrl: "#",
   },
@@ -165,7 +167,7 @@ export default function About() {
               <li key={person.name}>
                 <img
                   alt=""
-                  src={person.imageUrl}
+                  src={sirvResize(person.imageUrl, 1200)}
                   className="aspect-square w-full rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5"
                 />
                 <h3 className="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">

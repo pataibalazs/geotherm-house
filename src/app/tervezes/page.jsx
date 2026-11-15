@@ -51,7 +51,7 @@ export default function Design() {
         <div className="mx-auto max-w-3xl md:max-w-3xl lg:max-w-7xl px-6 md:px-8 lg:px-0 lg:w-1/2">
           <img
             alt="Üzletház bővítés látványterve – Geotherm House tervezés"
-            src="https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/kezd%C5%91.jpg?w=1600"
+            src="https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/kezdo%CC%8B.jpg?w=1600"
             className="w-full h-auto object-cover rounded-md aspect-square"
             loading="lazy"
           />
@@ -69,11 +69,11 @@ export default function Design() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/k%C3%B6zepes/kezd%C5%91.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/kezdo%CC%8B.jpg",
               title: "ÜZLETHÁZ BŐVÍTÉS",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/k%C3%B6zepes/KEZD%C5%90.jpg",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/KEZDO%CC%8B.jpg",
               title: "CSALÁDI HÁZ",
             },
           ].map((item, idx) => (

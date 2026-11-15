@@ -53,7 +53,7 @@ export default function Construction() {
         <div className="mx-auto max-w-3xl md:max-w-3xl lg:max-w-7xl px-6 md:px-8 lg:px-0 lg:w-1/2">
           <img
             alt="Construction"
-            src="https://geotherm.sirv.com/geotherm/f%C5%91oldal/kivitelez%C3%A9s_f%C5%91k%C3%A9p.webp?w=1400"
+            src="https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/2.jpg?w=1400"
             className="w-full h-auto object-cover rounded-md aspect-square"
             loading="lazy"
           />
@@ -88,59 +88,59 @@ export default function Construction() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/k%C3%B6zepes/kezd%C5%91.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/kezdo%CC%8Bo%CC%8B.jpg",
               title: "4 LAKÁSOS SORHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/KEZDO%CC%8B.jpg",
               title: "13 LAKÁSOS TÁRSASHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/KEZDO%CC%8B.jpg",
               title: "8 LAKÁSOS TÁRSASHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/KEZDO%CC%8B.jpg",
               title: "8 LAKÁSOS TÁRSASHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/KEZDO%CC%8B.jpg",
               title: "9 LAKÁSOS TÁRSASHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/KEZDO%CC%8B.jpg",
               title: "8 LAKÁSOS TÁRSASHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/k%C3%B6zepes/kezd%C5%91.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z/ke%CC%81ezdo%CC%8B.jpg",
               title: "IKERHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/KEZDO%CC%8B.jpg",
               title: "IKERHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/KEZDO%CC%8B.jpg",
               title: "CSALÁDI HÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/KEZDO%CC%8B.jpg",
               title: "6 LAKÁSOS SORHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/k%C3%B6zepes/kezd%C5%91.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/kezdo%CC%8B.jpg",
               title: "SZILASLIGETI SORHÁZAK",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/kezd%C5%91.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/kezdo%CC%8B.jpg",
               title: "4 LAKÁSOS SORHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/k%C3%B6zepes/kezd%C5%91.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/10%20laka%CC%81sos%20sorha%CC%81z/kezdo%CC%8B.jpg",
               title: "10 LAKÁSOS SORHÁZ",
             },
             {
-              src: "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/k%C3%B6zepes/kezd%C5%91.webp",
+              src: "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z/kezdo%CC%8B.jpg",
               title: "CSALÁDI HÁZ",
             },
             {

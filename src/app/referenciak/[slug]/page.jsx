@@ -1,10 +1,14 @@
 import { notFound } from "next/navigation";
-import { ogDefaults, ogImages } from "@/data/seo";
+import { ogDefaults, ogImages, sirvResize, sirvSrcSet } from "@/data/seo";
 import ImageLightbox from "@/components/ImageLightbox";
 
 // Image trigger for the lightbox: pointer cursor and a subtle hover lighten.
 const zoomClass =
   "block w-full cursor-pointer rounded transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2";
+
+// Rendered image widths inside the max-w-7xl px-4 container, so srcset picks the right Sirv size.
+const FULL_WIDTH = "(min-width: 1280px) 1248px, calc(100vw - 2rem)";
+const HALF_WIDTH = "(min-width: 1280px) 612px, (min-width: 640px) calc(50vw - 1.75rem), calc(100vw - 2rem)";
 
 const references = {
   "tervezesi-1": {
@@ -34,15 +38,15 @@ const references = {
       "METSZET B",
     ],
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/7.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/8.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/best_3.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/6_tervezett%20a%CC%81talaki%CC%81ta%CC%81s.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/7_tervezett%20a%CC%81talaki%CC%81ta%CC%81s.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/8_tervezett%20a%CC%81talaki%CC%81ta%CC%81s.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/4_homlokzat.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/9_homlokzat.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/3_alaprajz.jpg",
 
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/9.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/10.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/10_metszet.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Megle%CC%81vo%CC%8B%20e%CC%81pu%CC%88let%20a%CC%81talaki%CC%81ta%CC%81s,%20bo%CC%8Bvi%CC%81te%CC%81s%20Veresegyha%CC%81z/5_metszet.jpg",
     ],
   },
   "tervezesi-2": {
@@ -73,15 +77,15 @@ const references = {
       "METSZET",
     ],
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/3_best.jpg",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/2.jpg",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/1.jpg",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/4.jpg",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/3.jpg",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/10.jpg",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/7.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/tervez%C3%A9s/baj%C3%B3t/nagy/8.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/Ez%20legyen%20nagybab.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/de%CC%81li%20la%CC%81tva%CC%81ny.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/utcai%20la%CC%81tva%CC%81ny.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/keleti%20la%CC%81tva%CC%81ny.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/Ez%20legyen%20nagybab.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/alaprajz.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/de%CC%81li%20homlokzat.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/keleti%20homlokzat.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/tervezes/Csala%CC%81di%20ha%CC%81z,%20Bajo%CC%81t/metszet.jpg",
     ],
   },
   "kivitelezesi-1": {
@@ -89,18 +93,18 @@ const references = {
     seoTitle: "Ligetek sorház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/7.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/8.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/9.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/10.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/11.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%202/nagy/kezd%C5%91.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/1(1).jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/2(1).jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/3(1).jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/6.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/7.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/8.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/9.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/10.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/11.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/kezdo%CC%8Bo%CC%8B.jpg",
     ],
   },
   "kivitelezesi-2": {
@@ -108,14 +112,14 @@ const references = {
     seoTitle: "Társasház kivitelezése, Jókai utca 1., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/7.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/KEZD%C5%90.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/6.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/7U%CC%81J.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/KEZDO%CC%8B.jpg",
     ],
   },
   "kivitelezesi-3": {
@@ -123,12 +127,12 @@ const references = {
     seoTitle: "Társasház kivitelezése, Jókai utca 2., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%202/nagy/6.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/6U%CC%81J.jpg",
     ],
   },
   "kivitelezesi-4": {
@@ -136,13 +140,13 @@ const references = {
     seoTitle: "Társasház kivitelezése, Jókai utca 3., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%203/nagy/7.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/6.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/7.jpg",
     ],
   },
   "kivitelezesi-5": {
@@ -150,12 +154,12 @@ const references = {
     seoTitle: "Társasház kivitelezése, Jókai utca 4., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%204/nagy/6.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/6U%CC%81J.jpg",
     ],
   },
   "kivitelezesi-6": {
@@ -163,12 +167,12 @@ const references = {
     seoTitle: "Társasház kivitelezése, Jókai utca 5., Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai%205/nagy/6.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/6U%CC%81J.jpg",
     ],
   },
   "kivitelezesi-7": {
@@ -176,10 +180,10 @@ const references = {
     seoTitle: "Ikerház kivitelezése, Ligetek, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/ikerh%C3%A1z/nagy/kezd%C5%91.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z/ke%CC%81ezdo%CC%8B.jpg",
     ],
   },
   "kivitelezesi-8": {
@@ -187,14 +191,14 @@ const references = {
     seoTitle: "Családi ház kivitelezése, Etüd utca, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/7.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Et%C3%BCd/nagy/KEZD%C5%90.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/6.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/7.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/KEZDO%CC%8B.jpg",
     ],
   },
   "kivitelezesi-9": {
@@ -202,12 +206,12 @@ const references = {
     seoTitle: "Családi ház, Kodály Zoltán utca, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Kod%C3%A1ly/nagy/KEZD%C5%90.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/5U%CC%81J.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/KEZDO%CC%8B.jpg",
     ],
   },
   "kivitelezesi-10": {
@@ -215,15 +219,15 @@ const references = {
     seoTitle: "Sorház kivitelezése, Ligetek, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/3.1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/3.2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/6.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/7.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/Mosonyi/nagy/KEZD%C5%90.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/3.1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/3.2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/6.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/7.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/KEZDO%CC%8B.jpg",
     ],
   },
   "kivitelezesi-11": {
@@ -231,12 +235,12 @@ const references = {
     seoTitle: "Szilasligeti sorházak kivitelezése",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/5.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/szilasliget/nagy/6.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/5.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/6.jpg",
     ],
   },
   "kivitelezesi-12": {
@@ -244,10 +248,10 @@ const references = {
     seoTitle: "4 lakásos sorház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/4%20lak%C3%A1sos%20sorh%C3%A1z%201/nagy/kezd%C5%91.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/kezdo%CC%8B.jpg",
     ],
   },
   "kivitelezesi-13": {
@@ -255,11 +259,11 @@ const references = {
     seoTitle: "10 lakásos sorház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/3.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/4.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/10%20lak%C3%A1sos%20sorh%C3%A1z/nagy/kezd%C5%91.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/10%20laka%CC%81sos%20sorha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/10%20laka%CC%81sos%20sorha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/10%20laka%CC%81sos%20sorha%CC%81z/3.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/10%20laka%CC%81sos%20sorha%CC%81z/4.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/10%20laka%CC%81sos%20sorha%CC%81z/kezdo%CC%8B.jpg",
     ],
   },
   "kivitelezesi-14": {
@@ -267,9 +271,9 @@ const references = {
     seoTitle: "Családi ház kivitelezése, Veresegyház",
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/nagy/1.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/nagy/2.webp",
-      "https://geotherm.sirv.com/geotherm/referenci%C3%A1k/kivitelez%C3%A9s/csal%C3%A1di%20h%C3%A1z%201/nagy/kezd%C5%91.webp",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z/1.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z/2.jpg",
+      "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z/kezdo%CC%8B.jpg",
     ],
   },
   "kivitelezesi-15": {
@@ -349,7 +353,9 @@ export default async function ReferenceDetail({ params }) {
                   <div className="mb-10">
                     <button type="button" data-lb={heroIndex} aria-label="Kép nagyítása" className={zoomClass}>
                       <img
-                        src={heroImg}
+                        src={sirvResize(heroImg, 1280)}
+                        srcSet={sirvSrcSet(heroImg)}
+                        sizes={FULL_WIDTH}
                         alt={`${ref.title} hero kép`}
                         className="w-full rounded shadow object-contain"
                       />
@@ -423,7 +429,10 @@ export default async function ReferenceDetail({ params }) {
                             >
                               <button type="button" data-lb={idx} aria-label="Kép nagyítása" className={zoomClass}>
                                 <img
-                                  src={src}
+                                  src={sirvResize(src, 1280)}
+                                  srcSet={sirvSrcSet(src)}
+                                  sizes={isFeatured ? FULL_WIDTH : HALF_WIDTH}
+                                  loading="lazy"
                                   alt={`${ref.title} kép ${idx + 1}`}
                                   className="w-full rounded shadow object-contain"
                                 />
@@ -441,7 +450,10 @@ export default async function ReferenceDetail({ params }) {
                           <figure key={idx} className="mb-6 break-inside-avoid">
                             <button type="button" data-lb={idx} aria-label="Kép nagyítása" className={zoomClass}>
                               <img
-                                src={src}
+                                src={sirvResize(src, 1280)}
+                                srcSet={sirvSrcSet(src)}
+                                sizes={HALF_WIDTH}
+                                loading="lazy"
                                 alt={`${ref.title} kép ${idx + 1}`}
                                 className="rounded shadow object-contain w-full"
                               />
@@ -464,7 +476,9 @@ export default async function ReferenceDetail({ params }) {
                   <div className="mb-10">
                     <button type="button" data-lb={0} aria-label="Kép nagyítása" className={zoomClass}>
                       <img
-                        src={ref.images[0]}
+                        src={sirvResize(ref.images[0], 1280)}
+                        srcSet={sirvSrcSet(ref.images[0])}
+                        sizes={FULL_WIDTH}
                         alt={`${ref.title} kép 1`}
                         className="w-full rounded shadow object-contain"
                       />
@@ -483,7 +497,10 @@ export default async function ReferenceDetail({ params }) {
                       className={`${zoomClass} mb-6 break-inside-avoid`}
                     >
                       <img
-                        src={img}
+                        src={sirvResize(img, 1280)}
+                        srcSet={sirvSrcSet(img)}
+                        sizes={HALF_WIDTH}
+                        loading={i < 2 ? "eager" : "lazy"}
                         alt={`${ref.title} kép ${i + 1}`}
                         className="rounded shadow object-contain w-full"
                       />
