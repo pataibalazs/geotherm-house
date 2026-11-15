@@ -16,3 +16,10 @@ export const ogPhotos = {
   design: `${SIRV}/referenci%C3%A1k/tervez%C3%A9s/F%C5%91%C3%BAt2/nagy/kezd%C5%91.jpg`,
   references: `${SIRV}/referenci%C3%A1k/kivitelez%C3%A9s/J%C3%B3kai1/nagy/KEZD%C5%90.webp`,
 };
+
+// Ask Sirv for a resized copy (it also serves WebP/AVIF to browsers that accept them).
+// Used for thumbnails so a 300px tile does not download a 1200px original.
+export function sirvResize(src, width) {
+  if (!src || !src.includes(".sirv.com/")) return src;
+  return `${src}${src.includes("?") ? "&" : "?"}w=${width}`;
+}

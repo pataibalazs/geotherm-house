@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sirvResize } from "@/data/seo";
 
 export default function ReferenceGallery() {
   const kivitelezesi = [
@@ -97,7 +98,7 @@ export default function ReferenceGallery() {
             prefetch={false}
           >
             <img
-              src={item.src}
+              src={sirvResize(item.src, 640)}
               alt={item.title}
               className="h-full w-full object-cover"
               loading="lazy"

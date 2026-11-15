@@ -7,6 +7,7 @@ const stats = [
 
 import DescriptionWithoutImageConstruction from "@/components/DescriptionWithoutImageConstruction";
 import Link from "next/link";
+import { sirvResize } from "@/data/seo";
 import { useCallback } from "react";
 
 export default function Construction() {
@@ -52,7 +53,7 @@ export default function Construction() {
         <div className="mx-auto max-w-3xl md:max-w-3xl lg:max-w-7xl px-6 md:px-8 lg:px-0 lg:w-1/2">
           <img
             alt="Construction"
-            src="https://geotherm.sirv.com/geotherm/f%C5%91oldal/kivitelez%C3%A9s_f%C5%91k%C3%A9p.webp"
+            src="https://geotherm.sirv.com/geotherm/f%C5%91oldal/kivitelez%C3%A9s_f%C5%91k%C3%A9p.webp?w=1400"
             className="w-full h-auto object-cover rounded-md aspect-square"
             loading="lazy"
           />
@@ -161,7 +162,7 @@ export default function Construction() {
               className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <img
-                src={item.src}
+                src={sirvResize(item.src, 800)}
                 alt={item.title}
                 className="h-full w-full object-cover"
                 loading="lazy"

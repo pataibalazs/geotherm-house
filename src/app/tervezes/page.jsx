@@ -3,6 +3,7 @@
 import DescriptionWithoutImageDesign from "@/components/DescriptionWithoutImageDesign";
 import Services from "@/components/Services";
 import Link from "next/link";
+import { sirvResize } from "@/data/seo";
 import { useCallback } from "react";
 
 export default function Design() {
@@ -82,7 +83,7 @@ export default function Design() {
               className="group relative aspect-square overflow-hidden rounded-md shadow focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <img
-                src={item.src}
+                src={sirvResize(item.src, 800)}
                 alt={item.title}
                 className="h-full w-full object-cover"
                 loading="lazy"
