@@ -84,7 +84,16 @@ export default function Footer() {
             </Link>
           ))}
         </nav>
-        <p className="mt-15 sm:mt-10 text-center text-sm/6 text-black">
+        <p className="mt-15 sm:mt-10 text-center text-sm/6 text-gray-600">
+          <Link href="/adatkezeles" className="hover:text-amber-500">
+            Adatkezelési tájékoztató
+          </Link>
+          <span aria-hidden="true"> · </span>
+          <Link href="/adatkezeles#impresszum" className="hover:text-amber-500">
+            Impresszum
+          </Link>
+        </p>
+        <p className="mt-2 text-center text-sm/6 text-black">
           &copy; {year} Geotherm House Kft. Minden jog fenntartva.
         </p>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useForm } from "@formspree/react";
 import ThankYouModal from "@/components/ThankYouModal";
 import { salesContact } from "@/data/lakasok";
@@ -124,6 +125,14 @@ export default function InquiryForm({ apartmentCode }) {
           minket: {salesContact.phone}.
         </p>
       )}
+
+      <p className="mt-4 text-xs text-gray-600">
+        Adatait csak a megkeresés megválaszolására használjuk. Részletek az{" "}
+        <Link href="/adatkezeles" className="font-medium text-amber-600 underline hover:text-amber-500">
+          adatkezelési tájékoztatóban
+        </Link>
+        .
+      </p>
 
       <button
         type="submit"

@@ -27,5 +27,6 @@ export default function sitemap() {
     ...referenceSlugs.map((slug) => page(`/referenciak/${slug}`, 0.5)),
     page("/rolunk", 0.5),
     page("/kapcsolat", 0.6),
+    page("/adatkezeles", 0.1, "yearly"),
   ];
 }

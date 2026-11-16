@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useForm } from "@formspree/react";
 import ThankYouModal from "./ThankYouModal";
 
@@ -91,6 +92,14 @@ export default function ContactForm() {
             minket: +36 30 932 1632.
           </p>
         )}
+
+        <p className="mb-4 text-sm text-gray-600">
+          Az adataidat csak a megkeresésed megválaszolására használjuk. Részletek az{" "}
+          <Link href="/adatkezeles" className="font-medium text-amber-600 underline hover:text-amber-500">
+            adatkezelési tájékoztatóban
+          </Link>
+          .
+        </p>
 
         <button
           type="submit"
