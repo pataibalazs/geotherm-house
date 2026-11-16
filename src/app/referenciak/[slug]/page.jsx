@@ -399,7 +399,7 @@ const references = {
     title: "VERESEGYHÁZ, 4 LAKÁSOS SORHÁZ",
     seoTitle: "4 lakásos sorház kivitelezése, Veresegyház",
     descriptionParagraphs: [
-      "Négylakásos sorház Veresegyházon. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "Négylakásos sorház Veresegyházon, amelyet kulcsrakészen kiviteleztünk, és a lakásait is mi értékesítettük.",
     ],
     meta: { units: "4 lakás", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -419,7 +419,7 @@ const references = {
     title: "VERESEGYHÁZ, 10 LAKÁSOS SORHÁZ",
     seoTitle: "10 lakásos sorház kivitelezése, Veresegyház",
     descriptionParagraphs: [
-      "Tízlakásos sorház Veresegyházon. Az épületet mi terveztük, kulcsrakészen kiviteleztük, és a lakásokat is mi értékesítettük: a tervezéstől az átadásig minden egy kézben volt.",
+      "Tízlakásos sorház Veresegyházon, amelyet mi terveztünk, kulcsrakészen kiviteleztünk és értékesítettünk.",
     ],
     meta: { units: "10 lakás", scope: "Tervezés, kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -530,6 +530,31 @@ function ConstructionInfo({ item }) {
   );
 }
 
+// The gallery cover ("kezdő" in the Sirv file name) leads the page; otherwise the first photo.
+// Names are stored decomposed (NFD) and percent-encoded, so decode and normalize before matching.
+function coverIndex(images) {
+  const i = images.findIndex((src) =>
+    decodeURIComponent(src).normalize("NFC").toLowerCase().includes("ezdő")
+  );
+  return i === -1 ? 0 : i;
+}
+
+// Rhythm of the two-column gallery: four half-width photos, then one full-width, repeated.
+// An odd number of photos after the last full-width one would leave one alone in a row:
+// a single trailing photo instead turns that full-width slot back into a half (so two big photos
+// never follow each other), otherwise the final photo goes full-width.
+function wideSlots(count) {
+  const wide = new Set();
+  for (let k = 4; k < count; k += 5) wide.add(k);
+  const lastWide = wide.size ? Math.max(...wide) : -1;
+  const trailing = count - 1 - lastWide;
+  if (trailing % 2 === 1) {
+    if (trailing === 1 && lastWide >= 0) wide.delete(lastWide);
+    else wide.add(count - 1);
+  }
+  return wide;
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const ref = references[slug];
@@ -559,7 +584,6 @@ export default async function ReferenceDetail({ params }) {
     <div className="mx-auto min-h-screen bg-stone-50">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h1 className="text-3xl font-bold mb-4 text-black">{ref.title}</h1>
-        {slug.startsWith("kivitelezesi-") && <ConstructionInfo item={ref} />}
         {/* Every image is a data-lb trigger: clicking opens it enlarged in the lightbox */}
         <ImageLightbox images={ref.images} captions={ref.captions} title={ref.title}>
         {/* Design (tervezési) speciális layout: hero kép -> meta + leírás -> maradék képek */}
@@ -699,44 +723,58 @@ export default async function ReferenceDetail({ params }) {
               );
             })()
           : (() => {
-              const isSingleConstruction =
-                slug.startsWith("kivitelezesi-") && ref.images.length === 1;
-              if (isSingleConstruction) {
-                return (
+              // Construction: hero photo, then facts (or a single sentence when facts are thin),
+              // then the remaining photos in two columns with a full-width one every few rows.
+              const heroIndex = coverIndex(ref.images);
+              const rest = ref.images
+                .map((src, idx) => ({ src, idx }))
+                .filter((it) => it.idx !== heroIndex);
+              const wide = wideSlots(rest.length);
+              const detailed = Boolean(ref.meta?.area);
+              return (
+                <>
+                  {!detailed && ref.descriptionParagraphs && (
+                    <p className="mb-8 max-w-3xl text-lg/8 text-gray-700">
+                      {ref.descriptionParagraphs[0]}
+                    </p>
+                  )}
                   <div className="mb-10">
-                    <button type="button" data-lb={0} aria-label="Kép nagyítása" className={zoomClass}>
+                    <button type="button" data-lb={heroIndex} aria-label="Kép nagyítása" className={zoomClass}>
                       <img
-                        src={sirvResize(ref.images[0], 1280)}
-                        srcSet={sirvSrcSet(ref.images[0])}
+                        src={sirvResize(ref.images[heroIndex], 1280)}
+                        srcSet={sirvSrcSet(ref.images[heroIndex])}
                         sizes={FULL_WIDTH}
-                        alt={`${ref.title} kép 1`}
+                        alt={`${ref.title} kép ${heroIndex + 1}`}
                         className="w-full rounded shadow object-contain"
                       />
                     </button>
                   </div>
-                );
-              }
-              return (
-                <div className="columns-1 sm:columns-2 gap-6">
-                  {ref.images.map((img, i) => (
-                    <button
-                      key={i}
-                      type="button"
-                      data-lb={i}
-                      aria-label="Kép nagyítása"
-                      className={`${zoomClass} mb-6 break-inside-avoid`}
-                    >
-                      <img
-                        src={sirvResize(img, 1280)}
-                        srcSet={sirvSrcSet(img)}
-                        sizes={HALF_WIDTH}
-                        loading={i < 2 ? "eager" : "lazy"}
-                        alt={`${ref.title} kép ${i + 1}`}
-                        className="rounded shadow object-contain w-full"
-                      />
-                    </button>
-                  ))}
-                </div>
+                  {detailed && <ConstructionInfo item={ref} />}
+                  {rest.length > 0 && (
+                    <div className="grid grid-cols-1 items-start gap-6 sm:grid-cols-2">
+                      {rest.map(({ src, idx }, k) => (
+                        <button
+                          key={idx}
+                          type="button"
+                          data-lb={idx}
+                          aria-label="Kép nagyítása"
+                          className={`${zoomClass} ${wide.has(k) ? "sm:col-span-2" : ""}`}
+                        >
+                          <img
+                            src={sirvResize(src, 1280)}
+                            srcSet={sirvSrcSet(src)}
+                            sizes={wide.has(k) ? FULL_WIDTH : HALF_WIDTH}
+                            loading="lazy"
+                            alt={`${ref.title} kép ${idx + 1}`}
+                            // Fixed ratios keep rows even when portrait and landscape photos meet;
+                            // the lightbox still shows the whole photo.
+                            className={`w-full rounded shadow object-cover ${wide.has(k) ? "aspect-[3/2]" : "aspect-[4/3]"}`}
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </>
               );
             })()}
         </ImageLightbox>
