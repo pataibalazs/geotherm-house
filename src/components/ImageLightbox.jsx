@@ -13,7 +13,33 @@ import { sirvResize } from "@/data/seo";
 // Same look and controls as the apartment render gallery (arrows, keyboard, swipe).
 export default function ImageLightbox({ images, captions = [], title, children }) {
   const [open, setOpen] = useState(null);
+  const [sharpReady, setSharpReady] = useState({});
   const touchX = useRef(null);
+  const galleryRef = useRef(null);
+
+  // Enlarged size matched to the screen (1280 / 1920 / 2560px), so laptops do not fetch the largest variant.
+  const sharpSrc = useCallback((i) => {
+    const need = typeof window === "undefined" ? 2560 : window.innerWidth * (window.devicePixelRatio || 1);
+    return sirvResize(images[i], need <= 1280 ? 1280 : need <= 1920 ? 1920 : 2560);
+  }, [images]);
+
+  // The thumbnail already on the page (in the browser cache) shows instantly while the sharp version loads.
+  const previewSrc = (i) => {
+    const img = galleryRef.current?.querySelector(`[data-lb="${i}"] img`);
+    return img?.complete && img.naturalWidth > 0 ? img.currentSrc : null;
+  };
+
+  // Load the sharp version of the open image and its neighbours in the background.
+  useEffect(() => {
+    if (open === null) return;
+    const n = images.length;
+    for (const i of new Set([open, (open + 1) % n, (open - 1 + n) % n])) {
+      const url = sharpSrc(i);
+      const img = new Image();
+      img.onload = () => setSharpReady((r) => (r[url] ? r : { ...r, [url]: true }));
+      img.src = url;
+    }
+  }, [open, images.length, sharpSrc]);
 
   const step = useCallback(
     (dir) => setOpen((i) => (i + dir + images.length) % images.length),
@@ -42,10 +68,24 @@ export default function ImageLightbox({ images, captions = [], title, children }
     touchX.current = null;
   };
 
+  // The image box is larger than the picture itself (object-contain); a click on that empty margin
+  // closes the gallery, like a click on the dark background.
+  const closeOnLetterbox = (e) => {
+    const img = e.currentTarget;
+    if (!img.naturalWidth) return;
+    const box = img.getBoundingClientRect();
+    const scale = Math.min(box.width / img.naturalWidth, box.height / img.naturalHeight);
+    const w = img.naturalWidth * scale;
+    const h = img.naturalHeight * scale;
+    const x = e.clientX - box.left - (box.width - w) / 2;
+    const y = e.clientY - box.top - (box.height - h) / 2;
+    if (x < 0 || y < 0 || x > w || y > h) setOpen(null);
+  };
+
   const caption = open !== null ? captions[open] || title : "";
 
   return (
-    <div onClick={onClick}>
+    <div ref={galleryRef} onClick={onClick}>
       {children}
       <Dialog open={open !== null} onClose={() => setOpen(null)} className="relative z-50">
         <div className="fixed inset-0 bg-black/90" aria-hidden="true" />
@@ -58,9 +98,11 @@ export default function ImageLightbox({ images, captions = [], title, children }
         >
           {open !== null && (
             <img
-              src={sirvResize(images[open], 2560)}
+              src={sharpReady[sharpSrc(open)] ? sharpSrc(open) : previewSrc(open) || sharpSrc(open)}
               alt={`${title} – ${open + 1}. kép`}
-              className="max-h-full max-w-full object-contain"
+              // Fills the panel so the preview and the sharp version occupy the same box (no jump on swap).
+              className="h-full w-full object-contain"
+              onClick={closeOnLetterbox}
             />
           )}
           <button
