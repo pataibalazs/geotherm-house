@@ -8,6 +8,10 @@ import Link from "next/link";
 import { navigation } from "./navigation";
 import { contacts } from "@/data/lakasok";
 
+// Desktop menu text: one size larger once there is room for it next to the logo and call button.
+const desktopLinkClass =
+  "whitespace-nowrap text-base min-[1400px]:text-lg font-bold text-black hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded";
+
 // Header call shortcut uses the company's main number (first contact).
 const phone = contacts[0].phone;
 const phoneHref = `tel:${phone.replace(/\s/g, "")}`;
@@ -19,7 +23,7 @@ export default function Header() {
     <header className="bg-stone-50">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between gap-x-10 p-6 lg:px-8"
+        className="mx-auto flex max-w-[1800px] items-center justify-between gap-x-10 p-6 lg:px-8 2xl:px-12"
       >
         <Link
           href="/fooldal"
@@ -50,13 +54,9 @@ export default function Header() {
           </button>
         </div>
         {/* Desktop: links centered in the free space, call button pinned to the right edge */}
-        <div className="hidden xl:flex xl:flex-1 xl:items-center xl:justify-center xl:gap-x-7">
+        <div className="hidden xl:flex xl:flex-1 xl:items-center xl:justify-center xl:gap-x-7 min-[1400px]:gap-x-10 2xl:gap-x-14">
           {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="whitespace-nowrap text-base font-bold text-black hover:text-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
-            >
+            <Link key={item.name} href={item.href} className={desktopLinkClass}>
               {item.name}
             </Link>
           ))}

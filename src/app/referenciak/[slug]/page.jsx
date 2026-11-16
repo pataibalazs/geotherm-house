@@ -91,6 +91,20 @@ const references = {
   "kivitelezesi-1": {
     title: "VERESEGYHÁZ, LIGETEK SORHÁZ",
     seoTitle: "Ligetek sorház kivitelezése, Veresegyház",
+    descriptionParagraphs: [
+      "Négylakásos sorház a veresegyházi Ligetekben. Minden lakáshoz saját kert és autóbeálló tartozik.",
+      "A legizgalmasabb feladatot a homlokzat jelentette: a sorházas tömeget a téglaburkolat tagolja és teszi karakteressé. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2023", units: "4 lakás", area: "kb. 500 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott tégla homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/1(1).jpg",
@@ -110,6 +124,21 @@ const references = {
   "kivitelezesi-2": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 1. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 1., Veresegyház",
+    descriptionParagraphs: [
+      "Tizenhárom lakásos társasház Veresegyház központjában, a Jókai utcában. Ez volt az első ekkora léptékű saját beruházásunk, és nagy sikert hozott: a lakások rendkívül keresettek, a jó környék miatt pedig kiváló befektetésnek bizonyultak.",
+      "Karakteres homlokzata ma meghatározó eleme az utcaképnek. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2018", units: "13 lakás", area: "kb. 950 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott tégla homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/13%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresehyga%CC%81z/1.jpg",
@@ -125,6 +154,19 @@ const references = {
   "kivitelezesi-3": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 2. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 2., Veresegyház",
+    descriptionParagraphs: [
+      "Nyolclakásos társasház a veresegyházi Jókai utcában, kőburkolatú homlokzattal. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2020", units: "8 lakás", area: "kb. 800 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott kő homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%201/1.jpg",
@@ -138,6 +180,21 @@ const references = {
   "kivitelezesi-4": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 3. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 3., Veresegyház",
+    descriptionParagraphs: [
+      "Nyolclakásos társasház a veresegyházi Jókai utcában. Különlegessége, hogy a nyolc lakásból négy kétszintes, belső lépcsős (duplex) lakás.",
+      "A homlokzatot a kőburkolat és a kékre pácolt faszerkezetek együtt teszik izgalmassá. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2021", units: "8 lakás", area: "kb. 750 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott kő homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%202/1.jpg",
@@ -152,6 +209,20 @@ const references = {
   "kivitelezesi-5": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 4. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 4., Veresegyház",
+    descriptionParagraphs: [
+      "Kilenclakásos társasház a veresegyházi Jókai utcában, téglaburkolatú homlokzattal. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2022", units: "9 lakás", area: "kb. 700 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott tégla homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/9%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z/1.jpg",
@@ -165,6 +236,20 @@ const references = {
   "kivitelezesi-6": {
     title: "VERESEGYHÁZ, JÓKAI UTCA 5. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 5., Veresegyház",
+    descriptionParagraphs: [
+      "Nyolclakásos társasház a veresegyházi Jókai utcában, kőburkolatú homlokzattal. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2023", units: "8 lakás", area: "kb. 600 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott kő homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/8%20laka%CC%81sos%20ta%CC%81rsasha%CC%81z%20Veresegyha%CC%81z%203/1.jpg",
@@ -178,6 +263,21 @@ const references = {
   "kivitelezesi-7": {
     title: "VERESEGYHÁZ, LIGETEK, IKERHÁZ",
     seoTitle: "Ikerház kivitelezése, Ligetek, Veresegyház",
+    descriptionParagraphs: [
+      "Kétlakásos ikerház a veresegyházi Ligetekben. A tetőteret úgy alakítottuk ki, hogy később beépíthető legyen, így a lakások idővel bővíthetők.",
+      "Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2024", units: "2 lakás", area: "kb. 300 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott tégla homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z/1.jpg",
@@ -189,6 +289,20 @@ const references = {
   "kivitelezesi-8": {
     title: "VERESEGYHÁZ, ETÜD UTCA, CSALÁDI HÁZ",
     seoTitle: "Családi ház kivitelezése, Etüd utca, Veresegyház",
+    descriptionParagraphs: [
+      "Két ikerház, összesen négy lakással a veresegyházi Etüd utcában. Az épületeket kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { units: "4 lakás (2 ikerház)", area: "kb. 600 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott tégla homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Ikerha%CC%81z%20Veresegyha%CC%81z/1.jpg",
@@ -204,6 +318,20 @@ const references = {
   "kivitelezesi-9": {
     title: "VERESEGYHÁZ, KODÁLY ZOLTÁN UTCA, CSALÁDI HÁZ",
     seoTitle: "Családi ház, Kodály Zoltán utca, Veresegyház",
+    descriptionParagraphs: [
+      "Családi ház a veresegyházi Kodály Zoltán utcában, téglaburkolatú homlokzattal. A házat kulcsrakészen kiviteleztük, és az értékesítést is mi végeztük.",
+    ],
+    meta: { units: "1 családi ház", area: "kb. 250 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott tégla homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z%20Veresegyha%CC%81z/1.jpg",
@@ -217,6 +345,21 @@ const references = {
   "kivitelezesi-10": {
     title: "VERESEGYHÁZ, LIGETEK, SORHÁZ",
     seoTitle: "Sorház kivitelezése, Ligetek, Veresegyház",
+    descriptionParagraphs: [
+      "Hatlakásos sorház a veresegyházi Ligetekben. Megjelenését a karakteres, íves nyílászárók határozzák meg.",
+      "Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { year: "2014", units: "6 lakás", area: "kb. 950 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+      "Háromrétegű hőszigetelő üvegezésű nyílászárók",
+      "Ragasztott tégla homlokzatburkolat",
+      "A+ energetikai besorolás",
+      "Padló- és falfűtés",
+      "Gipszbeton lépcsőszerkezet",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/6%20laka%CC%81sos%20sorha%CC%81z%20Veresegyha%CC%81z/1.jpg",
@@ -233,6 +376,15 @@ const references = {
   "kivitelezesi-11": {
     title: "SZILASLIGETI SORHÁZAK",
     seoTitle: "Szilasligeti sorházak kivitelezése",
+    descriptionParagraphs: [
+      "A szilasligeti sorházak szerkezetkész kivitelezését végeztük.",
+    ],
+    meta: { scope: "Szerkezetkész kivitelezés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Sorha%CC%81zak%20Szilasliget/1.jpg",
@@ -246,6 +398,15 @@ const references = {
   "kivitelezesi-12": {
     title: "VERESEGYHÁZ, 4 LAKÁSOS SORHÁZ",
     seoTitle: "4 lakásos sorház kivitelezése, Veresegyház",
+    descriptionParagraphs: [
+      "Négylakásos sorház Veresegyházon. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+    ],
+    meta: { units: "4 lakás", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/4%20laka%CC%81sos%20sorha%CC%81z/1.jpg",
@@ -257,6 +418,15 @@ const references = {
   "kivitelezesi-13": {
     title: "VERESEGYHÁZ, 10 LAKÁSOS SORHÁZ",
     seoTitle: "10 lakásos sorház kivitelezése, Veresegyház",
+    descriptionParagraphs: [
+      "Tízlakásos sorház Veresegyházon. Az épületet mi terveztük, kulcsrakészen kiviteleztük, és a lakásokat is mi értékesítettük: a tervezéstől az átadásig minden egy kézben volt.",
+    ],
+    meta: { units: "10 lakás", scope: "Tervezés, kulcsrakész generálkivitelezés és értékesítés" },
+    specs: [
+      "Kerámia falazóblokk falazat",
+      "Monolit vasbeton födém",
+      "Hagyományos ácsszerkezetű magastetős fedélszék",
+    ],
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/10%20laka%CC%81sos%20sorha%CC%81z/1.jpg",
@@ -269,6 +439,10 @@ const references = {
   "kivitelezesi-14": {
     title: "VERESEGYHÁZ, CSALÁDI HÁZ",
     seoTitle: "Családi ház kivitelezése, Veresegyház",
+    descriptionParagraphs: [
+      "Családi ház Veresegyházon, amelyet kulcsrakészen kiviteleztünk.",
+    ],
+    meta: { units: "1 családi ház", scope: "Kulcsrakész generálkivitelezés" },
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
       "https://geotherm.sirv.com/geotherm/geotherm_high_resolution/kivitelezes/Csala%CC%81di%20ha%CC%81z/1.jpg",
@@ -279,7 +453,10 @@ const references = {
   "kivitelezesi-15": {
     title: "130 LAKÁSOS TÁRSASHÁZ",
     seoTitle: "130 lakásos társasház kivitelezése",
-    credit: "A projektben művezetőként vettünk részt.",
+    descriptionParagraphs: [
+      "Százharminc lakásos társasház, amelynek építésén felelős műszaki vezetőként dolgoztunk.",
+    ],
+    meta: { units: "130 lakás", scope: "Felelős műszaki vezetés" },
     images: [
       "/images/referenciak/budapest-1.webp",
     ],
@@ -287,7 +464,10 @@ const references = {
   "kivitelezesi-16": {
     title: "120 LAKÁSOS TÁRSASHÁZ",
     seoTitle: "120 lakásos társasház kivitelezése",
-    credit: "A projektben művezetőként vettünk részt.",
+    descriptionParagraphs: [
+      "Százhúsz lakásos társasház, amelynek építésén felelős műszaki vezetőként dolgoztunk.",
+    ],
+    meta: { units: "120 lakás", scope: "Felelős műszaki vezetés" },
     images: [
       "/images/referenciak/budapest-2.webp",
     ],
@@ -295,11 +475,60 @@ const references = {
   "kivitelezesi-17": {
     title: "CSALÁDI HÁZ",
     seoTitle: "Családi ház kivitelezése",
+    descriptionParagraphs: [
+      "Családi ház, amelyet kulcsrakészen kiviteleztünk.",
+    ],
+    meta: { units: "1 családi ház", scope: "Kulcsrakész kivitelezés" },
     images: [
       "/images/referenciak/leanyfalu.webp",
     ],
   },
 };
+
+// Construction references: key facts on the left, short story and technical content on the right.
+// Rows with no data are skipped, since not every project has every detail on record.
+function ConstructionInfo({ item }) {
+  const meta = item.meta ?? {};
+  const rows = [
+    { label: "Átadás éve", value: meta.year },
+    { label: "Lakások", value: meta.units },
+    { label: "Alapterület", value: meta.area },
+    { label: "Feladatunk", value: meta.scope },
+  ].filter((r) => r.value);
+  if (rows.length === 0 && !item.descriptionParagraphs) return null;
+
+  return (
+    <div className="mb-14 md:grid md:grid-cols-2 md:gap-12">
+      <dl className="mb-8 space-y-4 md:mb-0">
+        {rows.map((r) => (
+          <div key={r.label}>
+            <dt className="text-md font-semibold uppercase text-gray-500">{r.label}</dt>
+            <dd className="text-black text-md">{r.value}</dd>
+          </div>
+        ))}
+      </dl>
+      <div>
+        <div className="space-y-5">
+          {item.descriptionParagraphs?.map((para, i) => (
+            <p key={i} className="text-gray-700 leading-relaxed">
+              {para}
+            </p>
+          ))}
+        </div>
+        {item.specs && (
+          <div className="mt-8">
+            <h2 className="text-md font-semibold uppercase text-gray-500">Műszaki tartalom</h2>
+            <ul className="mt-3 list-disc space-y-1.5 pl-5 text-gray-700 marker:text-amber-500">
+              {item.specs.map((spec) => (
+                <li key={spec}>{spec}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -330,6 +559,7 @@ export default async function ReferenceDetail({ params }) {
     <div className="mx-auto min-h-screen bg-stone-50">
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h1 className="text-3xl font-bold mb-4 text-black">{ref.title}</h1>
+        {slug.startsWith("kivitelezesi-") && <ConstructionInfo item={ref} />}
         {/* Every image is a data-lb trigger: clicking opens it enlarged in the lightbox */}
         <ImageLightbox images={ref.images} captions={ref.captions} title={ref.title}>
         {/* Design (tervezési) speciális layout: hero kép -> meta + leírás -> maradék képek */}

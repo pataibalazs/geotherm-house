@@ -1,11 +1,6 @@
 "use client";
-const stats = [
-  { id: 1, name: "Átadott lakás", value: "250" },
-  { id: 2, name: "Tapasztalat", value: "30 éves" },
-  { id: 3, name: "Alkalmazott", value: "15" },
-];
-
 import DescriptionWithoutImageConstruction from "@/components/DescriptionWithoutImageConstruction";
+import KeyFigures from "@/components/KeyFigures";
 import Link from "next/link";
 import { sirvResize } from "@/data/seo";
 import { useCallback } from "react";
@@ -59,23 +54,7 @@ export default function Construction() {
           />
         </div>
       </div>
-      {/* Statisztikák */}
-      <div className="mx-auto md:max-w-[840px] lg:max-w-7xl px-6 lg:px-8 py-12 mt-20">
-        <dl className="grid grid-cols-1 md:gap-x-16 lg:gap-x-8 gap-x-8 gap-y-16 text-center md:grid-cols-3">
-          {stats.map((stat) => (
-            <div
-              key={stat.id}
-              className="mx-auto flex max-w-xs flex-col gap-y-2"
-            >
-              <dt className="text-base text-gray-600">{stat.name}</dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                {stat.value}
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-
+      <KeyFigures />
       <DescriptionWithoutImageConstruction />
       {/* Referencia szekció */}
       <div

@@ -3,7 +3,7 @@ import { sirvResize } from "@/data/seo";
 const stats = [
   { label: "Átadott lakás", value: "250+" },
   { label: "Tapasztalat", value: "30 éves" },
-  { label: "Alkalmazott", value: "15" },
+  { label: "Megépített terület", value: "8500+ m²" },
 ];
 
 const people = [

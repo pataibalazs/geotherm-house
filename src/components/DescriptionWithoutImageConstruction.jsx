@@ -26,8 +26,9 @@ const features = [
 ];
 
 export default function DescriptionWithoutImageConstruction() {
+  // No top padding: it follows the KeyFigures section, whose bottom padding already sets the gap.
   return (
-    <section className="bg-stone-50 py-24 sm:py-32">
+    <section className="bg-stone-50 pb-24 sm:pb-32">
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
