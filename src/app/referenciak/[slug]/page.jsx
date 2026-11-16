@@ -93,7 +93,7 @@ const references = {
     seoTitle: "Ligetek sorház kivitelezése, Veresegyház",
     descriptionParagraphs: [
       "Négylakásos sorház a veresegyházi Ligetekben. Minden lakáshoz saját kert és autóbeálló tartozik.",
-      "A legizgalmasabb feladatot a homlokzat jelentette: a sorházas tömeget a téglaburkolat tagolja és teszi karakteressé. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "A legizgalmasabb feladatot a homlokzat jelentette: a sorházas tömeget a téglaburkolat tagolja és teszi karakteressé.",
     ],
     meta: { year: "2023", units: "4 lakás", area: "kb. 500 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -126,7 +126,7 @@ const references = {
     seoTitle: "Társasház kivitelezése, Jókai utca 1., Veresegyház",
     descriptionParagraphs: [
       "Tizenhárom lakásos társasház Veresegyház központjában, a Jókai utcában. Ez volt az első ekkora léptékű saját beruházásunk, és nagy sikert hozott: a lakások rendkívül keresettek, a jó környék miatt pedig kiváló befektetésnek bizonyultak.",
-      "Karakteres homlokzata ma meghatározó eleme az utcaképnek. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "Karakteres homlokzata ma meghatározó eleme az utcaképnek.",
     ],
     meta: { year: "2018", units: "13 lakás", area: "kb. 950 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -155,7 +155,7 @@ const references = {
     title: "VERESEGYHÁZ, JÓKAI UTCA 2. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 2., Veresegyház",
     descriptionParagraphs: [
-      "Nyolclakásos társasház a veresegyházi Jókai utcában, kőburkolatú homlokzattal. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "Nyolclakásos társasház a veresegyházi Jókai utcában, kőburkolatú homlokzattal.",
     ],
     meta: { year: "2020", units: "8 lakás", area: "kb. 800 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -182,7 +182,7 @@ const references = {
     seoTitle: "Társasház kivitelezése, Jókai utca 3., Veresegyház",
     descriptionParagraphs: [
       "Nyolclakásos társasház a veresegyházi Jókai utcában. Különlegessége, hogy a nyolc lakásból négy kétszintes, belső lépcsős (duplex) lakás.",
-      "A homlokzatot a kőburkolat és a kékre pácolt faszerkezetek együtt teszik izgalmassá. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "A homlokzatot a kőburkolat és a kékre pácolt faszerkezetek együtt teszik izgalmassá.",
     ],
     meta: { year: "2021", units: "8 lakás", area: "kb. 750 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -210,7 +210,7 @@ const references = {
     title: "VERESEGYHÁZ, JÓKAI UTCA 4. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 4., Veresegyház",
     descriptionParagraphs: [
-      "Kilenclakásos társasház a veresegyházi Jókai utcában, téglaburkolatú homlokzattal. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "Kilenclakásos társasház a veresegyházi Jókai utcában, téglaburkolatú homlokzattal.",
     ],
     meta: { year: "2022", units: "9 lakás", area: "kb. 700 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -237,7 +237,7 @@ const references = {
     title: "VERESEGYHÁZ, JÓKAI UTCA 5. TÁRSASHÁZ",
     seoTitle: "Társasház kivitelezése, Jókai utca 5., Veresegyház",
     descriptionParagraphs: [
-      "Nyolclakásos társasház a veresegyházi Jókai utcában, kőburkolatú homlokzattal. Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "Nyolclakásos társasház a veresegyházi Jókai utcában, kőburkolatú homlokzattal.",
     ],
     meta: { year: "2023", units: "8 lakás", area: "kb. 600 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -265,7 +265,6 @@ const references = {
     seoTitle: "Ikerház kivitelezése, Ligetek, Veresegyház",
     descriptionParagraphs: [
       "Kétlakásos ikerház a veresegyházi Ligetekben. A tetőteret úgy alakítottuk ki, hogy később beépíthető legyen, így a lakások idővel bővíthetők.",
-      "Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
     ],
     meta: { year: "2024", units: "2 lakás", area: "kb. 300 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -290,7 +289,7 @@ const references = {
     title: "VERESEGYHÁZ, ETÜD UTCA, CSALÁDI HÁZ",
     seoTitle: "Családi ház kivitelezése, Etüd utca, Veresegyház",
     descriptionParagraphs: [
-      "Két ikerház, összesen négy lakással a veresegyházi Etüd utcában. Az épületeket kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
+      "Két ikerház, összesen négy lakással a veresegyházi Etüd utcában.",
     ],
     meta: { units: "4 lakás (2 ikerház)", area: "kb. 600 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -319,7 +318,7 @@ const references = {
     title: "VERESEGYHÁZ, KODÁLY ZOLTÁN UTCA, CSALÁDI HÁZ",
     seoTitle: "Családi ház, Kodály Zoltán utca, Veresegyház",
     descriptionParagraphs: [
-      "Családi ház a veresegyházi Kodály Zoltán utcában, téglaburkolatú homlokzattal. A házat kulcsrakészen kiviteleztük, és az értékesítést is mi végeztük.",
+      "Családi ház a veresegyházi Kodály Zoltán utcában, téglaburkolatú homlokzattal.",
     ],
     meta: { units: "1 családi ház", area: "kb. 250 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -347,7 +346,6 @@ const references = {
     seoTitle: "Sorház kivitelezése, Ligetek, Veresegyház",
     descriptionParagraphs: [
       "Hatlakásos sorház a veresegyházi Ligetekben. Megjelenését a karakteres, íves nyílászárók határozzák meg.",
-      "Az épületet kulcsrakészen kiviteleztük, a lakásokat mi értékesítettük.",
     ],
     meta: { year: "2014", units: "6 lakás", area: "kb. 950 m²", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -398,9 +396,6 @@ const references = {
   "kivitelezesi-12": {
     title: "VERESEGYHÁZ, 4 LAKÁSOS SORHÁZ",
     seoTitle: "4 lakásos sorház kivitelezése, Veresegyház",
-    descriptionParagraphs: [
-      "Négylakásos sorház Veresegyházon, amelyet kulcsrakészen kiviteleztünk, és a lakásait is mi értékesítettük.",
-    ],
     meta: { units: "4 lakás", scope: "Kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
       "Kerámia falazóblokk falazat",
@@ -419,7 +414,7 @@ const references = {
     title: "VERESEGYHÁZ, 10 LAKÁSOS SORHÁZ",
     seoTitle: "10 lakásos sorház kivitelezése, Veresegyház",
     descriptionParagraphs: [
-      "Tízlakásos sorház Veresegyházon, amelyet mi terveztünk, kulcsrakészen kiviteleztünk és értékesítettünk.",
+      "Tízlakásos sorház Veresegyházon, amelyet mi terveztünk.",
     ],
     meta: { units: "10 lakás", scope: "Tervezés, kulcsrakész generálkivitelezés és értékesítés" },
     specs: [
@@ -439,9 +434,6 @@ const references = {
   "kivitelezesi-14": {
     title: "VERESEGYHÁZ, CSALÁDI HÁZ",
     seoTitle: "Családi ház kivitelezése, Veresegyház",
-    descriptionParagraphs: [
-      "Családi ház Veresegyházon, amelyet kulcsrakészen kiviteleztünk.",
-    ],
     meta: { units: "1 családi ház", scope: "Kulcsrakész generálkivitelezés" },
     credit: "Fotókat készítette: Érsek Máté Attila",
     images: [
@@ -475,9 +467,6 @@ const references = {
   "kivitelezesi-17": {
     title: "CSALÁDI HÁZ",
     seoTitle: "Családi ház kivitelezése",
-    descriptionParagraphs: [
-      "Családi ház, amelyet kulcsrakészen kiviteleztünk.",
-    ],
     meta: { units: "1 családi ház", scope: "Kulcsrakész kivitelezés" },
     images: [
       "/images/referenciak/leanyfalu.webp",
