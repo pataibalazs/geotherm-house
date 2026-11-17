@@ -129,10 +129,11 @@ export default function ApartmentList() {
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     className="object-contain p-3"
                   />
-                  <div className="absolute left-3 top-3 flex gap-1.5">
+                  {/* Floor (permanent attribute) left, sale status right */}
+                  <div className="absolute left-3 top-3">
                     <FloorPill label={a.floorLabel} />
-                    <StatusBadge status={a.status} />
                   </div>
+                  <StatusBadge status={a.status} className="absolute right-3 top-3" />
                 </div>
                 <div className="flex flex-1 flex-col border-t border-stone-100 p-5">
                   <h3 className="text-xl font-bold text-gray-900">
