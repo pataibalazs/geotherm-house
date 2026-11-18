@@ -1,6 +1,8 @@
 import { Montserrat } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
+import { organization } from "@/data/structuredData";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -47,6 +49,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} font-sans antialiased bg-stone-50`}
       >
+        <JsonLd data={organization} />
         <Header />
         {children}
         <Footer />

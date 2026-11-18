@@ -7,9 +7,11 @@ export const project = {
   city: "Veresegyház",
   developer: "Geotherm House Kft.",
   address: "Könyves Kálmán krt. 1., Veresegyház",
-  // Exact location of the building (lat, lng)
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=47.652776,19.264478",
+  // Exact location of the building
+  lat: 47.652776,
+  lng: 19.264478,
 };
+project.mapUrl = `https://www.google.com/maps/search/?api=1&query=${project.lat},${project.lng}`;
 
 // Display order on contact lists. The first entry is the company's main number (header call button).
 export const contacts = [

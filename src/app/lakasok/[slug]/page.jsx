@@ -23,6 +23,8 @@ import InquiryForm from "@/components/lakasok/InquiryForm";
 import CallButton, { salesContact } from "@/components/lakasok/CallButton";
 import PdfDownloadCard from "@/components/lakasok/PdfDownloadCard";
 import ImageLightbox from "@/components/ImageLightbox";
+import JsonLd from "@/components/JsonLd";
+import { SITE_URL, breadcrumbList } from "@/data/structuredData";
 
 export function generateStaticParams() {
   return apartments.map((a) => ({ slug: a.slug }));
@@ -64,19 +66,35 @@ export default async function ApartmentPage({ params }) {
     .slice(0, 3);
   const sold = a.status === "eladva";
 
+  const address = {
+    "@type": "PostalAddress",
+    streetAddress: "Könyves Kálmán krt. 1.",
+    postalCode: "2112",
+    addressLocality: project.city,
+    addressRegion: "Pest megye",
+    addressCountry: "HU",
+  };
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Apartment",
     name: `${a.code} lakás – ${project.name}, ${project.city}`,
+    url: `${SITE_URL}/lakasok/${a.slug}`,
     floorSize: { "@type": "QuantitativeValue", value: a.area, unitCode: "MTK" },
     numberOfRooms: a.bedrooms + 1,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: project.city,
-      addressCountry: "HU",
+    numberOfBedrooms: a.bedrooms,
+    address,
+    image: `${SITE_URL}${a.plan.src}`,
+    containedInPlace: {
+      "@type": "ApartmentComplex",
+      name: `${project.name}, ${project.city}`,
+      address,
+      geo: { "@type": "GeoCoordinates", latitude: project.lat, longitude: project.lng },
     },
-    image: `https://www.geothermhouse.hu${a.plan.src}`,
   };
+  const breadcrumbs = breadcrumbList([
+    { name: "Eladó lakások", path: "/" },
+    { name: `${a.code} lakás`, path: `/lakasok/${a.slug}` },
+  ]);
 
   const floorPlan = floors.find((f) => f.key === a.floor).plan;
 
@@ -93,10 +111,8 @@ export default async function ApartmentPage({ params }) {
 
   return (
     <main className="bg-stone-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
+      <JsonLd data={breadcrumbs} />
       <div className="mx-auto max-w-7xl px-6 pb-20 pt-6 lg:px-8">
         <nav aria-label="Morzsamenü" className="text-sm text-gray-500">
           <Link href="/" className="hover:text-amber-600">
