@@ -9,15 +9,17 @@ import { apartments, project, renders } from "@/data/lakasok";
 
 const minArea = Math.floor(Math.min(...apartments.map((a) => a.area)));
 const maxArea = Math.ceil(Math.max(...apartments.map((a) => a.area)));
+// Apartments still on offer (available now or coming soon); sold and reserved ones are left out.
+const forSale = apartments.filter((a) => a.status !== "eladva" && a.status !== "foglalt").length;
 
 export const metadata = {
   title: `Eladó új építésű lakások Veresegyházon – ${project.name}`,
-  description: `${apartments.length} eladó új építésű, teraszos lakás Veresegyház Csonkás városrészében, ${minArea}–${maxArea} m² között. Alaprajzok, alapterületek és elérhetőség lakásonként.`,
+  description: `${forSale} eladó új építésű, teraszos lakás Veresegyház Csonkás városrészében, ${minArea}–${maxArea} m² között. Alaprajzok, alapterületek és elérhetőség lakásonként.`,
   // Same content is served on the homepage, which is the canonical URL.
   alternates: { canonical: "https://www.geothermhouse.hu/" },
   openGraph: {
     title: `Eladó új építésű lakások – ${project.city}, ${project.name}`,
-    description: `${apartments.length} teraszos lakás, ${minArea}–${maxArea} m². Nézze meg az alaprajzokat!`,
+    description: `${forSale} eladó teraszos lakás, ${minArea}–${maxArea} m². Nézze meg az alaprajzokat!`,
     url: "https://www.geothermhouse.hu/",
     type: "website",
     locale: "hu_HU",

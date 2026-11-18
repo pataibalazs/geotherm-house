@@ -18,6 +18,9 @@ const nextConfig = {
       { source: "/references/:slug", destination: "/referenciak/:slug", permanent: true },
       { source: "/about", destination: "/rolunk", permanent: true },
       { source: "/contact", destination: "/kapcsolat", permanent: true },
+      // Pages of the former WordPress site
+      { source: "/projektek/:path*", destination: "/referenciak", permanent: true },
+      { source: "/altalanos-informaciok", destination: "/kapcsolat", permanent: true },
     ];
   },
 };

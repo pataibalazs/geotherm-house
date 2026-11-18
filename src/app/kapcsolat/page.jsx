@@ -3,7 +3,9 @@
 import React from "react";
 import ContactForm from "@/components/ContactForm";
 import { PhoneIcon } from "@heroicons/react/24/solid";
+import { MapPinIcon } from "@heroicons/react/24/outline";
 import { contacts } from "@/data/lakasok";
+import { offices } from "@/data/company";
 
 const ContactPage = () => {
   return (
@@ -127,60 +129,27 @@ const ContactPage = () => {
                         </div>
                       </div>
 
-                      {/* Iroda */}
+                      {/* Irodák: the address opens Google Maps directions */}
+                      {offices.map((o) => (
+                        <div key={o.label} className="flex items-start">
+                          <div className="min-w-[36px] sm:min-w-[40px] flex justify-center pt-0.5">
+                            <MapPinIcon aria-hidden="true" className="h-5 w-5 text-amber-500" />
+                          </div>
+                          <div className="ml-3 text-left">
+                            <p className="text-sm text-gray-500">{o.label}</p>
+                            <p className="text-base font-medium text-gray-800">{o.address}</p>
+                            <a
+                              href={o.directionsUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="mt-1 inline-block text-sm font-semibold text-amber-600 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
+                            >
+                              Útvonalterv a Google Térképen →
+                            </a>
+                          </div>
+                        </div>
+                      ))}
 
-                      <div className="flex items-center md:col-span-2">
-                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-amber-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="ml-3 text-left">
-                          <p className="text-sm text-gray-500">
-                            Tervezői iroda
-                          </p>
-                          <p className="text-base font-medium text-gray-800">
-                            1084 Budapest, József u. 42.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center md:col-span-2">
-                        <div className="min-w-[36px] sm:min-w-[40px] flex justify-center">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5 text-amber-500"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="ml-3 text-left">
-                          <p className="text-sm text-gray-500">
-                            Kivitelezői iroda
-                          </p>
-                          <p className="text-base font-medium text-gray-800">
-                            2112 Veresegyház, Jókai u. 1/a.
-                          </p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

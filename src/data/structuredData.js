@@ -2,6 +2,8 @@
 // Rendered on every page by the root layout. Keep the name, address and phone identical to the
 // Google Business Profile: Google cross-checks them for local search ranking.
 
+import { facebookUrl, googleProfileUrl } from "./company";
+
 export const SITE_URL = "https://www.geothermhouse.hu";
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 
@@ -27,11 +29,7 @@ export const organization = {
   telephone: PHONE,
   taxID: "13835235-2-13",
   areaServed,
-  sameAs: [
-    "https://www.facebook.com/profile.php?id=100063270066044",
-    // Google Business Profile share link
-    "https://share.google/SO96nW6mYEIxWtf00",
-  ],
+  sameAs: [facebookUrl, googleProfileUrl],
   department: [
     {
       "@type": "GeneralContractor",
@@ -39,6 +37,7 @@ export const organization = {
       name: "Geotherm House – Kivitelezési iroda",
       url: `${SITE_URL}/kivitelezes`,
       image: `${SITE_URL}/images/gh_logo1.png`,
+      hasMap: googleProfileUrl,
       telephone: PHONE,
       address: {
         "@type": "PostalAddress",
